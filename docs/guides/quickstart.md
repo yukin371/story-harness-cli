@@ -30,6 +30,7 @@ uv run story-harness chapter suggest --root .\demo --chapter-id chapter-001
 uv run story-harness review apply --root .\demo --chapter-id chapter-001 --all-pending --decision accepted
 uv run story-harness projection apply --root .\demo --chapter-id chapter-001
 uv run story-harness context refresh --root .\demo --chapter-id chapter-001
+uv run story-harness doctor --root .\demo
 ```
 
 ## 5. Inspect machine-facing state
@@ -37,3 +38,11 @@ uv run story-harness context refresh --root .\demo --chapter-id chapter-001
 - `demo/reviews/change-requests.yaml`
 - `demo/projections/projection.yaml`
 - `demo/projections/context-lens.yaml`
+
+## 6. Validate the project shape
+
+```powershell
+uv run story-harness doctor --root .\demo
+```
+
+Use `--strict` if you want warnings to fail CI or release checks.

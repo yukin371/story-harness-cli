@@ -44,6 +44,7 @@ uv run story-harness chapter suggest --root .\demo --chapter-id chapter-001
 uv run story-harness review apply --root .\demo --chapter-id chapter-001 --all-pending --decision accepted
 uv run story-harness projection apply --root .\demo --chapter-id chapter-001
 uv run story-harness context refresh --root .\demo --chapter-id chapter-001
+uv run story-harness doctor --root .\demo
 ```
 
 ## Example Workflow
@@ -78,6 +79,7 @@ goal or reasoning
 - `story-harness outline promote`
 - `story-harness projection apply`
 - `story-harness context refresh`
+- `story-harness doctor`
 
 ## Project Layout
 
@@ -116,6 +118,12 @@ Run smoke tests:
 uv run python -m unittest discover -s tests
 ```
 
+Run structural validation against a story project:
+
+```powershell
+uv run story-harness doctor --root .\demo
+```
+
 Install a host adapter:
 
 ```powershell
@@ -129,9 +137,14 @@ Install multiple adapters in one shot:
 uv run python scripts/install_adapters.py --workspace <workspace-root> --force
 ```
 
+Contributor and release docs:
+
+- `CONTRIBUTING.md`
+- `docs/guides/releasing.md`
+
 ## Roadmap
 
 - Stabilize command contract and fixtures
 - Validate against real Story Harness chapter samples
-- Add schema validation and doctor commands
+- Add deeper schema validation for timeline / branch / graph semantics
 - Evaluate Go rewrite when distribution and binary size become release concerns
