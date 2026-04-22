@@ -9,6 +9,7 @@ from .outline import register_outline_commands
 from .projection import register_projection_commands
 from .project import register_project_commands
 from .review import register_review_commands
+from .stats import register_stats_commands
 
 __all__ = [
     "register_brainstorm_commands",
@@ -22,4 +23,5 @@ __all__ = [
     "register_projection_commands",
     "register_project_commands",
     "register_review_commands",
+    "register_stats_commands",
 ]
