@@ -1,0 +1,110 @@
+from __future__ import annotations
+
+import json
+import shutil
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SRC_ROOT = REPO_ROOT / "src"
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
+
+from story_harness_cli.cli import main
+from story_harness_cli.protocol import load_project_state
+
+
+def _setup_project(tmp: Path, entities_data: dict | None = None):
+    fixture = REPO_ROOT / "tests" / "fixtures" / "minimal_project"
+    shutil.copytree(fixture, tmp, dirs_exist_ok=True)
+    for d in ["proposals", "reviews", "projections", "logs"]:
+        (tmp / d).mkdir(exist_ok=True)
+    for name, content in [
+        ("entities.yaml", json.dumps(entities_data or {"entities": [], "enrichmentProposals": []})),
+        ("proposals/draft-proposals.yaml", '{"draftProposals":[]}'),
+        ("reviews/change-requests.yaml", '{"changeRequests":[]}'),
+        (
+            "projections/projection.yaml",
+            '{"snapshotProjections":[],"relationProjections":[],'
+            '"sceneScopeProjections":[],"timelineProjections":[],"causalityProjections":[]}',
+        ),
+        ("projections/context-lens.yaml", '{"currentChapterId":null,"lenses":[]}'),
+        ("logs/projection-log.yaml", '{"projectionChanges":[]}'),
+    ]:
+        (tmp / name).parent.mkdir(parents=True, exist_ok=True)
+        (tmp / name).write_text(content + "\n", encoding="utf-8")
+
+
+class ChapterAutoRegisterTest(unittest.TestCase):
+    def setUp(self):
+        self.temp_dir = Path(tempfile.mkdtemp(prefix="story-harness-chapter-reg-"))
+        _setup_project(self.temp_dir)
+
+    def tearDown(self):
+        shutil.rmtree(self.temp_dir, ignore_errors=True)
+
+    def test_inferred_entities_auto_registered(self):
+        """chapter analyze should auto-register inferred entities into entities.yaml."""
+        # chapter-001.md mentions @{林舟} and @{沈昭} — these are tag-mentioned
+        # but no seed entities exist, so they become inferred
+        result = main(["chapter", "analyze", "--root", str(self.temp_dir), "--chapter-id", "chapter-001"])
+        self.assertEqual(result, 0)
+
+        state = load_project_state(self.temp_dir)
+        entities = state["entities"]["entities"]
+        self.assertGreater(len(entities), 0)
+
+        names = {e["name"] for e in entities}
+        self.assertIn("林舟", names)
+        self.assertIn("沈昭", names)
+
+        # All should be inferred since we had no seed entities
+        for e in entities:
+            self.assertEqual(e.get("source"), "inferred")
+            self.assertTrue(e["id"].startswith("inferred::"))
+
+    def test_no_duplicate_registration(self):
+        """Running analyze twice should not create duplicates."""
+        main(["chapter", "analyze", "--root", str(self.temp_dir), "--chapter-id", "chapter-001"])
+        state1 = load_project_state(self.temp_dir)
+        count1 = len(state1["entities"]["entities"])
+
+        main(["chapter", "analyze", "--root", str(self.temp_dir), "--chapter-id", "chapter-001"])
+        state2 = load_project_state(self.temp_dir)
+        count2 = len(state2["entities"]["entities"])
+
+        self.assertEqual(count1, count2)
+
+    def test_seed_entities_not_overwritten(self):
+        """Pre-existing seed entities should remain untouched."""
+        seed_entities = {
+            "entities": [
+                {
+                    "id": "char-linzhou",
+                    "name": "林舟",
+                    "type": "character",
+                    "aliases": [],
+                    "seed": {"archetype": "落魄侦探"},
+                    "source": "seed",
+                }
+            ],
+            "enrichmentProposals": [],
+        }
+        tmp2 = Path(tempfile.mkdtemp(prefix="story-harness-chapter-seed-"))
+        try:
+            _setup_project(tmp2, entities_data=seed_entities)
+            main(["chapter", "analyze", "--root", str(tmp2), "--chapter-id", "chapter-001"])
+
+            state = load_project_state(tmp2)
+            linzhou = next(e for e in state["entities"]["entities"] if e["name"] == "林舟")
+            # Seed entity should keep its original id and source
+            self.assertEqual(linzhou["id"], "char-linzhou")
+            self.assertEqual(linzhou["source"], "seed")
+        finally:
+            shutil.rmtree(tmp2, ignore_errors=True)
+
+
+if __name__ == "__main__":
+    unittest.main()

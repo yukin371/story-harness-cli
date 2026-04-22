@@ -19,6 +19,25 @@ def command_chapter_analyze(args) -> int:
 
     analysis = analyze_chapter(root, state, chapter_id)
 
+    # Auto-register inferred entities that are not yet in entities.yaml
+    entities_list = state["entities"].setdefault("entities", [])
+    existing_ids = {e.get("id") for e in entities_list}
+    for active in analysis.get("activeEntities", []):
+        if active.get("source") == "inferred" and active["id"] not in existing_ids:
+            entities_list.append(
+                {
+                    "id": active["id"],
+                    "name": active["name"],
+                    "type": "character",
+                    "aliases": [],
+                    "summary": "",
+                    "currentState": "",
+                    "source": "inferred",
+                    "registeredAt": now_iso(),
+                }
+            )
+            existing_ids.add(active["id"])
+
     # Auto-update chapter status in outline volumes
     for vol in state["outline"].get("volumes", []):
         for ch in vol.get("chapters", []):
