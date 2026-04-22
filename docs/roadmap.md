@@ -24,8 +24,8 @@
 ### Track P2: 工程质量
 
 - 目标: CI/CD (GitHub Actions)、lint (ruff)、entity 注册自动化
-- 当前状态: git hooks 已建立
-- 下一步: GitHub Actions workflow
+- 当前状态: **已完成** — CI workflow、ruff 配置、entity 自动注册均已落地
+- 下一步: 无
 
 ### Track P3: 体验优化
 
@@ -49,10 +49,14 @@
 - 修复 entity enricher 跨实体属性错配（P0）
 - 新增 timeline add/list/check 命令（P1）
 - 新增 search 跨章节搜索命令（P1）
-- 62 个测试全部通过
+- GitHub Actions CI workflow (test/lint/commit-governance)（P2）
+- ruff lint/format 配置（P2）
+- chapter analyze 自动注册 inferred entities（P2）
+- 65 个测试全部通过
 
 ## 6. 下一步
 
-1. GitHub Actions CI workflow（P2）
-2. lint 配置 - ruff（P2）
-3. entity 注册自动化（P2）
+1. causality 追踪（P1 遗留）
+2. 导出格式扩展（P3）
+3. relationship graph 可视化（P3）
+4. beat 追踪（P3）
