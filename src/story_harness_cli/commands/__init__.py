@@ -1,4 +1,5 @@
 from .brainstorm import register_brainstorm_commands
+from .causality import register_causality_commands
 from .chapter import register_chapter_commands
 from .consistency import register_consistency_commands
 from .context import register_context_commands
@@ -15,6 +16,7 @@ from .search import register_search_commands
 
 __all__ = [
     "register_brainstorm_commands",
+    "register_causality_commands",
     "register_chapter_commands",
     "register_consistency_commands",
     "register_context_commands",

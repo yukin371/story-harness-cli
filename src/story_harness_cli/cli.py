@@ -5,6 +5,7 @@ from typing import List
 
 from story_harness_cli.commands import (
     register_brainstorm_commands,
+    register_causality_commands,
     register_chapter_commands,
     register_consistency_commands,
     register_context_commands,
@@ -25,6 +26,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Story Harness CLI")
     subparsers = parser.add_subparsers(dest="command", required=True)
     register_brainstorm_commands(subparsers)
+    register_causality_commands(subparsers)
     register_project_commands(subparsers)
     register_chapter_commands(subparsers)
     register_review_commands(subparsers)
