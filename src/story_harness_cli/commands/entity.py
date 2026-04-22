@@ -153,6 +153,92 @@ def command_entity_show(args) -> int:
     return 0
 
 
+def command_entity_graph(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    fmt = args.format
+    chapter_id = getattr(args, "chapter_id", None)
+
+    relation_projections = state.get("projection", {}).get("relationProjections", [])
+    entities = state.get("entities", {}).get("entities", [])
+
+    if chapter_id:
+        relations = [r for r in relation_projections if r.get("scopeRef") == chapter_id]
+    else:
+        # Deduplicate: keep latest label per pair
+        seen = {}
+        for r in sorted(relation_projections, key=lambda x: x.get("updatedAt", "")):
+            key = (r.get("fromId"), r.get("toId"))
+            seen[key] = r
+        relations = list(seen.values())
+
+    # Collect all entity names involved (including isolated nodes from entity list)
+    name_map = {e.get("id"): e.get("name", e.get("id")) for e in entities}
+    node_ids = set()
+    for r in relations:
+        node_ids.add(r.get("fromId"))
+        node_ids.add(r.get("toId"))
+
+    # Add isolated entity nodes when no chapter filter
+    if not chapter_id:
+        for e in entities:
+            node_ids.add(e.get("id"))
+
+    nodes = {}
+    for nid in node_ids:
+        nodes[nid] = name_map.get(nid, nid.replace("inferred::", ""))
+
+    if fmt == "dot":
+        output = _render_dot(nodes, relations)
+    else:
+        output = _render_mermaid(nodes, relations)
+
+    print(output)
+    return 0
+
+
+def _render_mermaid(nodes: dict, relations: list) -> str:
+    lines = ["graph LR"]
+    for r in relations:
+        from_name = nodes.get(r.get("fromId"), r.get("fromId", "?"))
+        to_name = nodes.get(r.get("toId"), r.get("toId", "?"))
+        label = r.get("label", "")
+        # Mermaid-safe: replace spaces and special chars
+        safe_from = _mermaid_id(from_name)
+        safe_to = _mermaid_id(to_name)
+        lines.append(f"  {safe_from}[\"{from_name}\"] -->|\"{label}\"| {safe_to}[\"{to_name}\"]")
+
+    # Isolated nodes
+    linked_ids = set()
+    for r in relations:
+        linked_ids.add(r.get("fromId"))
+        linked_ids.add(r.get("toId"))
+    for nid, name in nodes.items():
+        if nid not in linked_ids:
+            safe = _mermaid_id(name)
+            lines.append(f"  {safe}[\"{name}\"]")
+
+    return "\n".join(lines)
+
+
+def _render_dot(nodes: dict, relations: list) -> str:
+    lines = ["digraph relations {"]
+    for r in relations:
+        from_name = nodes.get(r.get("fromId"), r.get("fromId", "?"))
+        to_name = nodes.get(r.get("toId"), r.get("toId", "?"))
+        label = r.get("label", "")
+        lines.append(f'  "{from_name}" -> "{to_name}" [label="{label}"];')
+    lines.append("}")
+    return "\n".join(lines)
+
+
+def _mermaid_id(name: str) -> str:
+    """Create a Mermaid-safe node ID."""
+    import re
+    return re.sub(r'[^\w]', '_', name)
+
+
 def register_entity_commands(subparsers) -> None:
     entity_parser = subparsers.add_parser("entity", help="Entity and character card commands")
     entity_sub = entity_parser.add_subparsers(dest="entity_command", required=True)
@@ -180,3 +266,9 @@ def register_entity_commands(subparsers) -> None:
     show_parser.add_argument("--entity-id", dest="entity_id")
     show_parser.add_argument("--name")
     show_parser.set_defaults(func=command_entity_show)
+
+    graph_parser = entity_sub.add_parser("graph", help="Export relationship graph")
+    graph_parser.add_argument("--root", required=True)
+    graph_parser.add_argument("--chapter-id", help="Filter relations by chapter")
+    graph_parser.add_argument("--format", choices=["mermaid", "dot"], default="mermaid", help="Graph format")
+    graph_parser.set_defaults(func=command_entity_graph)
