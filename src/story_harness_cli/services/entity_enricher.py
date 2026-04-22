@@ -30,6 +30,18 @@ def enrich_entities(
     existing_proposals = state["entities"].setdefault("enrichmentProposals", [])
     existing_fingerprints = {p.get("fingerprint") for p in existing_proposals}
 
+    # Build set of existing profile details per entity for cross-chapter dedup
+    existing_details: Dict[str, set] = {}
+    for entity in entities_list:
+        details = set()
+        for entry in entity.get("profile", {}).get("appearance", []):
+            for part in entry.get("detail", "").split("；"):
+                details.add(part)
+        for entry in entity.get("profile", {}).get("abilities", []):
+            for part in entry.get("detail", "").split("；"):
+                details.add(part)
+        existing_details[entity["id"]] = details
+
     name_to_entity = {}
     for entity in entities_list:
         name_to_entity[entity["name"]] = entity
@@ -49,6 +61,10 @@ def enrich_entities(
         for entity in matched_entities:
             if appearance_tags:
                 detail = "；".join(sorted(set(appearance_tags)))
+                # Skip if all tags already exist in profile
+                already_have = existing_details.get(entity["id"], set())
+                if all(tag in already_have for tag in set(appearance_tags)):
+                    continue
                 fp = f"enrich::appearance::{entity['id']}::{detail}"
                 if fp not in existing_fingerprints:
                     existing_proposals.append({
@@ -69,6 +85,9 @@ def enrich_entities(
 
             if ability_tags:
                 detail = "；".join(sorted(set(ability_tags)))
+                already_have = existing_details.get(entity["id"], set())
+                if all(tag in already_have for tag in set(ability_tags)):
+                    continue
                 fp = f"enrich::ability::{entity['id']}::{detail}"
                 if fp not in existing_fingerprints:
                     existing_proposals.append({

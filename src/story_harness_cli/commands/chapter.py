@@ -18,6 +18,14 @@ def command_chapter_analyze(args) -> int:
         raise SystemExit("缺少 chapter id")
 
     analysis = analyze_chapter(root, state, chapter_id)
+
+    # Auto-update chapter status in outline volumes
+    for vol in state["outline"].get("volumes", []):
+        for ch in vol.get("chapters", []):
+            if ch.get("id") == chapter_id:
+                ch["status"] = "completed"
+                break
+
     state["project"]["activeChapterId"] = chapter_id
     state["project"]["updatedAt"] = now_iso()
     save_state(root, state)

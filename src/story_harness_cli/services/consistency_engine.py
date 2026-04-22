@@ -14,8 +14,12 @@ ACTIVE_BEHAVIOR_KEYWORDS = [
 
 INTIMATE_KEYWORDS = [
     "亲密", "拥抱", "亲吻", "依偎", "牵手", "抚摸", "温柔",
-    "信任", "默契", "配合", "并肩", "携手", "守护",
+    "默契", "配合", "并肩", "携手", "守护",
 ]
+
+NEGATION_PREFIXES = ("不", "没", "无", "未", "非")
+
+INTIMATE_WORDS_NEED_NEGATION_CHECK = {"信任", "爱", "喜欢"}
 
 
 def check_consistency(
@@ -93,7 +97,16 @@ def _check_relation_contradictions(
         for para in paragraphs:
             if from_name not in para or to_name not in para:
                 continue
-            has_intimate = any(kw in para for kw in INTIMATE_KEYWORDS)
+            has_intimate = False
+            for kw in INTIMATE_KEYWORDS:
+                if kw not in para:
+                    continue
+                if kw in INTIMATE_WORDS_NEED_NEGATION_CHECK:
+                    idx = para.index(kw)
+                    if idx > 0 and para[idx - 1] in NEGATION_PREFIXES:
+                        continue
+                has_intimate = True
+                break
             if has_intimate:
                 results.append({
                     "from": rel.get("fromId"),
