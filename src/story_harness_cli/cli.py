@@ -6,8 +6,10 @@ from typing import List
 from story_harness_cli.commands import (
     register_brainstorm_commands,
     register_chapter_commands,
+    register_consistency_commands,
     register_context_commands,
     register_doctor_commands,
+    register_entity_commands,
     register_outline_commands,
     register_projection_commands,
     register_project_commands,
@@ -26,6 +28,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_projection_commands(subparsers)
     register_context_commands(subparsers)
     register_doctor_commands(subparsers)
+    register_consistency_commands(subparsers)
+    register_entity_commands(subparsers)
     return parser
 
 
