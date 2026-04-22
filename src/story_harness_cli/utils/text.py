@@ -89,3 +89,76 @@ def relation_for_paragraph(paragraph: str) -> Tuple[str | None, str]:
             return label, severity
     return None, "suggestion"
 
+
+APPEARANCE_KEYWORDS = {
+    "长发": "长发",
+    "短发": "短发",
+    "光头": "光头",
+    "马尾": "马尾",
+    "白发": "白发",
+    "黑发": "黑发",
+    "金发": "金发",
+    "红发": "红发",
+    "灰发": "灰发",
+    "银发": "银发",
+    "蓝眼睛": "蓝眼睛",
+    "琥珀色": "琥珀色眼睛",
+    "琥珀色眼睛": "琥珀色眼睛",
+    "黑眼睛": "黑眼睛",
+    "绿眼睛": "绿眼睛",
+    "高个子": "高个子",
+    "矮个子": "矮个子",
+    "瘦削": "瘦削",
+    "魁梧": "魁梧",
+    "疤痕": "有疤痕",
+    "伤疤": "有疤痕",
+    "纹身": "有纹身",
+    "胎记": "有胎记",
+    "戴眼镜": "戴眼镜",
+    "胡子": "有胡子",
+    "胡须": "有胡子",
+    "络腮胡": "络腮胡",
+    "独眼": "独眼",
+    "拐杖": "拄拐杖",
+    "轮椅": "坐轮椅",
+}
+
+ABILITY_KEYWORDS = {
+    "格斗": "格斗",
+    "拳击": "格斗",
+    "刀法": "刀术",
+    "剑术": "剑术",
+    "枪法": "枪法",
+    "射击": "射击",
+    "暗器": "暗器",
+    "轻功": "轻功",
+    "身法": "身法",
+    "内力": "内力",
+    "法术": "法术",
+    "魔法": "魔法",
+    "咒语": "咒语",
+    "医术": "医术",
+    "毒术": "毒术",
+    "易容": "易容",
+    "潜行": "潜行",
+    "破解": "破解",
+    "黑客": "黑客",
+    "驾驶": "驾驶",
+    "骑术": "骑术",
+    "游泳": "游泳",
+    "追踪": "追踪",
+    "推理": "推理",
+    "分析": "分析",
+    "领导": "领导",
+    "口才": "口才",
+    "谈判": "谈判",
+}
+
+
+def appearance_tags_for_paragraph(paragraph: str) -> List[str]:
+    return [label for keyword, label in APPEARANCE_KEYWORDS.items() if keyword in paragraph]
+
+
+def ability_tags_for_paragraph(paragraph: str) -> List[str]:
+    return [label for keyword, label in ABILITY_KEYWORDS.items() if keyword in paragraph]
+
