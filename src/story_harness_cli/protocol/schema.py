@@ -6,8 +6,8 @@ from typing import Any, Dict
 def default_project_state() -> Dict[str, Dict[str, Any]]:
     return {
         "project": {},
-        "outline": {"chapters": [], "chapterDirections": []},
-        "entities": {"entities": []},
+        "outline": {"chapters": [], "chapterDirections": [], "volumes": []},
+        "entities": {"entities": [], "enrichmentProposals": []},
         "timeline": {"events": []},
         "branches": {"branches": []},
         "proposals": {"draftProposals": []},
