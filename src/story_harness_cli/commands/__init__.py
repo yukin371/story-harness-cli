@@ -10,6 +10,7 @@ from .projection import register_projection_commands
 from .project import register_project_commands
 from .review import register_review_commands
 from .stats import register_stats_commands
+from .timeline import register_timeline_commands
 
 __all__ = [
     "register_brainstorm_commands",
@@ -24,4 +25,5 @@ __all__ = [
     "register_project_commands",
     "register_review_commands",
     "register_stats_commands",
+    "register_timeline_commands",
 ]
