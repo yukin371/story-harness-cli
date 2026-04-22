@@ -1,7 +1,8 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set
 
 from story_harness_cli.protocol.files import chapter_path
 from story_harness_cli.utils import now_iso, stable_hash
@@ -10,6 +11,23 @@ from story_harness_cli.utils.text import (
     appearance_tags_for_paragraph,
     paragraphs_from_text,
 )
+
+
+def _split_sentences(text: str) -> List[str]:
+    """Split text into sentences on Chinese/English sentence-ending punctuation."""
+    parts = re.split(r'(?<=[。！？；.!?])\s*', text)
+    return [s.strip() for s in parts if s.strip()]
+
+
+def _matched_entities(text: str, name_to_entity: Dict[str, Any]) -> List[Dict]:
+    """Find entities whose name appears in the given text."""
+    matched = []
+    seen_ids: Set[str] = set()
+    for name, entity in name_to_entity.items():
+        if name in text and entity["id"] not in seen_ids:
+            matched.append(entity)
+            seen_ids.add(entity["id"])
+    return matched
 
 
 def enrich_entities(
@@ -28,7 +46,7 @@ def enrich_entities(
     paragraphs = paragraphs_from_text(text)
     entities_list = state["entities"].get("entities", [])
     existing_proposals = state["entities"].setdefault("enrichmentProposals", [])
-    existing_fingerprints = {p.get("fingerprint") for p in existing_proposals}
+    existing_fingerprints: Set[str] = {p.get("fingerprint") for p in existing_proposals}
 
     # Build set of existing profile details per entity for cross-chapter dedup
     existing_details: Dict[str, set] = {}
@@ -42,7 +60,7 @@ def enrich_entities(
                 details.add(part)
         existing_details[entity["id"]] = details
 
-    name_to_entity = {}
+    name_to_entity: Dict[str, Dict] = {}
     for entity in entities_list:
         name_to_entity[entity["name"]] = entity
         for alias in entity.get("aliases", []):
@@ -50,60 +68,59 @@ def enrich_entities(
 
     created = 0
     for paragraph in paragraphs:
-        appearance_tags = appearance_tags_for_paragraph(paragraph)
-        ability_tags = ability_tags_for_paragraph(paragraph)
+        # Split into sentences for per-entity attribution.
+        # Each sentence's tags are only assigned to entities mentioned
+        # in that same sentence, preventing cross-entity misattribution.
+        for sentence in _split_sentences(paragraph):
+            appearance_tags = appearance_tags_for_paragraph(sentence)
+            ability_tags = ability_tags_for_paragraph(sentence)
+            sentence_entities = _matched_entities(sentence, name_to_entity)
 
-        matched_entities = []
-        for name, entity in name_to_entity.items():
-            if name in paragraph:
-                matched_entities.append(entity)
+            for entity in sentence_entities:
+                if appearance_tags:
+                    detail = "；".join(sorted(set(appearance_tags)))
+                    already_have = existing_details.get(entity["id"], set())
+                    if all(tag in already_have for tag in set(appearance_tags)):
+                        continue
+                    fp = f"enrich::appearance::{entity['id']}::{detail}"
+                    if fp not in existing_fingerprints:
+                        existing_proposals.append({
+                            "id": f"enrich-{stable_hash(fp + now_iso())}",
+                            "entityId": entity["id"],
+                            "entityName": entity["name"],
+                            "chapterId": chapter_id,
+                            "field": "appearance",
+                            "detail": detail,
+                            "evidence": sentence,
+                            "confidence": 0.85,
+                            "status": "pending",
+                            "fingerprint": fp,
+                            "createdAt": now_iso(),
+                        })
+                        existing_fingerprints.add(fp)
+                        created += 1
 
-        for entity in matched_entities:
-            if appearance_tags:
-                detail = "；".join(sorted(set(appearance_tags)))
-                # Skip if all tags already exist in profile
-                already_have = existing_details.get(entity["id"], set())
-                if all(tag in already_have for tag in set(appearance_tags)):
-                    continue
-                fp = f"enrich::appearance::{entity['id']}::{detail}"
-                if fp not in existing_fingerprints:
-                    existing_proposals.append({
-                        "id": f"enrich-{stable_hash(fp + now_iso())}",
-                        "entityId": entity["id"],
-                        "entityName": entity["name"],
-                        "chapterId": chapter_id,
-                        "field": "appearance",
-                        "detail": detail,
-                        "evidence": paragraph,
-                        "confidence": 0.85,
-                        "status": "pending",
-                        "fingerprint": fp,
-                        "createdAt": now_iso(),
-                    })
-                    existing_fingerprints.add(fp)
-                    created += 1
-
-            if ability_tags:
-                detail = "；".join(sorted(set(ability_tags)))
-                already_have = existing_details.get(entity["id"], set())
-                if all(tag in already_have for tag in set(ability_tags)):
-                    continue
-                fp = f"enrich::ability::{entity['id']}::{detail}"
-                if fp not in existing_fingerprints:
-                    existing_proposals.append({
-                        "id": f"enrich-{stable_hash(fp + now_iso())}",
-                        "entityId": entity["id"],
-                        "entityName": entity["name"],
-                        "chapterId": chapter_id,
-                        "field": "abilities",
-                        "detail": detail,
-                        "evidence": paragraph,
-                        "confidence": 0.80,
-                        "status": "pending",
-                        "fingerprint": fp,
-                        "createdAt": now_iso(),
-                    })
-                    existing_fingerprints.add(fp)
-                    created += 1
+                if ability_tags:
+                    detail = "；".join(sorted(set(ability_tags)))
+                    already_have = existing_details.get(entity["id"], set())
+                    if all(tag in already_have for tag in set(ability_tags)):
+                        continue
+                    fp = f"enrich::ability::{entity['id']}::{detail}"
+                    if fp not in existing_fingerprints:
+                        existing_proposals.append({
+                            "id": f"enrich-{stable_hash(fp + now_iso())}",
+                            "entityId": entity["id"],
+                            "entityName": entity["name"],
+                            "chapterId": chapter_id,
+                            "field": "abilities",
+                            "detail": detail,
+                            "evidence": sentence,
+                            "confidence": 0.80,
+                            "status": "pending",
+                            "fingerprint": fp,
+                            "createdAt": now_iso(),
+                        })
+                        existing_fingerprints.add(fp)
+                        created += 1
 
     return {"created": created, "chapterId": chapter_id}

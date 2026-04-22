@@ -134,6 +134,53 @@ class EntityEnricherTest(unittest.TestCase):
         # Second run should create 0 new proposals due to fingerprint dedup
         self.assertEqual(result2["created"], 0)
 
+    def test_entity_attribution_per_sentence(self):
+        """Tags from one entity's sentence should NOT be attributed to another entity
+        in the same paragraph but different sentence."""
+        # Add a second entity
+        state = load_project_state(self.temp_dir)
+        entities = state["entities"]["entities"]
+        entities.append({
+            "id": "char-suqing",
+            "name": "苏晴",
+            "source": "seed",
+            "aliases": [],
+            "seed": {},
+            "profile": {"appearance": [], "abilities": [], "speech": [], "relationships": []},
+            "currentState": {"status": "active"},
+        })
+        import json as _json
+        (self.temp_dir / "entities.yaml").write_text(
+            _json.dumps(state["entities"], ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+
+        # Two entities, each in their own sentence with distinct appearance tags
+        chapter_text = "苏晴留着金发，琥珀色眼睛闪闪发光。林舟是个高个子，脸上有道疤痕。\n"
+        (self.temp_dir / "chapters").mkdir(exist_ok=True)
+        (self.temp_dir / "chapters" / "chapter-attrib.md").write_text(
+            chapter_text, encoding="utf-8"
+        )
+
+        state = load_project_state(self.temp_dir)
+        result = enrich_entities(state, "chapter-attrib", root=self.temp_dir)
+        self.assertGreater(result["created"], 0)
+
+        proposals = state["entities"]["enrichmentProposals"]
+        # Check that 苏晴 got 金发/琥珀色 but NOT 疤痕/高个子
+        suqing_props = [p for p in proposals if p["entityId"] == "char-suqing"]
+        for p in suqing_props:
+            if p["field"] == "appearance":
+                self.assertIn("金发", p["detail"])
+                self.assertNotIn("有疤痕", p["detail"])
+                self.assertNotIn("高个子", p["detail"])
+
+        # Check that 林舟 got 疤痕/高个子 but NOT 金发/琥珀色
+        linzhou_props = [p for p in proposals if p["entityId"] == "char-linzhou"]
+        for p in linzhou_props:
+            if p["field"] == "appearance":
+                self.assertNotIn("金发", p["detail"])
+                self.assertNotIn("琥珀色眼睛", p["detail"])
+
 
 if __name__ == "__main__":
     unittest.main()
