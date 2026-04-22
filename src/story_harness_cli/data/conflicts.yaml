@@ -1,0 +1,12 @@
+{
+  "conflictTypes": [
+    {"id": "ideology", "label": "立场对立", "description": "因信念或立场不同产生的对立"},
+    {"id": "interest", "label": "利益冲突", "description": "资源、权力或利益争夺"},
+    {"id": "misunderstanding", "label": "误解", "description": "因信息不对称造成的矛盾"},
+    {"id": "betrayal", "label": "背叛", "description": "一方背叛另一方的信任"},
+    {"id": "rivalry", "label": "竞争", "description": "同一目标下的竞争关系"},
+    {"id": "duty-vs-desire", "label": "职责与欲望", "description": "责任与个人愿望的抉择"},
+    {"id": "past-vs-present", "label": "过去与现在", "description": "历史包袱与现实需求的冲突"},
+    {"id": "individual-vs-group", "label": "个人与集体", "description": "个人利益与群体利益的矛盾"}
+  ]
+}

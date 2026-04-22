@@ -1,0 +1,16 @@
+{
+  "motivations": [
+    {"id": "revenge", "label": "复仇", "description": "为某事或某人复仇"},
+    {"id": "truth", "label": "追查真相", "description": "揭开隐藏的真相"},
+    {"id": "redemption", "label": "救赎", "description": "弥补过去的错误"},
+    {"id": "treasure", "label": "寻宝", "description": "寻找珍贵的宝物或遗产"},
+    {"id": "protection", "label": "守护", "description": "保护重要的人或事物"},
+    {"id": "freedom", "label": "自由", "description": "摆脱束缚，追求自由"},
+    {"id": "power", "label": "权力", "description": "获取或巩固权力地位"},
+    {"id": "love", "label": "爱情", "description": "追寻或守护爱情"},
+    {"id": "honor", "label": "荣誉", "description": "维护家族或个人荣誉"},
+    {"id": "exploration", "label": "探索", "description": "探索未知的世界或知识"},
+    {"id": "survival", "label": "生存", "description": "在极端环境中活下去"},
+    {"id": "legacy", "label": "传承", "description": "传承或恢复某种遗产"}
+  ]
+}

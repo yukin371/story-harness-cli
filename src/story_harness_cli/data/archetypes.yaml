@@ -1,0 +1,16 @@
+{
+  "archetypes": [
+    {"id": "fallen-detective", "label": "落魄侦探", "traits": ["敏锐", "固执", "孤独"]},
+    {"id": "genius-girl", "label": "天才少女", "traits": ["聪慧", "叛逆", "脆弱"]},
+    {"id": "hidden-master", "label": "隐世高人", "traits": ["淡泊", "深藏不露", "古怪"]},
+    {"id": "fallen-noble", "label": "落魄贵族", "traits": ["高傲", "优雅", "不甘"]},
+    {"id": "avenger", "label": "复仇者", "traits": ["坚定", "冷酷", "内心挣扎"]},
+    {"id": "wanderer", "label": "流浪者", "traits": ["自由", "洒脱", "逃避"]},
+    {"id": "scholar", "label": "书生学者", "traits": ["博学", "谨慎", "理想主义"]},
+    {"id": "merchant", "label": "精明商人", "traits": ["圆滑", "务实", "重情义"]},
+    {"id": "rebel-leader", "label": "反抗军领袖", "traits": ["果决", "魅力", "偏执"]},
+    {"id": "double-agent", "label": "双重间谍", "traits": ["冷静", "多疑", "矛盾"]},
+    {"id": "healer", "label": "医者", "traits": ["慈悲", "坚韧", "隐忍"]},
+    {"id": "warrior", "label": "武者", "traits": ["刚直", "重诺", "不善言辞"]}
+  ]
+}
