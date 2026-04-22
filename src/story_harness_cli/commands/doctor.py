@@ -101,6 +101,45 @@ def validate_project_links(root: Path, state: Dict[str, Dict[str, Any]], checks:
             record_check(checks, "warning", "missing-context-chapter", f"context-lens 指向不存在的章节: {context_chapter_id}")
 
 
+def _check_outline_volumes(root: Path, issues: list) -> None:
+    """Validate outline.yaml has volumes structure."""
+    outline_path = root / "outline.yaml"
+    if not outline_path.exists():
+        return
+    outline = load_json_compatible_yaml(outline_path, {})
+    volumes = outline.get("volumes")
+    if volumes is None:
+        issues.append({"level": "warn", "message": "outline.yaml 缺少 volumes 字段，建议运行 brainstorm outline 初始化"})
+    else:
+        for vol in volumes:
+            for ch in vol.get("chapters", []):
+                for beat in ch.get("beats", []):
+                    if beat.get("status") == "planned" and ch.get("status") == "completed":
+                        issues.append({
+                            "level": "info",
+                            "message": f"卷 '{vol.get('title')}' 章 '{ch.get('title')}' 的 beat '{beat.get('summary')}' 状态仍为 planned，但章节已标记 completed",
+                        })
+
+
+def _check_entity_profiles(root: Path, issues: list) -> None:
+    """Validate entities have profile structure."""
+    entities_path = root / "entities.yaml"
+    if not entities_path.exists():
+        return
+    entities_data = load_json_compatible_yaml(entities_path, {})
+    for entity in entities_data.get("entities", []):
+        if "profile" not in entity:
+            issues.append({
+                "level": "warn",
+                "message": f"实体 '{entity.get('name')}' 缺少 profile 字段，建议重新初始化或运行 entity enrich",
+            })
+        if "seed" not in entity:
+            issues.append({
+                "level": "info",
+                "message": f"实体 '{entity.get('name')}' 缺少 seed 字段，建议通过 brainstorm character 创建种子",
+            })
+
+
 def command_doctor(args) -> int:
     root = Path(args.root).resolve()
     checks: List[Dict[str, str]] = []
@@ -123,6 +162,8 @@ def command_doctor(args) -> int:
 
     state = validate_project_shape(root, checks)
     validate_project_links(root, state, checks)
+    _check_outline_volumes(root, checks)
+    _check_entity_profiles(root, checks)
 
     error_count = sum(1 for item in checks if item["level"] == "error")
     warning_count = sum(1 for item in checks if item["level"] == "warning")
