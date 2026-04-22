@@ -17,6 +17,7 @@ from story_harness_cli.commands import (
     register_review_commands,
     register_stats_commands,
     register_timeline_commands,
+    register_search_commands,
 )
 
 
@@ -36,6 +37,7 @@ def build_parser() -> argparse.ArgumentParser:
     register_export_commands(subparsers)
     register_stats_commands(subparsers)
     register_timeline_commands(subparsers)
+    register_search_commands(subparsers)
     return parser
 
 
