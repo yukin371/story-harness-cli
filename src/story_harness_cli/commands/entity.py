@@ -4,14 +4,17 @@ import json
 from pathlib import Path
 
 from story_harness_cli.protocol import ensure_project_root, load_project_state, save_state
+from story_harness_cli.protocol.keywords import load_keywords
 from story_harness_cli.services.entity_enricher import enrich_entities
 from story_harness_cli.utils import now_iso
+from story_harness_cli.utils.text import set_keywords
 
 
 def command_entity_enrich(args) -> int:
     root = Path(args.root).resolve()
     ensure_project_root(root)
     state = load_project_state(root)
+    set_keywords(load_keywords(root))
     chapter_id = args.chapter_id or state["project"].get("activeChapterId")
     if not chapter_id:
         raise SystemExit("缺少 chapter id")

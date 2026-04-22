@@ -80,13 +80,18 @@ def extract_tag_mentions(text: str) -> List[str]:
 
 
 def state_tags_for_paragraph(paragraph: str) -> List[str]:
-    return [label for keyword, label in STATE_KEYWORDS.items() if keyword in paragraph]
+    kw = _kw_override.get("state", STATE_KEYWORDS) if _kw_override else STATE_KEYWORDS
+    return [label for keyword, label in kw.items() if keyword in paragraph]
 
 
 def relation_for_paragraph(paragraph: str) -> Tuple[str | None, str]:
-    for keyword, (label, severity) in RELATION_KEYWORDS.items():
+    raw = _kw_override.get("relation", RELATION_KEYWORDS) if _kw_override else RELATION_KEYWORDS
+    # Normalize: both {k: (label, sev)} and {k: [label, sev]} forms
+    for keyword, val in raw.items():
         if keyword in paragraph:
-            return label, severity
+            if isinstance(val, (list, tuple)) and len(val) >= 2:
+                return val[0], val[1]
+            return None, "suggestion"
     return None, "suggestion"
 
 
@@ -155,12 +160,31 @@ ABILITY_KEYWORDS = {
 }
 
 
+# Module-level keyword override — set once per CLI invocation via set_keywords()
+_kw_override: dict | None = None
+
+
+def set_keywords(kw: dict) -> None:
+    """Inject custom keyword tables, replacing built-in defaults.
+
+    Expected keys: state, relation, appearance, ability.
+    - state: dict {keyword: label}
+    - relation: dict {keyword: [label, severity]}
+    - appearance: dict {keyword: label}
+    - ability: dict {keyword: label}
+    """
+    global _kw_override
+    _kw_override = kw
+
+
 def appearance_tags_for_paragraph(paragraph: str) -> List[str]:
-    return [label for keyword, label in APPEARANCE_KEYWORDS.items() if keyword in paragraph]
+    kw = _kw_override.get("appearance", APPEARANCE_KEYWORDS) if _kw_override else APPEARANCE_KEYWORDS
+    return [label for keyword, label in kw.items() if keyword in paragraph]
 
 
 def ability_tags_for_paragraph(paragraph: str) -> List[str]:
-    return [label for keyword, label in ABILITY_KEYWORDS.items() if keyword in paragraph]
+    kw = _kw_override.get("ability", ABILITY_KEYWORDS) if _kw_override else ABILITY_KEYWORDS
+    return [label for keyword, label in kw.items() if keyword in paragraph]
 
 
 def strip_entity_tags(text: str) -> str:

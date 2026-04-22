@@ -26,6 +26,7 @@ def check_consistency(
     state: Dict[str, Dict[str, Any]],
     chapter_text: str,
     chapter_id: str,
+    keywords: Dict[str, Any] | None = None,
 ) -> Dict[str, Any]:
     hard: Dict[str, List] = {
         "stateContradictions": [],
@@ -36,8 +37,14 @@ def check_consistency(
         "outlineDeviations": [],
     }
 
-    _check_state_contradictions(state, chapter_text, chapter_id, hard["stateContradictions"])
-    _check_relation_contradictions(state, chapter_text, chapter_id, hard["relationContradictions"])
+    active_kw = (keywords or {}).get("activeBehavior", ACTIVE_BEHAVIOR_KEYWORDS)
+    intimate_kw = (keywords or {}).get("intimate", INTIMATE_KEYWORDS)
+    negation_kw = tuple((keywords or {}).get("negationPrefixes", NEGATION_PREFIXES))
+
+    _check_state_contradictions(state, chapter_text, chapter_id, hard["stateContradictions"], active_kw)
+    _check_relation_contradictions(
+        state, chapter_text, chapter_id, hard["relationContradictions"], intimate_kw, negation_kw,
+    )
     _check_outline_deviations(state, chapter_id, soft["outlineDeviations"])
 
     context_for_ai = _build_ai_context(state, chapter_text, chapter_id)
@@ -50,7 +57,7 @@ def check_consistency(
 
 
 def _check_state_contradictions(
-    state: Dict, chapter_text: str, chapter_id: str, results: List
+    state: Dict, chapter_text: str, chapter_id: str, results: List, active_kw: List[str]
 ) -> None:
     entities = state.get("entities", {}).get("entities", [])
     paragraphs = paragraphs_from_text(chapter_text)
@@ -63,7 +70,7 @@ def _check_state_contradictions(
         for para in paragraphs:
             if name not in para:
                 continue
-            has_active = any(kw in para for kw in ACTIVE_BEHAVIOR_KEYWORDS)
+            has_active = any(kw in para for kw in active_kw)
             if has_active:
                 last_chapter = current.get("lastUpdatedChapter", "unknown")
                 results.append({
@@ -80,7 +87,8 @@ def _check_state_contradictions(
 
 
 def _check_relation_contradictions(
-    state: Dict, chapter_text: str, chapter_id: str, results: List
+    state: Dict, chapter_text: str, chapter_id: str, results: List,
+    intimate_kw: List[str], negation_kw: tuple,
 ) -> None:
     relations = state.get("projection", {}).get("relationProjections", [])
     paragraphs = paragraphs_from_text(chapter_text)
@@ -98,12 +106,12 @@ def _check_relation_contradictions(
             if from_name not in para or to_name not in para:
                 continue
             has_intimate = False
-            for kw in INTIMATE_KEYWORDS:
+            for kw in intimate_kw:
                 if kw not in para:
                     continue
                 if kw in INTIMATE_WORDS_NEED_NEGATION_CHECK:
                     idx = para.index(kw)
-                    if idx > 0 and para[idx - 1] in NEGATION_PREFIXES:
+                    if idx > 0 and para[idx - 1] in negation_kw:
                         continue
                 has_intimate = True
                 break

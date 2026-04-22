@@ -5,9 +5,11 @@ from pathlib import Path
 
 from story_harness_cli.protocol import ensure_project_root, load_project_state
 from story_harness_cli.protocol.files import chapter_path
+from story_harness_cli.protocol.keywords import load_keywords
 from story_harness_cli.protocol.io import dump_json_compatible_yaml
 from story_harness_cli.services.consistency_engine import check_consistency
 from story_harness_cli.utils import now_iso, stable_hash
+from story_harness_cli.utils.text import set_keywords
 
 
 def command_consistency_check(args) -> int:
@@ -23,7 +25,9 @@ def command_consistency_check(args) -> int:
         raise SystemExit(f"章节不存在: {chapter_file}")
 
     chapter_text = chapter_file.read_text(encoding="utf-8")
-    result = check_consistency(state, chapter_text, chapter_id)
+    keywords = load_keywords(root)
+    set_keywords(keywords)
+    result = check_consistency(state, chapter_text, chapter_id, keywords)
     result["checkId"] = f"check-{chapter_id}-{stable_hash(now_iso())}"
     result["chapterId"] = chapter_id
     result["checkedAt"] = now_iso()
