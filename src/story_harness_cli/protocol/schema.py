@@ -21,5 +21,7 @@ def default_project_state() -> Dict[str, Dict[str, Any]]:
         },
         "context_lens": {"currentChapterId": None, "lenses": []},
         "projection_log": {"projectionChanges": []},
+        "threads": {"threads": []},
+        "structures": {"activeStructure": None, "mappings": []},
     }
 

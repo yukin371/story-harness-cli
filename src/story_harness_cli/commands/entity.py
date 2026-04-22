@@ -77,9 +77,9 @@ def command_entity_list(args) -> int:
             "id": entity.get("id"),
             "name": entity.get("name"),
             "source": entity.get("source"),
-            "archetype": entity.get("seed", {}).get("archetype"),
-            "status": entity.get("currentState", {}).get("status"),
-            "lastChapter": entity.get("currentState", {}).get("lastUpdatedChapter"),
+            "seed": entity.get("seed") if not isinstance(entity.get("seed"), dict) else True,
+            "status": entity.get("currentState", {}).get("status") if isinstance(entity.get("currentState"), dict) else None,
+            "lastChapter": entity.get("currentState", {}).get("lastUpdatedChapter") if isinstance(entity.get("currentState"), dict) else None,
         })
 
     print(json.dumps(summaries, ensure_ascii=False, indent=2))

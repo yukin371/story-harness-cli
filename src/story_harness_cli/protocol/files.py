@@ -9,6 +9,8 @@ ROOT_FILES = [
     "entities.yaml",
     "timeline.yaml",
     "branches.yaml",
+    "threads.yaml",
+    "structures.yaml",
 ]
 
 

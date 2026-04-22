@@ -36,6 +36,8 @@ def load_project_state(root: Path) -> Dict[str, Dict[str, Any]]:
             root_file(root, "logs/projection-log.yaml"),
             defaults["projection_log"],
         ),
+        "threads": load_json_compatible_yaml(root_file(root, "threads.yaml"), defaults["threads"]),
+        "structures": load_json_compatible_yaml(root_file(root, "structures.yaml"), defaults["structures"]),
     }
 
 
@@ -53,6 +55,8 @@ def save_state(root: Path, state: Dict[str, Dict[str, Any]]) -> None:
     dump_json_compatible_yaml(root_file(root, "projections/projection.yaml"), state["projection"])
     dump_json_compatible_yaml(root_file(root, "projections/context-lens.yaml"), state["context_lens"])
     dump_json_compatible_yaml(root_file(root, "logs/projection-log.yaml"), state["projection_log"])
+    dump_json_compatible_yaml(root_file(root, "threads.yaml"), state["threads"])
+    dump_json_compatible_yaml(root_file(root, "structures.yaml"), state["structures"])
 
 
 def ensure_project_root(root: Path) -> None:

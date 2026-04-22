@@ -1,0 +1,381 @@
+{
+  "entities": [
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "type": "character",
+      "seed": true,
+      "profile": {
+        "role": "侦探",
+        "fullName": "林舟",
+        "age": 38,
+        "appearance": [
+          {
+            "detail": "中年发福，眉头紧锁"
+          },
+          {
+            "detail": "左肩有旧伤疤"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "刑侦推理"
+          },
+          {
+            "detail": "格斗擒拿"
+          },
+          {
+            "detail": "驾驶",
+            "source": "chapter-007",
+            "evidence": "@{林舟}推开车门，@{沈昭}跌跌撞撞地钻进副驾驶座。",
+            "confidence": 0.8
+          }
+        ],
+        "background": "前刑侦支队副队长，三年前因\"越权执法\"被革职，实际原因是查到了不该碰的账本。妻子因此离开，独自租住在旧仓库。三年来靠做私家侦探勉强糊口，始终未放弃追查真相。",
+        "motivation": "洗清三年前的冤屈，找到失踪的账本，查出幕后黑手",
+        "weakness": "固执，不信任他人，尤其是警局内部"
+      },
+      "currentState": {
+        "physicalState": "左肩旧伤偶发疼痛，失眠",
+        "emotionalState": "压抑的愤怒，近乎偏执的执念",
+        "locationState": "旧仓库住所/雾港码头区域",
+        "financialState": "拮据"
+      },
+      "statesHistory": [
+        {
+          "state": "警局风云",
+          "chapterId": "chapter-001",
+          "description": "曾是刑侦副队长，前途无量"
+        },
+        {
+          "state": "蒙冤革职",
+          "chapterId": "chapter-001",
+          "description": "因账本事件被诬陷越权执法"
+        },
+        {
+          "state": "落魄侦探",
+          "chapterId": "chapter-001",
+          "description": "三年私家侦探生涯"
+        }
+      ],
+      "arc": {
+        "motivation": "洗清三年前的冤屈，找到失踪的账本，查出幕后黑手",
+        "internalConflict": "固执正义vs信任他人",
+        "milestones": [
+          {
+            "id": "milestone-7af8181d52",
+            "chapterId": "chapter-001",
+            "type": "触发事件",
+            "description": "收到匿名短信，旧案重启"
+          },
+          {
+            "id": "milestone-9c46d77ea8",
+            "chapterId": "chapter-004",
+            "type": "关键转折",
+            "description": "发现账本线索，决定独自追查"
+          },
+          {
+            "id": "milestone-36807ab907",
+            "chapterId": "chapter-007",
+            "type": "灵魂暗夜",
+            "description": "被沈昭背叛的假象击溃，但最终选择信任"
+          }
+        ],
+        "resolutionChapterId": null
+      }
+    },
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "type": "character",
+      "seed": true,
+      "profile": {
+        "role": "情报人员",
+        "fullName": "沈昭",
+        "age": 35,
+        "appearance": [
+          {
+            "detail": "面目模糊，难以记住"
+          },
+          {
+            "detail": "左手无名指有旧伤疤"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "情报收集"
+          },
+          {
+            "detail": "伪装潜伏"
+          },
+          {
+            "detail": "格斗"
+          },
+          {
+            "detail": "驾驶",
+            "source": "chapter-007",
+            "evidence": "@{林舟}推开车门，@{沈昭}跌跌撞撞地钻进副驾驶座。",
+            "confidence": 0.8
+          },
+          {
+            "detail": "追踪",
+            "source": "chapter-007",
+            "evidence": "\"@{赵局长} 知道你去过芒镇岛，\"@{沈昭}继续说，\"他已经派人在你的面包车上装了追踪器。",
+            "confidence": 0.8
+          }
+        ],
+        "background": "双重身份，表面是跨国物流公司高管，实际是某神秘组织的\"清道夫\"。三年前与林舟有过一面之缘，当时林舟查到了账本线索，沈昭受命监视，但意外对林舟产生了某种复杂的情绪。三个月前组织下令清除林舟，但沈昭迟迟未动手。",
+        "motivation": "背叛组织，找到账本真本，彻底摧毁那个组织",
+        "weakness": "对林舟的复杂情感，关键时刻犹豫"
+      },
+      "currentState": {
+        "physicalState": "左手旧伤隐痛",
+        "emotionalState": "矛盾、挣扎",
+        "locationState": "雾港地区活动",
+        "financialState": "富足"
+      },
+      "statesHistory": [
+        {
+          "state": "组织清道夫",
+          "chapterId": "chapter-001",
+          "description": "神秘组织执行者"
+        },
+        {
+          "state": "物流公司高管",
+          "chapterId": "chapter-001",
+          "description": "表面身份"
+        }
+      ]
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "type": "character",
+      "seed": true,
+      "profile": {
+        "role": "法医",
+        "fullName": "苏晴",
+        "age": 32,
+        "appearance": [
+          {
+            "detail": "金发及肩"
+          },
+          {
+            "detail": "总是戴口罩"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "法医鉴定"
+          },
+          {
+            "detail": "病理分析"
+          }
+        ],
+        "background": "法医世家，毕业于国内顶尖医学院。表面上是专业严谨的法医，实际与赵局长有隐秘的利益关系。她负责在验尸时\"调整\"某些关键证据。对林舟有一定的愧疚之情，但选择了沉默。",
+        "motivation": "自保，在不暴露自己的前提下尽可能公正",
+        "weakness": "软弱，不敢正面冲突"
+      },
+      "currentState": {
+        "physicalState": "健康",
+        "emotionalState": "压抑的负罪感",
+        "locationState": "雾港市公安局法医中心",
+        "financialState": "中产"
+      },
+      "statesHistory": [
+        {
+          "state": "法医",
+          "chapterId": "chapter-002",
+          "description": "雾港市公安局法医"
+        }
+      ],
+      "arc": {
+        "motivation": "为母亲复仇，收集赵局长罪证",
+        "internalConflict": "自保vs正义",
+        "milestones": [
+          {
+            "id": "milestone-bc532cb285",
+            "chapterId": "chapter-003",
+            "type": "首次动摇",
+            "description": "主动联系林舟"
+          },
+          {
+            "id": "milestone-55f04def12",
+            "chapterId": "chapter-005",
+            "type": "关键选择",
+            "description": "选择帮助林舟而非服从赵局长"
+          }
+        ],
+        "resolutionChapterId": null
+      }
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "type": "character",
+      "seed": true,
+      "profile": {
+        "role": "幕后黑手",
+        "fullName": "赵继明",
+        "age": 55,
+        "appearance": [
+          {
+            "detail": "头发花白"
+          },
+          {
+            "detail": "目光如炬"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "权谋算计"
+          },
+          {
+            "detail": "幕后操控"
+          },
+          {
+            "detail": "追踪",
+            "source": "chapter-007",
+            "evidence": "\"@{赵局长} 知道你去过芒镇岛，\"@{沈昭}继续说，\"他已经派人在你的面包车上装了追踪器。",
+            "confidence": 0.8
+          }
+        ],
+        "background": "雾港市公安局局长，实际上是账本背后的真正主人。十五年前建立了一个覆盖走私、情报、洗钱的地下网络，账本记录了所有核心证据。他既是执法者，也是犯罪集团的核心。林舟三年前差点揭开真相，被他设计陷害革职。",
+        "motivation": "维持现状，确保账本永远不曝光，永远控制雾港的地下秩序",
+        "weakness": "过度自信，对林舟的轻视"
+      },
+      "currentState": {
+        "physicalState": "良好",
+        "emotionalState": "自信，掌控一切",
+        "locationState": "雾港市公安局",
+        "financialState": "不明"
+      },
+      "statesHistory": [
+        {
+          "state": "公安局长",
+          "chapterId": "chapter-001",
+          "description": "表面执法者"
+        },
+        {
+          "state": "地下网络核心",
+          "chapterId": "chapter-001",
+          "description": "犯罪集团核心"
+        }
+      ]
+    },
+    {
+      "id": "inferred::赵继业",
+      "name": "赵继业",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": "",
+      "source": "inferred",
+      "registeredAt": "2026-04-22T23:56:36+08:00"
+    },
+    {
+      "id": "inferred::苏明",
+      "name": "苏明",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": "",
+      "source": "inferred",
+      "registeredAt": "2026-04-22T23:56:36+08:00"
+    },
+    {
+      "id": "inferred::赵继明",
+      "name": "赵继明",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": "",
+      "source": "inferred",
+      "registeredAt": "2026-04-22T23:56:36+08:00"
+    }
+  ],
+  "enrichmentProposals": [
+    {
+      "id": "enrich-10c40b6444",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "chapterId": "chapter-007",
+      "field": "abilities",
+      "detail": "驾驶",
+      "evidence": "@{林舟}推开车门，@{沈昭}跌跌撞撞地钻进副驾驶座。",
+      "confidence": 0.8,
+      "status": "accepted",
+      "fingerprint": "enrich::ability::entity-lin-zhou::驾驶",
+      "createdAt": "2026-04-22T23:57:56+08:00",
+      "updatedAt": "2026-04-22T23:58:06+08:00"
+    },
+    {
+      "id": "enrich-ade99f73fe",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "chapterId": "chapter-007",
+      "field": "abilities",
+      "detail": "驾驶",
+      "evidence": "@{林舟}推开车门，@{沈昭}跌跌撞撞地钻进副驾驶座。",
+      "confidence": 0.8,
+      "status": "accepted",
+      "fingerprint": "enrich::ability::entity-shen-zhao::驾驶",
+      "createdAt": "2026-04-22T23:57:56+08:00",
+      "updatedAt": "2026-04-22T23:58:06+08:00"
+    },
+    {
+      "id": "enrich-9181d8d226",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "chapterId": "chapter-007",
+      "field": "abilities",
+      "detail": "追踪",
+      "evidence": "\"@{赵局长} 知道你去过芒镇岛，\"@{沈昭}继续说，\"他已经派人在你的面包车上装了追踪器。",
+      "confidence": 0.8,
+      "status": "accepted",
+      "fingerprint": "enrich::ability::entity-shen-zhao::追踪",
+      "createdAt": "2026-04-22T23:57:56+08:00",
+      "updatedAt": "2026-04-22T23:58:06+08:00"
+    },
+    {
+      "id": "enrich-074aa83e03",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "chapterId": "chapter-007",
+      "field": "abilities",
+      "detail": "追踪",
+      "evidence": "\"@{赵局长} 知道你去过芒镇岛，\"@{沈昭}继续说，\"他已经派人在你的面包车上装了追踪器。",
+      "confidence": 0.8,
+      "status": "accepted",
+      "fingerprint": "enrich::ability::entity-zhao-juzhang::追踪",
+      "createdAt": "2026-04-22T23:57:56+08:00",
+      "updatedAt": "2026-04-22T23:58:06+08:00"
+    },
+    {
+      "id": "enrich-8d8682b789",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "chapterId": "chapter-001",
+      "field": "abilities",
+      "detail": "领导",
+      "evidence": "@{林舟}的老上级，曾经最信任的领导和恩师。",
+      "confidence": 0.8,
+      "status": "pending",
+      "fingerprint": "enrich::ability::entity-lin-zhou::领导",
+      "createdAt": "2026-04-23T00:18:23+08:00"
+    },
+    {
+      "id": "enrich-8073f4c21e",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "chapterId": "chapter-006",
+      "field": "appearance",
+      "detail": "戴眼镜",
+      "evidence": "@{林舟}走进去的时候，里面只有寥寥几个人——一个戴眼镜的女学生在电脑前敲字，一个老头坐在角落里看报纸，还有一个带着孩子的年轻妈妈在儿童阅览区哄孩子睡觉。",
+      "confidence": 0.85,
+      "status": "pending",
+      "fingerprint": "enrich::appearance::entity-lin-zhou::戴眼镜",
+      "createdAt": "2026-04-23T00:18:23+08:00"
+    }
+  ]
+}

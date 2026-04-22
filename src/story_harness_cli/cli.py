@@ -4,6 +4,7 @@ import argparse
 from typing import List
 
 from story_harness_cli.commands import (
+    register_arc_commands,
     register_brainstorm_commands,
     register_causality_commands,
     register_chapter_commands,
@@ -17,14 +18,17 @@ from story_harness_cli.commands import (
     register_project_commands,
     register_review_commands,
     register_stats_commands,
+    register_structure_commands,
     register_timeline_commands,
     register_search_commands,
+    register_thread_commands,
 )
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Story Harness CLI")
     subparsers = parser.add_subparsers(dest="command", required=True)
+    register_arc_commands(subparsers)
     register_brainstorm_commands(subparsers)
     register_causality_commands(subparsers)
     register_project_commands(subparsers)
@@ -40,6 +44,8 @@ def build_parser() -> argparse.ArgumentParser:
     register_stats_commands(subparsers)
     register_timeline_commands(subparsers)
     register_search_commands(subparsers)
+    register_thread_commands(subparsers)
+    register_structure_commands(subparsers)
     return parser
 
 

@@ -46,6 +46,8 @@ def check_consistency(
         state, chapter_text, chapter_id, hard["relationContradictions"], intimate_kw, negation_kw,
     )
     _check_outline_deviations(state, chapter_id, soft["outlineDeviations"])
+    _check_thread_status(state, chapter_id, soft["outlineDeviations"])
+    _check_arc_alignment(state, chapter_text, chapter_id, soft["outlineDeviations"])
 
     context_for_ai = _build_ai_context(state, chapter_text, chapter_id)
 
@@ -64,6 +66,8 @@ def _check_state_contradictions(
 
     for entity in entities:
         current = entity.get("currentState", {})
+        if not isinstance(current, dict):
+            continue
         if current.get("status") != "deceased":
             continue
         name = entity.get("name", "")
@@ -194,3 +198,55 @@ def _build_ai_context(
         "chapterContent": chapter_text,
         "outlineExpectation": outline_expectation,
     }
+
+
+def _check_thread_status(
+    state: Dict, chapter_id: str, results: List
+) -> None:
+    """Check if any suspense threads are overdue at this chapter."""
+    import re
+    threads = state.get("threads", {}).get("threads", [])
+    if not threads:
+        return
+
+    def _ch_num(cid: str) -> int:
+        m = re.search(r"\d+", cid)
+        return int(m.group()) if m else 0
+
+    current_num = _ch_num(chapter_id)
+    for t in threads:
+        if t.get("status") == "resolved":
+            continue
+        expected = t.get("expectedResolveBy")
+        if expected and _ch_num(expected) < current_num:
+            results.append({
+                "threadId": t.get("id"),
+                "summary": t.get("name", ""),
+                "status": "overdue",
+                "note": f"悬念线索 '{t.get('name')}' 已逾期 (预期 chapter-{_ch_num(expected)} 解决)",
+                "severity": "advisory",
+            })
+
+
+def _check_arc_alignment(
+    state: Dict, chapter_text: str, chapter_id: str, results: List
+) -> None:
+    """Check if characters appearing in this chapter have arc milestones here."""
+    entities = state.get("entities", {}).get("entities", [])
+    for entity in entities:
+        arc = entity.get("arc")
+        if not arc:
+            continue
+        name = entity.get("name", "")
+        if name not in chapter_text:
+            continue
+        milestones = arc.get("milestones", [])
+        has_milestone = any(m.get("chapterId") == chapter_id for m in milestones)
+        if not has_milestone and milestones:
+            results.append({
+                "entityId": entity.get("id"),
+                "summary": f"{name} 在 {chapter_id} 出现但无弧线里程碑",
+                "status": "info",
+                "note": "角色出现但弧线未发展，可能遗漏弧线推进机会",
+                "severity": "advisory",
+            })

@@ -1,0 +1,64 @@
+{
+  "threads": [
+    {
+      "id": "thread-a50f061973",
+      "name": "神秘短信发送者",
+      "description": "凌晨4:23收到匿名短信，发送者身份不明",
+      "plantedAt": "chapter-001",
+      "expectedResolveBy": "chapter-006",
+      "resolvedAt": "chapter-008",
+      "severity": "major",
+      "status": "resolved"
+    },
+    {
+      "id": "thread-b6226882e6",
+      "name": "账本真本下落",
+      "description": "真本已转移至安全地点",
+      "plantedAt": "chapter-004",
+      "expectedResolveBy": "chapter-008",
+      "resolvedAt": "chapter-008",
+      "severity": "major",
+      "status": "resolved"
+    },
+    {
+      "id": "thread-4e486db170",
+      "name": "沈昭的真实身份",
+      "description": "",
+      "plantedAt": "chapter-002",
+      "expectedResolveBy": "chapter-007",
+      "resolvedAt": "chapter-007",
+      "severity": "major",
+      "status": "resolved"
+    },
+    {
+      "id": "thread-673087943f",
+      "name": "老陈的死因",
+      "description": "",
+      "plantedAt": "chapter-003",
+      "expectedResolveBy": "chapter-005",
+      "resolvedAt": "chapter-005",
+      "severity": "minor",
+      "status": "resolved"
+    },
+    {
+      "id": "thread-acbf89bc8b",
+      "name": "苏晴与赵局长的关系",
+      "description": "",
+      "plantedAt": "chapter-002",
+      "expectedResolveBy": "chapter-006",
+      "resolvedAt": "chapter-006",
+      "severity": "minor",
+      "status": "resolved"
+    },
+    {
+      "id": "thread-c0c96a5a72",
+      "name": "组织棋手",
+      "description": "",
+      "plantedAt": "chapter-004",
+      "expectedResolveBy": "chapter-008",
+      "resolvedAt": "chapter-008",
+      "severity": "major",
+      "status": "resolved"
+    }
+  ]
+}

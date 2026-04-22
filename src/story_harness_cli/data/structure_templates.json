@@ -1,0 +1,66 @@
+[
+  {
+    "id": "three-act",
+    "name": "三幕结构",
+    "beats": [
+      {"position": 0.0, "name": "开场", "description": "建立日常世界"},
+      {"position": 0.12, "name": "触发事件", "description": "打破平衡的事件"},
+      {"position": 0.25, "name": "第一幕转折", "description": "主角做出选择，无法回头"},
+      {"position": 0.50, "name": "中点", "description": "从被动变主动 / 虚假胜利"},
+      {"position": 0.75, "name": "灵魂暗夜", "description": "最低点，失去一切"},
+      {"position": 0.88, "name": "高潮", "description": "最终对决 / 真相揭露"},
+      {"position": 1.0, "name": "结局", "description": "新平衡"}
+    ]
+  },
+  {
+    "id": "five-act",
+    "name": "五幕结构",
+    "beats": [
+      {"position": 0.0, "name": "铺陈", "description": "建立世界与角色"},
+      {"position": 0.20, "name": "上升动作", "description": "冲突升级"},
+      {"position": 0.40, "name": "高潮", "description": "最大冲突"},
+      {"position": 0.60, "name": "下降动作", "description": "冲突后果"},
+      {"position": 0.80, "name": "灾难/解决", "description": "最终转折"},
+      {"position": 1.0, "name": "收束", "description": "新秩序"}
+    ]
+  },
+  {
+    "id": "hero-journey",
+    "name": "英雄之旅 (12阶段)",
+    "beats": [
+      {"position": 0.0, "name": "日常世界", "description": "英雄的平凡生活"},
+      {"position": 0.08, "name": "冒险召唤", "description": "打破平静的召唤"},
+      {"position": 0.12, "name": "拒绝召唤", "description": "英雄犹豫不决"},
+      {"position": 0.17, "name": "遇见导师", "description": "获得指引"},
+      {"position": 0.25, "name": "跨越第一道门槛", "description": "正式踏上旅途"},
+      {"position": 0.35, "name": "试炼、盟友、敌人", "description": "面对考验"},
+      {"position": 0.45, "name": "接近最深的洞穴", "description": "逼近核心危机"},
+      {"position": 0.55, "name": "磨难", "description": "最严峻的考验"},
+      {"position": 0.62, "name": "报酬", "description": "获得关键回报"},
+      {"position": 0.72, "name": "回归之路", "description": "带着收获返程"},
+      {"position": 0.85, "name": "复活", "description": "最后的蜕变"},
+      {"position": 0.95, "name": "携万灵丹回归", "description": "改变世界"}
+    ]
+  },
+  {
+    "id": "save-the-cat",
+    "name": "Save the Cat 节拍表",
+    "beats": [
+      {"position": 0.01, "name": "开场画面", "description": "展示主角现状"},
+      {"position": 0.05, "name": "主题陈述", "description": "点明主题"},
+      {"position": 0.10, "name": "铺垫", "description": "铺垫角色和世界"},
+      {"position": 0.10, "name": "催化剂", "description": "打破现状的事件"},
+      {"position": 0.15, "name": "辩论", "description": "主角犹豫"},
+      {"position": 0.25, "name": "进入第二幕", "description": "做出选择"},
+      {"position": 0.27, "name": "B故事", "description": "副线展开"},
+      {"position": 0.30, "name": "游戏与乐趣", "description": "探索新世界"},
+      {"position": 0.50, "name": "中点", "description": "虚假胜利或虚假失败"},
+      {"position": 0.55, "name": "反派逼近", "description": "威胁升级"},
+      {"position": 0.62, "name": "一无所有", "description": "失去一切"},
+      {"position": 0.65, "name": "灵魂暗夜", "description": "绝望时刻"},
+      {"position": 0.70, "name": "进入第三幕", "description": "重新振作"},
+      {"position": 0.80, "name": "结局", "description": "最终对决"},
+      {"position": 0.99, "name": "终场画面", "description": "展示改变"}
+    ]
+  }
+]

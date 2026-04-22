@@ -1,3 +1,4 @@
+from .arc import register_arc_commands
 from .brainstorm import register_brainstorm_commands
 from .causality import register_causality_commands
 from .chapter import register_chapter_commands
@@ -11,10 +12,13 @@ from .projection import register_projection_commands
 from .project import register_project_commands
 from .review import register_review_commands
 from .stats import register_stats_commands
+from .structure import register_structure_commands
 from .timeline import register_timeline_commands
 from .search import register_search_commands
+from .thread import register_thread_commands
 
 __all__ = [
+    "register_arc_commands",
     "register_brainstorm_commands",
     "register_causality_commands",
     "register_chapter_commands",
@@ -28,6 +32,8 @@ __all__ = [
     "register_project_commands",
     "register_review_commands",
     "register_stats_commands",
+    "register_structure_commands",
     "register_timeline_commands",
     "register_search_commands",
+    "register_thread_commands",
 ]

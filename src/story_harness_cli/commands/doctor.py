@@ -138,6 +138,59 @@ def _check_entity_profiles(root: Path, issues: list) -> None:
                 "level": "info",
                 "message": f"实体 '{entity.get('name')}' 缺少 seed 字段，建议通过 brainstorm character 创建种子",
             })
+        if entity.get("source") == "inferred" and not entity.get("profile"):
+            issues.append({
+                "level": "info",
+                "message": f"推断实体 '{entity.get('name')}' 缺少 profile，建议运行 entity enrich 补充",
+            })
+
+
+def _check_threads(root: Path, state: Dict, issues: list) -> None:
+    """Check thread (suspense) health."""
+    from story_harness_cli.services.thread import check_threads as thread_check
+
+    threads_data = state.get("threads", {})
+    if not threads_data.get("threads"):
+        return
+    outline = state.get("outline", {})
+    chapters = outline.get("chapters", [])
+    last_ch_id = chapters[-1].get("id") if chapters else None
+    result = thread_check(state, current_chapter_id=last_ch_id)
+    for w in result.get("warnings", []):
+        issues.append({"level": "warning", "message": w.get("message", "")})
+    stats = result.get("stats", {})
+    if stats.get("overdue", 0) > 0:
+        issues.append({"level": "warning", "message": f"有 {stats['overdue']} 条悬念线索已逾期未回收"})
+    open_count = stats.get("majorOpen", 0) + stats.get("minorOpen", 0)
+    if open_count > 0:
+        issues.append({"level": "info", "message": f"有 {open_count} 条悬念线索待回收"})
+
+
+def _check_arcs(root: Path, state: Dict, issues: list) -> None:
+    """Check character arc completeness."""
+    from story_harness_cli.services.arc import check_arcs as arc_check
+
+    result = arc_check(state)
+    for w in result.get("warnings", []):
+        issues.append({"level": "warning", "message": w.get("message", "")})
+    for a in result.get("advisory", []):
+        issues.append({"level": "info", "message": a.get("message", "")})
+
+
+def _check_structure_coverage(root: Path, state: Dict, issues: list) -> None:
+    """Check narrative structure coverage."""
+    from story_harness_cli.services.structure import check_structure as struct_check
+
+    structures = state.get("structures", {})
+    if not structures.get("activeStructure"):
+        return
+    result = struct_check(state)
+    for w in result.get("warnings", []):
+        level = "warning" if w.get("type") == "missing_critical_beat" else "info"
+        issues.append({"level": level, "message": w.get("message", "")})
+    coverage = result.get("coverage", 0)
+    if coverage < 1.0:
+        issues.append({"level": "info", "message": f"叙事结构覆盖率: {int(coverage * 100)}%"})
 
 
 def command_doctor(args) -> int:
@@ -164,6 +217,9 @@ def command_doctor(args) -> int:
     validate_project_links(root, state, checks)
     _check_outline_volumes(root, checks)
     _check_entity_profiles(root, checks)
+    _check_threads(root, state, checks)
+    _check_arcs(root, state, checks)
+    _check_structure_coverage(root, state, checks)
 
     error_count = sum(1 for item in checks if item["level"] == "error")
     warning_count = sum(1 for item in checks if item["level"] == "warning")

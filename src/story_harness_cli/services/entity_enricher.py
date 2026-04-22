@@ -53,10 +53,12 @@ def enrich_entities(
     for entity in entities_list:
         details = set()
         for entry in entity.get("profile", {}).get("appearance", []):
-            for part in entry.get("detail", "").split("；"):
+            text = entry.get("detail", "") if isinstance(entry, dict) else str(entry)
+            for part in text.split("；"):
                 details.add(part)
         for entry in entity.get("profile", {}).get("abilities", []):
-            for part in entry.get("detail", "").split("；"):
+            text = entry.get("detail", "") if isinstance(entry, dict) else str(entry)
+            for part in text.split("；"):
                 details.add(part)
         existing_details[entity["id"]] = details
 
