@@ -1,0 +1,43 @@
+name: Governance
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - develop
+  pull_request:
+    branches:
+      - main
+      - dev
+      - develop
+
+jobs:
+  commit-governance:
+    name: Commit Governance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate commit messages on push
+        if: github.event_name == 'push'
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            RANGE="$AFTER"
+          else
+            RANGE="$BEFORE..$AFTER"
+          fi
+          chmod +x scripts/check_commit_messages_range.sh
+          scripts/check_commit_messages_range.sh "$RANGE"
+
+      - name: Validate commit messages on pull request
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          chmod +x scripts/check_commit_messages_range.sh
+          scripts/check_commit_messages_range.sh "origin/${{ github.base_ref }}..HEAD"
