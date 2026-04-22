@@ -5,7 +5,7 @@
 
 ## 1. 当前版本目标
 
-- v0.2: 修复已知缺陷 + 补齐空壳功能 + 工程质量提升
+- v0.2: 修复已知缺陷 + 补齐空壳功能 + 工程质量提升 — **全部完成**
 
 ## 2. Active Tracks
 
@@ -30,8 +30,8 @@
 ### Track P3: 体验优化
 
 - 目标: 导出格式扩展、relationship graph、beat 追踪、配置化关键词表
-- 当前状态: 待评估
-- 下一步: 等 P0-P2 稳定后推进
+- 当前状态: **已完成** — 四项全部落地
+- 下一步: 无
 
 ## 3. 当前阻塞
 
@@ -49,14 +49,18 @@
 - 修复 entity enricher 跨实体属性错配（P0）
 - 新增 timeline add/list/check 命令（P1）
 - 新增 search 跨章节搜索命令（P1）
+- 新增 causality 追踪命令（P1）
 - GitHub Actions CI workflow (test/lint/commit-governance)（P2）
 - ruff lint/format 配置（P2）
 - chapter analyze 自动注册 inferred entities（P2）
-- 71 个测试全部通过
+- export --format json/markdown/txt 多格式导出（P3）
+- entity graph --format mermaid/dot 关系图导出（P3）
+- outline beat-add/beat-complete/beat-list 细纲追踪（P3）
+- keywords.yaml 配置化关键词表（P3）
+- 89 个测试全部通过
 
 ## 6. 下一步
 
-1. 导出格式扩展（P3）
-2. relationship graph 可视化（P3）
-3. beat 追踪（P3）
-4. 配置化关键词表（P3）
+- v0.2 发布准备
+- 真实小说项目端到端验证
+- 收集使用反馈，规划 v0.3
