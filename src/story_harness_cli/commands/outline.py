@@ -99,6 +99,84 @@ def command_outline_promote(args) -> int:
     return 0
 
 
+def _find_chapter(outline: dict, chapter_id: str) -> dict | None:
+    """Find chapter entry in either volumes or flat chapters list."""
+    for vol in outline.get("volumes", []):
+        for ch in vol.get("chapters", []):
+            if ch.get("id") == chapter_id:
+                return ch
+    for ch in outline.get("chapters", []):
+        if ch.get("id") == chapter_id:
+            return ch
+    return None
+
+
+def command_outline_beat_add(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id
+    summary = args.summary
+
+    chapter = _find_chapter(state["outline"], chapter_id)
+    if chapter is None:
+        raise SystemExit(f"找不到章节: {chapter_id}")
+
+    beats = chapter.setdefault("beats", [])
+    beat_id = f"beat-{stable_hash(summary + now_iso())[:10]}"
+    beat = {
+        "id": beat_id,
+        "summary": summary,
+        "status": "planned",
+        "createdAt": now_iso(),
+    }
+    beats.append(beat)
+    save_state(root, state)
+    print(json.dumps(beat, ensure_ascii=False, indent=2))
+    return 0
+
+
+def command_outline_beat_complete(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id
+    beat_id = args.beat_id
+
+    chapter = _find_chapter(state["outline"], chapter_id)
+    if chapter is None:
+        raise SystemExit(f"找不到章节: {chapter_id}")
+
+    beats = chapter.get("beats", [])
+    beat = next((b for b in beats if b.get("id") == beat_id), None)
+    if beat is None:
+        raise SystemExit(f"找不到 beat: {beat_id}")
+
+    beat["status"] = "completed"
+    beat["completedAt"] = now_iso()
+    save_state(root, state)
+    print(json.dumps(beat, ensure_ascii=False, indent=2))
+    return 0
+
+
+def command_outline_beat_list(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id
+
+    chapter = _find_chapter(state["outline"], chapter_id)
+    if chapter is None:
+        raise SystemExit(f"找不到章节: {chapter_id}")
+
+    beats = chapter.get("beats", [])
+    if args.status:
+        beats = [b for b in beats if b.get("status") == args.status]
+
+    print(json.dumps(beats, ensure_ascii=False, indent=2))
+    return 0
+
+
 def register_outline_commands(subparsers) -> None:
     outline_parser = subparsers.add_parser("outline", help="Outline and structure commands")
     outline_subparsers = outline_parser.add_subparsers(dest="outline_command", required=True)
@@ -118,4 +196,22 @@ def register_outline_commands(subparsers) -> None:
     promote_parser.add_argument("--proposal-id", required=True)
     promote_parser.add_argument("--chapter-id")
     promote_parser.set_defaults(func=command_outline_promote)
+
+    beat_add_parser = outline_subparsers.add_parser("beat-add", help="Add a beat to a chapter")
+    beat_add_parser.add_argument("--root", required=True)
+    beat_add_parser.add_argument("--chapter-id", required=True)
+    beat_add_parser.add_argument("--summary", required=True, help="Beat description")
+    beat_add_parser.set_defaults(func=command_outline_beat_add)
+
+    beat_complete_parser = outline_subparsers.add_parser("beat-complete", help="Mark a beat as completed")
+    beat_complete_parser.add_argument("--root", required=True)
+    beat_complete_parser.add_argument("--chapter-id", required=True)
+    beat_complete_parser.add_argument("--beat-id", required=True)
+    beat_complete_parser.set_defaults(func=command_outline_beat_complete)
+
+    beat_list_parser = outline_subparsers.add_parser("beat-list", help="List beats for a chapter")
+    beat_list_parser.add_argument("--root", required=True)
+    beat_list_parser.add_argument("--chapter-id", required=True)
+    beat_list_parser.add_argument("--status", choices=["planned", "completed"], help="Filter by status")
+    beat_list_parser.set_defaults(func=command_outline_beat_list)
 
