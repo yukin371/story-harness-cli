@@ -18,8 +18,8 @@
 ### Track P1: 补齐空壳功能
 
 - 目标: timeline 管理、causality 追踪、search 跨章节搜索
-- 当前状态: timeline (add/list/check) 和 search 已完成，causality 待实施
-- 下一步: causality 追踪（或跳过，优先 P2）
+- 当前状态: **已完成** — timeline、search、causality 全部落地
+- 下一步: 无
 
 ### Track P2: 工程质量
 
@@ -52,11 +52,11 @@
 - GitHub Actions CI workflow (test/lint/commit-governance)（P2）
 - ruff lint/format 配置（P2）
 - chapter analyze 自动注册 inferred entities（P2）
-- 65 个测试全部通过
+- 71 个测试全部通过
 
 ## 6. 下一步
 
-1. causality 追踪（P1 遗留）
-2. 导出格式扩展（P3）
-3. relationship graph 可视化（P3）
-4. beat 追踪（P3）
+1. 导出格式扩展（P3）
+2. relationship graph 可视化（P3）
+3. beat 追踪（P3）
+4. 配置化关键词表（P3）
