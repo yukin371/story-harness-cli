@@ -162,3 +162,14 @@ def appearance_tags_for_paragraph(paragraph: str) -> List[str]:
 def ability_tags_for_paragraph(paragraph: str) -> List[str]:
     return [label for keyword, label in ABILITY_KEYWORDS.items() if keyword in paragraph]
 
+
+def strip_entity_tags(text: str) -> str:
+    """Remove all @{实体} and @entity markup tags, keeping the entity name."""
+    text = re.sub(r"@\{([^{}\n]+)\}", r"\1", text)
+    text = re.sub(
+        r"@([A-Za-z][A-Za-z0-9_-]{0,31}|[\u4e00-\u9fff·-]{1,12})(?=[\s，。！？、；：""''（）()《》〈〉【】\[\],.!?:;]|$)",
+        r"\1",
+        text,
+    )
+    return text
+
