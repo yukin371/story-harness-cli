@@ -12,14 +12,14 @@
 ### Track P0: 修复 entity enricher 实体归属
 
 - 目标: 同段落多实体时，外貌/能力属性错配给后出现的实体
-- 当前状态: 待实施
-- 下一步: 重写段落级提取逻辑，按句子粒度归属实体
+- 当前状态: **已完成** — 按句子粒度归属标签
+- 下一步: 无
 
 ### Track P1: 补齐空壳功能
 
 - 目标: timeline 管理、causality 追踪、search 跨章节搜索
-- 当前状态: 待实施
-- 下一步: timeline 命令（add/list/check）
+- 当前状态: timeline (add/list/check) 和 search 已完成，causality 待实施
+- 下一步: causality 追踪（或跳过，优先 P2）
 
 ### Track P2: 工程质量
 
@@ -46,13 +46,13 @@
 
 ## 5. 最近进展
 
-- 完成 entity list/show、context show、stats 查询命令
-- 建立仓库治理骨架（PROJECT_PROFILE/AGENTS/ARCHITECTURE_GUARDRAILS/MODULE 等）
-- 清理 Co-Authored-By，启用 commit-msg hook
-- 54 个测试全部通过
+- 修复 entity enricher 跨实体属性错配（P0）
+- 新增 timeline add/list/check 命令（P1）
+- 新增 search 跨章节搜索命令（P1）
+- 62 个测试全部通过
 
 ## 6. 下一步
 
-1. 修复 entity enricher 实体归属（P0）
-2. timeline 管理命令（P1）
-3. GitHub Actions CI（P2）
+1. GitHub Actions CI workflow（P2）
+2. lint 配置 - ruff（P2）
+3. entity 注册自动化（P2）
