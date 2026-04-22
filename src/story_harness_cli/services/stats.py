@@ -4,6 +4,8 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List
 
+from story_harness_cli.utils.text import count_words
+
 
 def compute_project_stats(state: Dict[str, Dict[str, Any]], root: Path) -> Dict[str, Any]:
     return {
@@ -87,9 +89,7 @@ def _word_count(state: Dict[str, Dict[str, Any]], root: Path) -> Dict[str, Any]:
                     break
         if cp.exists():
             text = cp.read_text(encoding="utf-8")
-            cn_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
-            en_words = len(re.findall(r'[A-Za-z]+', text))
-            words = cn_chars + en_words
+            words = count_words(text)
             by_chapter.append({"chapterId": cid, "words": words})
             total += words
 

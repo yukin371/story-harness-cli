@@ -173,3 +173,10 @@ def strip_entity_tags(text: str) -> str:
     )
     return text
 
+
+def count_words(text: str) -> int:
+    """Count Chinese characters + English words in text."""
+    cn_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
+    en_words = len(re.findall(r'[A-Za-z]+', text))
+    return cn_chars + en_words
+

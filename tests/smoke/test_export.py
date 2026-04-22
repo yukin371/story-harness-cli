@@ -77,6 +77,47 @@ class ExportCommandTest(unittest.TestCase):
         content = out_file.read_text(encoding="utf-8")
         self.assertNotIn("@{", content)
 
+    def test_export_json_format(self):
+        out_file = self.temp_dir / "output.json"
+        result = main([
+            "export", "--root", str(self.temp_dir),
+            "--format", "json",
+            "--output", str(out_file),
+        ])
+        self.assertEqual(result, 0)
+        data = json.loads(out_file.read_text(encoding="utf-8"))
+        self.assertIsInstance(data, list)
+        self.assertGreater(len(data), 0)
+        ch = data[0]
+        self.assertEqual(ch["chapterId"], "chapter-001")
+        self.assertIn("title", ch)
+        self.assertIn("wordCount", ch)
+        self.assertIn("content", ch)
+        self.assertGreater(ch["wordCount"], 0)
+
+    def test_export_markdown_format(self):
+        out_file = self.temp_dir / "output.md"
+        result = main([
+            "export", "--root", str(self.temp_dir),
+            "--format", "markdown",
+            "--output", str(out_file),
+        ])
+        self.assertEqual(result, 0)
+        content = out_file.read_text(encoding="utf-8")
+        self.assertIn("## ", content)
+        self.assertNotIn("@{", content)
+
+    def test_export_txt_default(self):
+        out_file = self.temp_dir / "output.txt"
+        result = main([
+            "export", "--root", str(self.temp_dir),
+            "--output", str(out_file),
+        ])
+        self.assertEqual(result, 0)
+        content = out_file.read_text(encoding="utf-8")
+        self.assertNotIn("## ", content)
+        self.assertNotIn("@{", content)
+
 
 if __name__ == "__main__":
     unittest.main()
