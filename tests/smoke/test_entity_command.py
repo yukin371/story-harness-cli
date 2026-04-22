@@ -70,6 +70,59 @@ class EntityCommandTest(unittest.TestCase):
         ])
         self.assertEqual(result, 0)
 
+    def test_entity_list_command(self):
+        from contextlib import redirect_stdout
+        from io import StringIO
+        buf = StringIO()
+        with redirect_stdout(buf):
+            result = main(["entity", "list", "--root", str(self.temp_dir)])
+        self.assertEqual(result, 0)
+        data = json.loads(buf.getvalue())
+        self.assertIsInstance(data, list)
+        self.assertEqual(len(data), 1)
+        self.assertEqual(data[0]["id"], "char-linzhou")
+        self.assertEqual(data[0]["name"], "林舟")
+        self.assertEqual(data[0]["archetype"], "落魄侦探")
+
+    def test_entity_list_with_type_filter(self):
+        from contextlib import redirect_stdout
+        from io import StringIO
+        buf = StringIO()
+        with redirect_stdout(buf):
+            result = main(["entity", "list", "--root", str(self.temp_dir), "--type", "location"])
+        self.assertEqual(result, 0)
+        data = json.loads(buf.getvalue())
+        self.assertEqual(data, [])
+
+    def test_entity_show_by_id(self):
+        from contextlib import redirect_stdout
+        from io import StringIO
+        buf = StringIO()
+        with redirect_stdout(buf):
+            result = main(["entity", "show", "--root", str(self.temp_dir), "--entity-id", "char-linzhou"])
+        self.assertEqual(result, 0)
+        data = json.loads(buf.getvalue())
+        self.assertEqual(data["id"], "char-linzhou")
+        self.assertIn("seed", data)
+        self.assertIn("profile", data)
+        self.assertIn("currentState", data)
+        self.assertIn("latestProjection", data)
+        self.assertIn("relations", data)
+
+    def test_entity_show_by_name(self):
+        from contextlib import redirect_stdout
+        from io import StringIO
+        buf = StringIO()
+        with redirect_stdout(buf):
+            result = main(["entity", "show", "--root", str(self.temp_dir), "--name", "林舟"])
+        self.assertEqual(result, 0)
+        data = json.loads(buf.getvalue())
+        self.assertEqual(data["name"], "林舟")
+
+    def test_entity_show_not_found(self):
+        with self.assertRaises(SystemExit):
+            main(["entity", "show", "--root", str(self.temp_dir), "--entity-id", "nonexistent"])
+
 
 if __name__ == "__main__":
     unittest.main()
