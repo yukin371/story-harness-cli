@@ -28,6 +28,20 @@ def command_context_refresh(args) -> int:
     return 0
 
 
+def command_context_show(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id or state["context_lens"].get("currentChapterId")
+    if not chapter_id:
+        raise SystemExit("缺少 chapter id 且没有活跃章节")
+    for lens in state["context_lens"].get("lenses", []):
+        if lens.get("chapterId") == chapter_id:
+            print(json.dumps(lens, ensure_ascii=False, indent=2))
+            return 0
+    raise SystemExit(f"章节 {chapter_id} 尚无 context lens，请先运行 context refresh")
+
+
 def register_context_commands(subparsers) -> None:
     context_parser = subparsers.add_parser("context", help="Context lens commands")
     context_subparsers = context_parser.add_subparsers(dest="context_command", required=True)
@@ -36,4 +50,9 @@ def register_context_commands(subparsers) -> None:
     refresh_parser.add_argument("--root", required=True)
     refresh_parser.add_argument("--chapter-id")
     refresh_parser.set_defaults(func=command_context_refresh)
+
+    show_parser = context_subparsers.add_parser("show", help="Show current context lens for a chapter")
+    show_parser.add_argument("--root", required=True)
+    show_parser.add_argument("--chapter-id")
+    show_parser.set_defaults(func=command_context_show)
 
