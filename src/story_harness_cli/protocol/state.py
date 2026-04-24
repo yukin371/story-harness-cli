@@ -97,7 +97,13 @@ def save_state(root: Path, state: Dict[str, Any], *, timeout_seconds: float = ST
 
 
 def ensure_project_root(root: Path) -> None:
-    missing = [name for name in ROOT_FILES if not root_file(root, name).exists()]
+    # project.yaml and branches.yaml always at root; spec-eligible keys use resolve_state_path
+    always_root = ["project.yaml", "branches.yaml"]
+    missing = [name for name in always_root if not (root / name).exists()]
+    spec_keys = ["outline", "entities", "timeline", "threads", "structures"]
+    for key in spec_keys:
+        if not resolve_state_path(root, key).exists():
+            missing.append(f"{key}.yaml")
     if missing:
         raise SystemExit(f"{root} 不是已初始化的 story harness 项目，缺少: {', '.join(missing)}")
 
