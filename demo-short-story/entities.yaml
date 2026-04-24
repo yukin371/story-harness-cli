@@ -1,0 +1,261 @@
+{
+  "entities": [
+    {
+      "id": "entity-shen-he",
+      "name": "沈禾",
+      "type": "character",
+      "source": "seed",
+      "aliases": [],
+      "seed": {
+        "archetype": "旧巷看店人",
+        "personality": "敏感、克制、记性极好",
+        "motivation": "确认哥哥当年到底是失踪还是被人抹掉",
+        "background": "在纸灯巷经营母亲留下的文具店"
+      },
+      "profile": {
+        "role": "主角",
+        "fullName": "沈禾",
+        "appearance": [
+          {
+            "detail": "总穿深蓝色旧雨衣"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "修理旧收音机和磁带机"
+          },
+          {
+            "detail": "记忆街坊细节"
+          }
+        ],
+        "background": "八年前的洪灾后，她一直守着纸灯巷的文具店。哥哥沈岚被外界当作失踪者，她却始终不信哥哥会无声无息地离开。",
+        "motivation": "找回哥哥留下的真相，也决定自己是否继续留在纸灯巷。",
+        "weakness": "遇到家人相关线索时容易逞强，不肯求助。 "
+      },
+      "currentState": {
+        "physicalState": "连日熬夜，肩颈僵硬",
+        "emotionalState": "紧绷却不愿示弱",
+        "locationState": "纸灯巷文具店",
+        "financialState": "勉强维持"
+      },
+      "arc": {
+        "motivation": "找回哥哥被掩埋的真相，并决定自己与旧巷的未来",
+        "internalConflict": "抓住过去的执念 vs 接受真相后继续生活",
+        "milestones": [
+          {
+            "id": "arc-shenhe-01",
+            "chapterId": "chapter-001",
+            "type": "触发事件",
+            "description": "在停电夜收到沈岚留下的信封和十七号信箱钥匙。"
+          },
+          {
+            "id": "arc-shenhe-02",
+            "chapterId": "chapter-002",
+            "type": "真相逼近",
+            "description": "读到哥哥未寄出的最后一封信，确认他并非逃离。"
+          },
+          {
+            "id": "arc-shenhe-03",
+            "chapterId": "chapter-003",
+            "type": "完成回应",
+            "description": "在听证会上公开证据，并亲手给哥哥写下回信。"
+          }
+        ],
+        "resolutionChapterId": "chapter-003"
+      }
+    },
+    {
+      "id": "entity-lu-chuan",
+      "name": "陆川",
+      "type": "character",
+      "source": "seed",
+      "aliases": [],
+      "seed": {
+        "archetype": "年轻片警",
+        "personality": "稳、耐心、嘴硬心软",
+        "motivation": "不想再让旧巷的人被一纸决定推走",
+        "background": "在纸灯巷片区值勤三年"
+      },
+      "profile": {
+        "role": "调查搭档",
+        "fullName": "陆川",
+        "appearance": [
+          {
+            "detail": "常把制服外套搭在手臂上"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "走访街坊与调卷宗"
+          },
+          {
+            "detail": "临场控场"
+          }
+        ],
+        "background": "年轻片警，值勤久了，对纸灯巷每一户人的脾气都很熟。他知道旧巷改造里有不对劲的地方，但一直缺一个足够硬的突破口。",
+        "motivation": "把旧案从流言里拉回证据层面，给巷子里的人一个交代。",
+        "weakness": "对程序边界过分谨慎，容易错过主动出手时机。 "
+      },
+      "currentState": {
+        "physicalState": "状态稳定",
+        "emotionalState": "表面冷静，内里一直在算风险",
+        "locationState": "纸灯巷片区",
+        "financialState": "稳定"
+      },
+      "arc": {
+        "motivation": "用合法证据阻止旧巷被粗暴清空，也证明自己不只是看门人",
+        "internalConflict": "程序谨慎 vs 眼前正义的紧迫性",
+        "milestones": [
+          {
+            "id": "arc-luchuan-01",
+            "chapterId": "chapter-001",
+            "type": "卷入事件",
+            "description": "在停电巡查中决定陪沈禾去开十七号信箱。"
+          },
+          {
+            "id": "arc-luchuan-02",
+            "chapterId": "chapter-002",
+            "type": "跨线支持",
+            "description": "在废戏台帮助沈禾保住录音和旧信。"
+          },
+          {
+            "id": "arc-luchuan-03",
+            "chapterId": "chapter-003",
+            "type": "公开站位",
+            "description": "在听证会现场用警务身份为证据保驾护航。"
+          }
+        ],
+        "resolutionChapterId": "chapter-003"
+      }
+    },
+    {
+      "id": "entity-shen-lan",
+      "name": "沈岚",
+      "type": "character",
+      "source": "seed",
+      "aliases": [],
+      "seed": {
+        "archetype": "缺席的见证人",
+        "personality": "沉静、固执、愿意替别人挡灾",
+        "motivation": "把洪灾真相留下来",
+        "background": "八年前在洪灾夜后失去踪迹"
+      },
+      "profile": {
+        "role": "缺席核心人物",
+        "fullName": "沈岚",
+        "appearance": [
+          {
+            "detail": "旧照片里总拎着工具箱"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "修电路和录音设备"
+          },
+          {
+            "detail": "收集街坊证词"
+          }
+        ],
+        "background": "沈禾的哥哥。洪灾那一夜，他发现水闸与施工方之间有交易痕迹，于是把证词、录音和街坊来信分别藏进十七号信箱与废戏台。",
+        "motivation": "在自己出事前把真相留下，让纸灯巷的人以后还能开口。",
+        "weakness": "遇事总想一个人扛。 "
+      },
+      "currentState": {
+        "physicalState": "已故",
+        "emotionalState": "仅存于旧信与录音里",
+        "locationState": "缺席",
+        "financialState": ""
+      },
+      "arc": {
+        "motivation": "留下可被看见的证据，而不是只留下传言",
+        "internalConflict": "保护妹妹远离危险 vs 必须把证据留在巷子里",
+        "milestones": [
+          {
+            "id": "arc-shenlan-01",
+            "chapterId": "chapter-001",
+            "type": "死后触发",
+            "description": "通过旧信封把钥匙和第一条线索交到沈禾手里。"
+          },
+          {
+            "id": "arc-shenlan-02",
+            "chapterId": "chapter-002",
+            "type": "证据显形",
+            "description": "铁盒中的录音和未寄信件说明他当年留下了完整指向。"
+          },
+          {
+            "id": "arc-shenlan-03",
+            "chapterId": "chapter-003",
+            "type": "名誉归位",
+            "description": "在公开场合洗清失踪污名，被确认是洪灾中的救人者。"
+          }
+        ],
+        "resolutionChapterId": "chapter-003"
+      }
+    },
+    {
+      "id": "entity-chen-qiming",
+      "name": "陈启明",
+      "type": "character",
+      "source": "seed",
+      "aliases": [],
+      "seed": {
+        "archetype": "地方包工头",
+        "personality": "圆滑、强势、擅长切割责任",
+        "motivation": "赶在追责前拆掉旧巷",
+        "background": "洪灾旧案的关键责任人"
+      },
+      "profile": {
+        "role": "对立面",
+        "fullName": "陈启明",
+        "appearance": [
+          {
+            "detail": "总拿一把黑伞"
+          }
+        ],
+        "abilities": [
+          {
+            "detail": "操盘听证会话术"
+          },
+          {
+            "detail": "压街坊签字"
+          }
+        ],
+        "background": "当年参与水闸改造和旧巷排水工程的包工头。洪灾后，他靠赔偿协议和各种说法把责任推给天灾，如今又借旧巷改造想彻底抹掉痕迹。",
+        "motivation": "在所有旧证据被翻出来之前，把纸灯巷连同记忆一起拆掉。",
+        "weakness": "以为没人会把多年旧信和旧录音当回事。 "
+      },
+      "currentState": {
+        "physicalState": "健康",
+        "emotionalState": "自信但越来越急躁",
+        "locationState": "旧巷改造项目现场",
+        "financialState": "充裕"
+      },
+      "arc": {
+        "motivation": "压住旧案，快速完成拆迁，保住既得利益",
+        "internalConflict": "表面镇定的商人姿态 vs 真相被公开后的失控恐惧",
+        "milestones": [
+          {
+            "id": "arc-chen-01",
+            "chapterId": "chapter-001",
+            "type": "威压登场",
+            "description": "以开发方身份要求沈禾尽快签字搬离。"
+          },
+          {
+            "id": "arc-chen-02",
+            "chapterId": "chapter-002",
+            "type": "证据逼近",
+            "description": "其旧录音被重新找到，责任链开始失守。"
+          },
+          {
+            "id": "arc-chen-03",
+            "chapterId": "chapter-003",
+            "type": "公开失守",
+            "description": "在听证会上被录音、信件和街坊证词击穿说辞。"
+          }
+        ],
+        "resolutionChapterId": "chapter-003"
+      }
+    }
+  ],
+  "enrichmentProposals": []
+}

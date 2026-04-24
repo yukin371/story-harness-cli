@@ -1,0 +1,132 @@
+{
+  "changeRequests": [
+    {
+      "id": "cr-d4d93a1129",
+      "chapterId": "chapter-001",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 艾琳 当前状态",
+      "summary": "检测到 艾琳 可能进入状态：冷静；怀疑",
+      "evidence": "“我就知道，院长又把考试伪装成委托了。”门口的风铃在这时轻轻一碰，提着工具箱的 @{伦恩} 踩着木梯走进来。他本来是来修快递公会卡了两天的报时钟，结果第一眼就看见 @{艾琳} 怀里多了一只喷火花的龙，第二眼看见那只龙已经把她的袖口啃出了半个牙印。@{艾琳} 本能地怀疑他会立刻掉头走人，可 @{伦恩} 只是盯着那封信，神色从散漫一点点变得冷静。",
+      "targetIds": [
+        "entity-ailin"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-ailin",
+        "entityName": "艾琳",
+        "state": "冷静；怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-ailin::冷静；怀疑",
+      "createdAt": "2026-04-23T17:51:06+08:00",
+      "updatedAt": "2026-04-23T17:51:06+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T17:51:06+08:00"
+    },
+    {
+      "id": "cr-06e732d786",
+      "chapterId": "chapter-001",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 伦恩 当前状态",
+      "summary": "检测到 伦恩 可能进入状态：冷静；怀疑",
+      "evidence": "“我就知道，院长又把考试伪装成委托了。”门口的风铃在这时轻轻一碰，提着工具箱的 @{伦恩} 踩着木梯走进来。他本来是来修快递公会卡了两天的报时钟，结果第一眼就看见 @{艾琳} 怀里多了一只喷火花的龙，第二眼看见那只龙已经把她的袖口啃出了半个牙印。@{艾琳} 本能地怀疑他会立刻掉头走人，可 @{伦恩} 只是盯着那封信，神色从散漫一点点变得冷静。",
+      "targetIds": [
+        "entity-renn"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-renn",
+        "entityName": "伦恩",
+        "state": "冷静；怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-renn::冷静；怀疑",
+      "createdAt": "2026-04-23T17:51:06+08:00",
+      "updatedAt": "2026-04-23T17:51:06+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T17:51:06+08:00"
+    },
+    {
+      "id": "cr-5a5b832089",
+      "chapterId": "chapter-001",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 艾琳 当前状态",
+      "summary": "检测到 艾琳 可能进入状态：怀疑",
+      "evidence": "@{艾琳} 把信拍到 @{伦恩} 面前，语速快得像在抢答，“北风塔，天亮前，认铃，路上最好不要把屋顶点着。你是钟楼的人，你得负责技术支持。”@{伦恩} 把信读完，先叹气，再把工具箱放到柜台上，“你这不是请求，是现场拉壮丁。不过算了，要是真让晨钟少一枚星铃，明早整个镇子都会来找我。既然这是危险差事，我们只能现在出发。”他这句“我们”让 @{艾琳} 怔了一下，她原本绷紧的怀疑才第一次松开半寸。",
+      "targetIds": [
+        "entity-ailin"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-ailin",
+        "entityName": "艾琳",
+        "state": "怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-ailin::怀疑",
+      "createdAt": "2026-04-23T17:51:06+08:00",
+      "updatedAt": "2026-04-23T17:51:06+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T17:51:06+08:00"
+    },
+    {
+      "id": "cr-25da5cbbc2",
+      "chapterId": "chapter-001",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 伦恩 当前状态",
+      "summary": "检测到 伦恩 可能进入状态：怀疑",
+      "evidence": "@{艾琳} 把信拍到 @{伦恩} 面前，语速快得像在抢答，“北风塔，天亮前，认铃，路上最好不要把屋顶点着。你是钟楼的人，你得负责技术支持。”@{伦恩} 把信读完，先叹气，再把工具箱放到柜台上，“你这不是请求，是现场拉壮丁。不过算了，要是真让晨钟少一枚星铃，明早整个镇子都会来找我。既然这是危险差事，我们只能现在出发。”他这句“我们”让 @{艾琳} 怔了一下，她原本绷紧的怀疑才第一次松开半寸。",
+      "targetIds": [
+        "entity-renn"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-renn",
+        "entityName": "伦恩",
+        "state": "怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-renn::怀疑",
+      "createdAt": "2026-04-23T17:51:06+08:00",
+      "updatedAt": "2026-04-23T17:51:06+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T17:51:06+08:00"
+    },
+    {
+      "id": "cr-42124637fc",
+      "chapterId": "chapter-001",
+      "kind": "relation",
+      "severity": "high-risk",
+      "title": "更新 艾琳 与 伦恩 的关系",
+      "summary": "检测到两者关系可能变化为：信任下降",
+      "evidence": "“我就知道，院长又把考试伪装成委托了。”门口的风铃在这时轻轻一碰，提着工具箱的 @{伦恩} 踩着木梯走进来。他本来是来修快递公会卡了两天的报时钟，结果第一眼就看见 @{艾琳} 怀里多了一只喷火花的龙，第二眼看见那只龙已经把她的袖口啃出了半个牙印。@{艾琳} 本能地怀疑他会立刻掉头走人，可 @{伦恩} 只是盯着那封信，神色从散漫一点点变得冷静。",
+      "targetIds": [
+        "entity-ailin",
+        "entity-renn"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-ailin",
+        "fromName": "艾琳",
+        "toId": "entity-renn",
+        "toName": "伦恩",
+        "label": "信任下降"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "relation::entity-ailin::entity-renn::信任下降",
+      "createdAt": "2026-04-23T17:51:06+08:00",
+      "updatedAt": "2026-04-23T17:51:06+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T17:51:06+08:00"
+    }
+  ]
+}

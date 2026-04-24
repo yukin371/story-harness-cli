@@ -1,6 +1,6 @@
 # Commands 模块说明
 
-> 最后更新: 2026-04-22
+> 最后更新: 2026-04-23
 > 状态: 当前有效模块文档
 
 ## 1. 模块职责
@@ -15,6 +15,12 @@
 - 命令参数定义（--root, --chapter-id, --output 等）
 - JSON 输出格式化（`print(json.dumps(...))`）
 - 文件 I/O 时机控制（何时 save_state）
+- workflow 命令编排（如 `review apply`、`review chapter`、`review scene` 的不同评审路径，以及 `review scene --list-scenes` 的场景枚举）
+- `outline scene-add` / `outline scene-list` / `outline scene-detect` / `outline scene-update` / `outline scene-remove` 这类轻量结构维护命令
+- `outline check` 这类“写作前门禁”命令，以及 `chapter suggest` 的 outline-first workflow gate
+  默认门禁口径为 `project.positioning` / `project.storyContract` + chapter `direction` + `beats` + `scenePlans`
+- 项目初始化参数装配（如 `init` 写入 positioning / storyContract / commercialPositioning）
+- doctor 类命令中的项目元数据校验编排
 
 ## 3. Must Not Own
 
@@ -45,6 +51,13 @@
 
 - 忘记在 `cli.py` 的 `build_parser()` 中调用 `register_xxx_commands(subparsers)` 会导致命令不可见
 - `argparse` 的 `dest` 参数和 `--entity-id` 的 kebab-case 需要显式 `dest="entity_id"`
+- `review scene` 的段落范围是 1-based 且基于“去掉标题后的正文段落”计数，和 markdown 原始行号不是一回事
+- `review scene --scene-index` 在没有 `scenePlans` 时会回退到启发式候选场景
+- 一旦章节里存在显式 `scenePlans`，`review scene --scene-index` 会优先使用显式边界，而不是启发式切分
+- `outline scene-update` 更新段落范围时，必须同时提供 `--start-paragraph` 和 `--end-paragraph`
+- `outline scene-detect` 默认不会覆盖已有 `scenePlans`，需要显式传入 `--replace`
+- `chapter suggest` 默认要求目标章节先通过 `outline check`，旧项目如需跳过必须显式传 `--allow-without-outline`
+- `outline check` 默认是严格模式；只有显式传入 `--allow-missing-project-gate`、`--allow-missing-beats`、`--allow-missing-scene-plans` 才会放宽
 
 ## 8. 测试方式
 
@@ -57,4 +70,5 @@
 - 新增/删除命令
 - 命令参数变化（breaking change）
 - 输出格式变化
+- workflow 文件读写路径变化
 - 注册方式变化

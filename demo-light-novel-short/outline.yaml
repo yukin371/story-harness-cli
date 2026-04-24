@@ -1,0 +1,267 @@
+{
+  "volumes": [
+    {
+      "id": "volume-001",
+      "title": "第一卷 星铃快递",
+      "theme": "把一次笨拙夜奔送成一段轻快搭档故事",
+      "chapters": [
+        {
+          "id": "chapter-001",
+          "title": "会打喷嚏的包裹",
+          "status": "completed",
+          "direction": "用失控包裹和孵化事故快速建立主角、搭档与任务目标。",
+          "beats": [
+            {
+              "id": "beat-c001-01",
+              "summary": "艾琳在夜班收尾时拆出一只会喷火花的幼龙"
+            },
+            {
+              "id": "beat-c001-02",
+              "summary": "得知必须在天亮前把星铃送到北风塔"
+            },
+            {
+              "id": "beat-c001-03",
+              "summary": "艾琳和伦恩组成临时搭档出发"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c001-01",
+              "title": "孵化事故",
+              "summary": "艾琳在快递公会的夜班里拆开最后一个包裹，意外放出幼龙诺瓦。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            },
+            {
+              "id": "scene-c001-02",
+              "title": "钟楼临时搭档",
+              "summary": "伦恩加入夜奔任务，诺瓦也决定跟着一起去送星铃。",
+              "startParagraph": 5,
+              "endParagraph": 7,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-002",
+          "title": "风车塔的夜路",
+          "status": "completed",
+          "direction": "让团队在夜路和高空阻力里完成第一次真正配合，兑现轻小说式搭档成长。",
+          "beats": [
+            {
+              "id": "beat-c002-01",
+              "summary": "他们在北风塔底被半毁的通行条卡住"
+            },
+            {
+              "id": "beat-c002-02",
+              "summary": "伦恩破解通行码，诺瓦第一次克服恐高滑翔"
+            },
+            {
+              "id": "beat-c002-03",
+              "summary": "三人抵达塔顶，却发现主齿轮被寒雾冻住"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c002-01",
+              "title": "被咬掉一半的通行条",
+              "summary": "半张通行条无法直接过塔门，艾琳和伦恩只能临场解题。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            },
+            {
+              "id": "scene-c002-02",
+              "title": "维护桥上的第一次滑翔",
+              "summary": "星铃被吹上维护桥，诺瓦在艾琳鼓励下完成第一次滑翔回收。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-003",
+          "title": "晨钟前的试飞",
+          "status": "completed",
+          "direction": "在塔顶完成主齿轮修复和星铃归位，让冒险以轻快的搭档确立收束。",
+          "beats": [
+            {
+              "id": "beat-c003-01",
+              "summary": "伦恩发现主齿轮卡死，需要稳定火焰和节拍配合"
+            },
+            {
+              "id": "beat-c003-02",
+              "summary": "诺瓦在艾琳帮助下控制吐息，点活整座晨钟"
+            },
+            {
+              "id": "beat-c003-03",
+              "summary": "米拉院长揭晓这也是一场搭档资格测试"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c003-01",
+              "title": "冻住的主齿轮",
+              "summary": "塔顶的主齿轮被寒雾冻住，三人必须在天亮前修好它。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            },
+            {
+              "id": "scene-c003-02",
+              "title": "星铃归位",
+              "summary": "星铃终于在晨钟响起前归位，艾琳和诺瓦成为真正的搭档。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T17:31:00+08:00",
+              "updatedAt": "2026-04-23T17:31:00+08:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-001",
+      "title": "会打喷嚏的包裹",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c001-01",
+          "summary": "艾琳在夜班收尾时拆出一只会喷火花的幼龙"
+        },
+        {
+          "id": "beat-c001-02",
+          "summary": "得知必须在天亮前把星铃送到北风塔"
+        },
+        {
+          "id": "beat-c001-03",
+          "summary": "艾琳和伦恩组成临时搭档出发"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c001-01",
+          "title": "孵化事故",
+          "summary": "艾琳在快递公会的夜班里拆开最后一个包裹，意外放出幼龙诺瓦。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        },
+        {
+          "id": "scene-c001-02",
+          "title": "钟楼临时搭档",
+          "summary": "伦恩加入夜奔任务，诺瓦也决定跟着一起去送星铃。",
+          "startParagraph": 5,
+          "endParagraph": 7,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-002",
+      "title": "风车塔的夜路",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c002-01",
+          "summary": "他们在北风塔底被半毁的通行条卡住"
+        },
+        {
+          "id": "beat-c002-02",
+          "summary": "伦恩破解通行码，诺瓦第一次克服恐高滑翔"
+        },
+        {
+          "id": "beat-c002-03",
+          "summary": "三人抵达塔顶，却发现主齿轮被寒雾冻住"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c002-01",
+          "title": "被咬掉一半的通行条",
+          "summary": "半张通行条无法直接过塔门，艾琳和伦恩只能临场解题。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        },
+        {
+          "id": "scene-c002-02",
+          "title": "维护桥上的第一次滑翔",
+          "summary": "星铃被吹上维护桥，诺瓦在艾琳鼓励下完成第一次滑翔回收。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-003",
+      "title": "晨钟前的试飞",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c003-01",
+          "summary": "伦恩发现主齿轮卡死，需要稳定火焰和节拍配合"
+        },
+        {
+          "id": "beat-c003-02",
+          "summary": "诺瓦在艾琳帮助下控制吐息，点活整座晨钟"
+        },
+        {
+          "id": "beat-c003-03",
+          "summary": "米拉院长揭晓这也是一场搭档资格测试"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c003-01",
+          "title": "冻住的主齿轮",
+          "summary": "塔顶的主齿轮被寒雾冻住，三人必须在天亮前修好它。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        },
+        {
+          "id": "scene-c003-02",
+          "title": "星铃归位",
+          "summary": "星铃终于在晨钟响起前归位，艾琳和诺瓦成为真正的搭档。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T17:31:00+08:00",
+          "updatedAt": "2026-04-23T17:31:00+08:00"
+        }
+      ]
+    }
+  ],
+  "chapterDirections": [
+    {
+      "chapterId": "chapter-001",
+      "title": "会打喷嚏的包裹",
+      "summary": "用失控包裹和孵化事故快速建立主角、搭档与任务目标。"
+    },
+    {
+      "chapterId": "chapter-002",
+      "title": "风车塔的夜路",
+      "summary": "让团队在夜路和高空阻力里完成第一次真正配合，兑现轻小说式搭档成长。"
+    },
+    {
+      "chapterId": "chapter-003",
+      "title": "晨钟前的试飞",
+      "summary": "在塔顶完成主齿轮修复和星铃归位，让冒险以轻快的搭档确立收束。"
+    }
+  ]
+}

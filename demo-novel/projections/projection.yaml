@@ -1,0 +1,54 @@
+{
+  "snapshotProjections": [],
+  "relationProjections": [],
+  "sceneScopeProjections": [
+    {
+      "chapterId": "chapter-002",
+      "activeEntityIds": [
+        "entity-lin-zhou",
+        "entity-shen-zhao",
+        "entity-zhao-juzhang",
+        "entity-su-qing"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T00:18:03+08:00"
+    },
+    {
+      "chapterId": "chapter-004",
+      "activeEntityIds": [
+        "entity-shen-zhao",
+        "entity-lin-zhou",
+        "entity-zhao-juzhang",
+        "entity-su-qing"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T00:18:03+08:00"
+    },
+    {
+      "chapterId": "chapter-006",
+      "activeEntityIds": [
+        "entity-su-qing",
+        "entity-lin-zhou",
+        "entity-zhao-juzhang",
+        "entity-shen-zhao"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T00:18:03+08:00"
+    },
+    {
+      "chapterId": "chapter-008",
+      "activeEntityIds": [
+        "entity-lin-zhou",
+        "entity-zhao-juzhang",
+        "entity-shen-zhao",
+        "entity-su-qing",
+        "inferred::赵继业",
+        "inferred::苏明"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T00:18:03+08:00"
+    }
+  ],
+  "timelineProjections": [],
+  "causalityProjections": []
+}

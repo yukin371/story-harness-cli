@@ -1,18 +1,28 @@
 from __future__ import annotations
 
-import re
 from pathlib import Path
 from typing import Any, Dict, List
 
-from story_harness_cli.utils.text import count_words
+from story_harness_cli.utils.text import count_words, paragraphs_from_text, strip_entity_tags
 
 
-def compute_project_stats(state: Dict[str, Dict[str, Any]], root: Path) -> Dict[str, Any]:
+def compute_project_stats(
+    state: Dict[str, Dict[str, Any]],
+    root: Path,
+    *,
+    min_chapter_words: int = 2000,
+    target_chapter_words: int = 3000,
+) -> Dict[str, Any]:
     return {
         "project": _project_info(state),
         "progress": _progress(state),
         "entities": _entity_stats(state),
-        "wordCount": _word_count(state, root),
+        "wordCount": _word_count(
+            state,
+            root,
+            min_chapter_words=min_chapter_words,
+            target_chapter_words=target_chapter_words,
+        ),
         "projections": _projection_stats(state),
     }
 
@@ -66,20 +76,31 @@ def _entity_stats(state: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
     return {"total": len(entities), "bySource": by_source, "mostMentioned": most_mentioned}
 
 
-def _word_count(state: Dict[str, Dict[str, Any]], root: Path) -> Dict[str, Any]:
+def _word_count(
+    state: Dict[str, Dict[str, Any]],
+    root: Path,
+    *,
+    min_chapter_words: int,
+    target_chapter_words: int,
+) -> Dict[str, Any]:
     volumes = state.get("outline", {}).get("volumes", [])
-    chapter_ids = []
+    chapter_entries: List[Dict[str, Any]] = []
     if volumes:
         for vol in volumes:
             for ch in vol.get("chapters", []):
-                chapter_ids.append(ch.get("id", ""))
+                chapter_entries.append(ch)
     else:
         for ch in state.get("outline", {}).get("chapters", []):
-            chapter_ids.append(ch.get("id", ""))
+            chapter_entries.append(ch)
 
     by_chapter = []
     total = 0
-    for cid in chapter_ids:
+    below_minimum = 0
+    at_or_above_minimum = 0
+    at_or_above_target = 0
+    for chapter in chapter_entries:
+        cid = chapter.get("id", "")
+        title = chapter.get("title", cid)
         cp = root / "chapters" / f"{cid}.md"
         if not cp.exists():
             # Try glob fallback
@@ -89,11 +110,52 @@ def _word_count(state: Dict[str, Dict[str, Any]], root: Path) -> Dict[str, Any]:
                     break
         if cp.exists():
             text = cp.read_text(encoding="utf-8")
-            words = count_words(text)
-            by_chapter.append({"chapterId": cid, "words": words})
+            clean = "\n\n".join(paragraphs_from_text(strip_entity_tags(text)))
+            words = count_words(clean)
+            status = _chapter_word_status(words, min_chapter_words, target_chapter_words)
+            minimum_gap = max(min_chapter_words - words, 0)
+            target_gap = max(target_chapter_words - words, 0)
+            if words < min_chapter_words:
+                below_minimum += 1
+            else:
+                at_or_above_minimum += 1
+            if words >= target_chapter_words:
+                at_or_above_target += 1
+            by_chapter.append(
+                {
+                    "chapterId": cid,
+                    "title": title,
+                    "words": words,
+                    "status": status,
+                    "minimumWords": min_chapter_words,
+                    "targetWords": target_chapter_words,
+                    "missingToMinimum": minimum_gap,
+                    "missingToTarget": target_gap,
+                }
+            )
             total += words
 
-    return {"total": total, "byChapter": by_chapter}
+    return {
+        "total": total,
+        "byChapter": by_chapter,
+        "targets": {
+            "minimumPerChapter": min_chapter_words,
+            "recommendedPerChapter": target_chapter_words,
+        },
+        "summary": {
+            "chaptersBelowMinimum": below_minimum,
+            "chaptersAtOrAboveMinimum": at_or_above_minimum,
+            "chaptersAtOrAboveRecommended": at_or_above_target,
+        },
+    }
+
+
+def _chapter_word_status(words: int, min_chapter_words: int, target_chapter_words: int) -> str:
+    if words >= target_chapter_words:
+        return "meets-recommended"
+    if words >= min_chapter_words:
+        return "meets-minimum"
+    return "below-minimum"
 
 
 def _projection_stats(state: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:

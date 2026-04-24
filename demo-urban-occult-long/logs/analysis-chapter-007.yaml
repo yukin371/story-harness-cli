@@ -1,0 +1,111 @@
+{
+  "chapterId": "chapter-007",
+  "chapterTitle": "纸马过街",
+  "analyzedAt": "2026-04-24T01:53:48+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 14,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-du",
+      "name": "杜魁",
+      "mentionCount": 1,
+      "source": "registry"
+    },
+    {
+      "id": "entity-gu",
+      "name": "顾算盘",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhou-qian::39e2c21508",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "封街命令来得很快，却不是普通治安口的节奏。外围交警只接到“旧路禁行”的指令，没人知道为什么要封；内圈几个夜巡协查点却已经提前把最容易撞上纸马的岔路清了出来，像有人不想让普通人出事，却也不准备真正阻止车队通过。@{周祈安}越看越不舒服，因为这种封法不像临时救火，更像顺着对方已经画好的路线给车队让路。若不是昨夜井口才截下那页“借债司”残契，他几乎会怀疑封街的人里是不是也有人知道这条押解线会从今晚开始重跑。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-bai::6dedb713a7",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "巷子尽头是一处废弃检查亭，早年是水路货和夜场班社进城时登记杂项的地方，如今窗框都烂得快掉下来。可三人翻进去时，里头却不像纯粹荒废，反倒像刚被人临时拿来做过一次中转。桌上压着半箱没送出去的纸偶、票根和折扇，墙上旧勾子还挂着三件未拆封的戏班行头袋。@{白小刀}翻出其中一叠票簿，发现每一张座号旁都附着一笔“寿银”，金额不大，却精确到时辰，连入场先后都被另划了一道红线。她越翻越冷静，语气却更重，“这不是普通卖票，是先收寿数，再给戏班开台。”",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhou-qian::a48454dfc9",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "@{周祈安}沿着纸马留下的灰痕一路追到老戏台外墙，终于在排水沟边看到一片新的残印碎屑。那碎屑边缘和空棺案、借火案里抢回来的残片一模一样，只是这一块上头多了一道戏服纹，纹脚还沾着很细的银粉，和刚才票簿、座号后抹出的那层东西正好同源。因为残印正在按行业和场子被拆散运输，所以敌人要的从来不是某一件法器，而是一套可以在不同生意里反复调用的收债系统。想到这里，周祈安心里那点隐约的怀疑终于真正成形: 卷一追的不是“异案背后的人”，而是“把异案当模块调用的体系”。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhou-qian::3391acd1cb",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "老戏台外围这会儿还没正式开场，门前却已经搭起了临时茶棚和卖票桌，像今晚真要演一出普通热闹戏。可越是这种表面平静，越让人不安。因为纸马车刚过，戏台门口就开始有人摆桌迎客，说明押解线和开台线之间根本没有空档，车一到，账就能直接进后台。@{周祈安}甚至怀疑，若不是他们昨夜在井口硬生生多拖了半晚，今晚戏台可能会比现在更早开锣，连给他们看到车队路线的机会都不会留下。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhou-qian::de6f6feb44",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "三人离开旧街时，纸马车队已经完全没入通往戏台的那条老路，只剩木牌轻碰和纸轮碾过石缝的声音一阵阵往远处去。周祈安最后回头看了一眼那条路，忽然意识到，对方今晚展示给他们看的不是胆大，而是控制力。空棺、雨轿、河灯、井口和纸马，原来都只是这套系统在不同场子里的不同外壳。可如果这只手已经能把纸马、戏票和寿数一起调度，那他们今晚去看的，到底还是一出戏，还是一场准备当众收债、顺便把夜巡人名字也拖进账里的开台？",
+      "confidence": 0.78
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-bai",
+      "entity-shen",
+      "entity-du",
+      "entity-gu"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "白小刀",
+      "沈观澜",
+      "杜魁",
+      "顾算盘"
+    ]
+  }
+}

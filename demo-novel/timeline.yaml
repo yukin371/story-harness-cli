@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": "event-a19d253984",
+      "chapterId": "chapter-001",
+      "description": "林舟在旧仓库租屋中醒来",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:27+08:00"
+    },
+    {
+      "id": "event-01feaa90af",
+      "chapterId": "chapter-001",
+      "description": "林舟收到匿名短信，约在码头仓库",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:27+08:00"
+    },
+    {
+      "id": "event-fba27bacbc",
+      "chapterId": "chapter-001",
+      "description": "林舟在码头仓库发现老陈尸体和账本",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:27+08:00"
+    },
+    {
+      "id": "event-dd567facfe",
+      "chapterId": "chapter-002",
+      "description": "沈昭击退追杀者，警告林舟",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:28+08:00"
+    },
+    {
+      "id": "event-cb442a752b",
+      "chapterId": "chapter-006",
+      "description": "沈昭背叛组织，保护林舟",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:28+08:00"
+    },
+    {
+      "id": "event-dc5da32045",
+      "chapterId": "chapter-008",
+      "description": "赵局长落网，案件告一段落",
+      "timeLabel": "",
+      "entityIds": [],
+      "createdAt": "2026-04-22T23:58:28+08:00"
+    }
+  ]
+}

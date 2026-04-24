@@ -44,6 +44,43 @@ class SingleChapterLoopSmokeTest(unittest.TestCase):
 
     def test_single_chapter_loop(self) -> None:
         args_root = str(self.temp_dir)
+        project_path = self.temp_dir / "project.yaml"
+        project = json.loads(project_path.read_text(encoding="utf-8"))
+        project["positioning"] = {
+            "primaryGenre": "mystery",
+            "subGenre": "",
+            "styleTags": [],
+            "targetAudience": ["mystery-reader"],
+        }
+        project["storyContract"] = {
+            "corePromises": ["每章推进账本谜团"],
+            "avoidances": [],
+            "endingContract": "",
+            "paceContract": "中快节奏",
+        }
+        project_path.write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+        outline_path = self.temp_dir / "outline.yaml"
+        outline = json.loads(outline_path.read_text(encoding="utf-8"))
+        outline["chapters"][0]["beats"] = [{"id": "beat-001", "summary": "两人在仓库对峙", "status": "planned"}]
+        outline["chapters"][0]["scenePlans"] = [
+            {
+                "id": "scene-001",
+                "title": "仓库对峙",
+                "summary": "林舟与沈昭必须在这一幕里摊开怀疑。",
+                "startParagraph": 1,
+                "endParagraph": 3,
+            }
+        ]
+        outline["chapterDirections"] = [
+            {
+                "chapterId": "chapter-001",
+                "title": "第一章方向",
+                "summary": "让林舟与沈昭在仓库爆发第一次决定性冲突。",
+            }
+        ]
+        outline_path.write_text(json.dumps(outline, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
         self.assertEqual(main(["chapter", "analyze", "--root", args_root, "--chapter-id", "chapter-001"]), 0)
         self.assertEqual(main(["chapter", "suggest", "--root", args_root, "--chapter-id", "chapter-001"]), 0)
         self.assertEqual(
@@ -76,4 +113,3 @@ class SingleChapterLoopSmokeTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

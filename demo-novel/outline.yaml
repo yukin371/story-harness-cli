@@ -1,0 +1,766 @@
+{
+  "chapters": [
+    {
+      "id": "chapter-001",
+      "title": "裂痕之夜",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-5ad26779e7",
+          "title": "场景01 凌晨四点十七分，林舟从噩梦中惊醒",
+          "summary": "凌晨四点十七分，林舟从噩梦中惊醒。",
+          "startParagraph": 1,
+          "endParagraph": 9,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-bcb5c75017",
+          "title": "场景02 三天后，老陈死了。官方说法是出海遇到",
+          "summary": "三天后，老陈死了。官方说法是出海遇到风浪，船只倾覆，尸体都没有找到。同一天晚上，林舟被指控\"越权执法、伪造证据、妨碍司法",
+          "startParagraph": 10,
+          "endParagraph": 52,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:三天后",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-e705410e82",
+          "title": "场景03 就在这时，仓库外突然传来一阵引擎声",
+          "summary": "就在这时，仓库外突然传来一阵引擎声，接着是刺耳的刹车声。那只踩着林舟的脚微微一松，他趁机翻身，用手肘狠狠撞向对方的膝盖。",
+          "startParagraph": 53,
+          "endParagraph": 64,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-002",
+      "title": "暗影追踪",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-9bfba9661f",
+          "title": "场景01 林舟把那本账本塞进风衣内袋，离开7号",
+          "summary": "林舟把那本账本塞进风衣内袋，离开7号仓库时，天色已经彻底亮了。",
+          "startParagraph": 1,
+          "endParagraph": 12,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-96c5c3a49e",
+          "title": "场景02 就在这时，停车场边缘传来一阵引擎的咆",
+          "summary": "就在这时，停车场边缘传来一阵引擎的咆哮声。一辆黑色的面包车突然冲出晨雾，径直朝开枪的方向冲去。枪声停了。",
+          "startParagraph": 13,
+          "endParagraph": 18,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-e6e4f14e74",
+          "title": "场景03 现在他没得选了",
+          "summary": "现在他没得选了。",
+          "startParagraph": 19,
+          "endParagraph": 73,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-003",
+      "title": "雾中往事",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-1b876e57e7",
+          "title": "场景01 三天后，林舟的左肩终于能正常活动了",
+          "summary": "三天后，林舟的左肩终于能正常活动了。",
+          "startParagraph": 1,
+          "endParagraph": 21,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-76a21bb61a",
+          "title": "场景02 就在这时，桌上的手机响了",
+          "summary": "就在这时，桌上的手机响了。",
+          "startParagraph": 22,
+          "endParagraph": 68,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-2ec3847e86",
+          "title": "场景03 现在他明白了。那不是威胁，那是警告",
+          "summary": "现在他明白了。那不是威胁，那是警告。",
+          "startParagraph": 69,
+          "endParagraph": 82,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-004",
+      "title": "棋局初现",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-b15ad43fb1",
+          "title": "场景01 雾港联络办是一座不起眼的四层小楼，坐",
+          "summary": "雾港联络办是一座不起眼的四层小楼，坐落在老城区的一条小巷尽头。",
+          "startParagraph": 1,
+          "endParagraph": 51,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        },
+        {
+          "id": "scene-f19dab2c5f",
+          "title": "场景02 就在这时，头顶传来一阵响动",
+          "summary": "就在这时，头顶传来一阵响动。",
+          "startParagraph": 52,
+          "endParagraph": 104,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-005",
+      "title": "真相碎片",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-37498e2735",
+          "title": "场景01 林舟拼命往楼梯上跑，身后是密集的枪声",
+          "summary": "林舟拼命往楼梯上跑，身后是密集的枪声和玻璃破碎的声音。",
+          "startParagraph": 1,
+          "endParagraph": 63,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:15+08:00",
+          "updatedAt": "2026-04-23T14:13:15+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-006",
+      "title": "暗流涌动",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-3901e90985",
+          "title": "场景01 下午两点四十五分，林舟站在雾港市图书",
+          "summary": "下午两点四十五分，林舟站在雾港市图书馆东门的台阶上。",
+          "startParagraph": 1,
+          "endParagraph": 81,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-ae4837690d",
+          "title": "场景02 就在这时，身后传来一阵轻微的脚步声",
+          "summary": "就在这时，身后传来一阵轻微的脚步声。",
+          "startParagraph": 82,
+          "endParagraph": 128,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-d2351c845c",
+          "title": "场景03 现在他终于明白了",
+          "summary": "现在他终于明白了。",
+          "startParagraph": 129,
+          "endParagraph": 135,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-007",
+      "title": "信任危机",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-96cdbd13df",
+          "title": "场景01 凌晨三点，林舟的面包车停在雾港老城区",
+          "summary": "凌晨三点，林舟的面包车停在雾港老城区的一条小巷里。",
+          "startParagraph": 1,
+          "endParagraph": 66,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-c3ac6dbe45",
+          "title": "场景02 现在他终于明白了。她的\"不简单\"，不",
+          "summary": "现在他终于明白了。她的\"不简单\"，不是阴谋，不是背叛，而是用另一种方式战斗——用手术刀一样的精准，用法医一样的冷静，用三",
+          "startParagraph": 67,
+          "endParagraph": 87,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-008",
+      "title": "雾散",
+      "status": "completed",
+      "beats": [],
+      "scenePlans": [
+        {
+          "id": "scene-95b834b1c7",
+          "title": "场景01 三天后，林舟站在雾港市公安局的大门前",
+          "summary": "三天后，林舟站在雾港市公安局的大门前。",
+          "startParagraph": 1,
+          "endParagraph": 8,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "chapter-start",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-73d9daed8f",
+          "title": "场景02 现在，机会来了",
+          "summary": "现在，机会来了。",
+          "startParagraph": 9,
+          "endParagraph": 13,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-22890e64a5",
+          "title": "场景03 十五分钟后，林舟坐在了一间审讯室里",
+          "summary": "十五分钟后，林舟坐在了一间审讯室里。",
+          "startParagraph": 14,
+          "endParagraph": 39,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:十五分钟后",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-3cd617fee3",
+          "title": "场景04 就在这时，审讯室的门被推开了",
+          "summary": "就在这时，审讯室的门被推开了。",
+          "startParagraph": 40,
+          "endParagraph": 53,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:就在这时",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-fc666ac8d0",
+          "title": "场景05 三天后，赵局长被正式逮捕的消息传遍了",
+          "summary": "三天后，赵局长被正式逮捕的消息传遍了整个雾港。同一天，苏晴被解除软禁，回到法医中心工作。沈昭消失了，没有人知道他去了哪里",
+          "startParagraph": 54,
+          "endParagraph": 59,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:三天后",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-b24b2f4bba",
+          "title": "场景06 三个月后的一个晚上，林舟的手机突然收",
+          "summary": "三个月后的一个晚上，林舟的手机突然收到一条陌生号码发来的短信。",
+          "startParagraph": 60,
+          "endParagraph": 76,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:三个月后",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-bf7750ddff",
+          "title": "场景07 现在他终于明白，那句话的真正含义——",
+          "summary": "现在他终于明白，那句话的真正含义——",
+          "startParagraph": 77,
+          "endParagraph": 91,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:现在",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-d6497ccb15",
+          "title": "场景08 几分钟后，回复来了",
+          "summary": "几分钟后，回复来了。",
+          "startParagraph": 92,
+          "endParagraph": 98,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:几分钟后",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        },
+        {
+          "id": "scene-bf0e7d3c48",
+          "title": "场景09 新的一天要开始了",
+          "summary": "新的一天要开始了。",
+          "startParagraph": 99,
+          "endParagraph": 100,
+          "source": "heuristic-detect",
+          "detectionMethod": "scene-candidate-v1",
+          "breakReason": "transition:新的一天",
+          "createdAt": "2026-04-23T14:13:16+08:00",
+          "updatedAt": "2026-04-23T14:13:16+08:00"
+        }
+      ]
+    }
+  ],
+  "chapterDirections": [],
+  "volumes": [
+    {
+      "id": "volume-001",
+      "title": "??? ????",
+      "theme": "?????????",
+      "chapters": [
+        {
+          "id": "chapter-001",
+          "title": "裂痕之夜",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-5ad26779e7",
+              "title": "场景01 凌晨四点十七分，林舟从噩梦中惊醒",
+              "summary": "凌晨四点十七分，林舟从噩梦中惊醒。",
+              "startParagraph": 1,
+              "endParagraph": 9,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-bcb5c75017",
+              "title": "场景02 三天后，老陈死了。官方说法是出海遇到",
+              "summary": "三天后，老陈死了。官方说法是出海遇到风浪，船只倾覆，尸体都没有找到。同一天晚上，林舟被指控\"越权执法、伪造证据、妨碍司法",
+              "startParagraph": 10,
+              "endParagraph": 52,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:三天后",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-e705410e82",
+              "title": "场景03 就在这时，仓库外突然传来一阵引擎声",
+              "summary": "就在这时，仓库外突然传来一阵引擎声，接着是刺耳的刹车声。那只踩着林舟的脚微微一松，他趁机翻身，用手肘狠狠撞向对方的膝盖。",
+              "startParagraph": 53,
+              "endParagraph": 64,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-002",
+          "title": "暗影追踪",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-9bfba9661f",
+              "title": "场景01 林舟把那本账本塞进风衣内袋，离开7号",
+              "summary": "林舟把那本账本塞进风衣内袋，离开7号仓库时，天色已经彻底亮了。",
+              "startParagraph": 1,
+              "endParagraph": 12,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-96c5c3a49e",
+              "title": "场景02 就在这时，停车场边缘传来一阵引擎的咆",
+              "summary": "就在这时，停车场边缘传来一阵引擎的咆哮声。一辆黑色的面包车突然冲出晨雾，径直朝开枪的方向冲去。枪声停了。",
+              "startParagraph": 13,
+              "endParagraph": 18,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-e6e4f14e74",
+              "title": "场景03 现在他没得选了",
+              "summary": "现在他没得选了。",
+              "startParagraph": 19,
+              "endParagraph": 73,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-003",
+          "title": "雾中往事",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-1b876e57e7",
+              "title": "场景01 三天后，林舟的左肩终于能正常活动了",
+              "summary": "三天后，林舟的左肩终于能正常活动了。",
+              "startParagraph": 1,
+              "endParagraph": 21,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-76a21bb61a",
+              "title": "场景02 就在这时，桌上的手机响了",
+              "summary": "就在这时，桌上的手机响了。",
+              "startParagraph": 22,
+              "endParagraph": 68,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-2ec3847e86",
+              "title": "场景03 现在他明白了。那不是威胁，那是警告",
+              "summary": "现在他明白了。那不是威胁，那是警告。",
+              "startParagraph": 69,
+              "endParagraph": 82,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-004",
+          "title": "棋局初现",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-b15ad43fb1",
+              "title": "场景01 雾港联络办是一座不起眼的四层小楼，坐",
+              "summary": "雾港联络办是一座不起眼的四层小楼，坐落在老城区的一条小巷尽头。",
+              "startParagraph": 1,
+              "endParagraph": 51,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            },
+            {
+              "id": "scene-f19dab2c5f",
+              "title": "场景02 就在这时，头顶传来一阵响动",
+              "summary": "就在这时，头顶传来一阵响动。",
+              "startParagraph": 52,
+              "endParagraph": 104,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-005",
+          "title": "真相碎片",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-37498e2735",
+              "title": "场景01 林舟拼命往楼梯上跑，身后是密集的枪声",
+              "summary": "林舟拼命往楼梯上跑，身后是密集的枪声和玻璃破碎的声音。",
+              "startParagraph": 1,
+              "endParagraph": 63,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:15+08:00",
+              "updatedAt": "2026-04-23T14:13:15+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-006",
+          "title": "暗流涌动",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-3901e90985",
+              "title": "场景01 下午两点四十五分，林舟站在雾港市图书",
+              "summary": "下午两点四十五分，林舟站在雾港市图书馆东门的台阶上。",
+              "startParagraph": 1,
+              "endParagraph": 81,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-ae4837690d",
+              "title": "场景02 就在这时，身后传来一阵轻微的脚步声",
+              "summary": "就在这时，身后传来一阵轻微的脚步声。",
+              "startParagraph": 82,
+              "endParagraph": 128,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-d2351c845c",
+              "title": "场景03 现在他终于明白了",
+              "summary": "现在他终于明白了。",
+              "startParagraph": 129,
+              "endParagraph": 135,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-007",
+          "title": "信任危机",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-96cdbd13df",
+              "title": "场景01 凌晨三点，林舟的面包车停在雾港老城区",
+              "summary": "凌晨三点，林舟的面包车停在雾港老城区的一条小巷里。",
+              "startParagraph": 1,
+              "endParagraph": 66,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-c3ac6dbe45",
+              "title": "场景02 现在他终于明白了。她的\"不简单\"，不",
+              "summary": "现在他终于明白了。她的\"不简单\"，不是阴谋，不是背叛，而是用另一种方式战斗——用手术刀一样的精准，用法医一样的冷静，用三",
+              "startParagraph": 67,
+              "endParagraph": 87,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-008",
+          "title": "雾散",
+          "status": "completed",
+          "beats": [],
+          "scenePlans": [
+            {
+              "id": "scene-95b834b1c7",
+              "title": "场景01 三天后，林舟站在雾港市公安局的大门前",
+              "summary": "三天后，林舟站在雾港市公安局的大门前。",
+              "startParagraph": 1,
+              "endParagraph": 8,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "chapter-start",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-73d9daed8f",
+              "title": "场景02 现在，机会来了",
+              "summary": "现在，机会来了。",
+              "startParagraph": 9,
+              "endParagraph": 13,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-22890e64a5",
+              "title": "场景03 十五分钟后，林舟坐在了一间审讯室里",
+              "summary": "十五分钟后，林舟坐在了一间审讯室里。",
+              "startParagraph": 14,
+              "endParagraph": 39,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:十五分钟后",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-3cd617fee3",
+              "title": "场景04 就在这时，审讯室的门被推开了",
+              "summary": "就在这时，审讯室的门被推开了。",
+              "startParagraph": 40,
+              "endParagraph": 53,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:就在这时",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-fc666ac8d0",
+              "title": "场景05 三天后，赵局长被正式逮捕的消息传遍了",
+              "summary": "三天后，赵局长被正式逮捕的消息传遍了整个雾港。同一天，苏晴被解除软禁，回到法医中心工作。沈昭消失了，没有人知道他去了哪里",
+              "startParagraph": 54,
+              "endParagraph": 59,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:三天后",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-b24b2f4bba",
+              "title": "场景06 三个月后的一个晚上，林舟的手机突然收",
+              "summary": "三个月后的一个晚上，林舟的手机突然收到一条陌生号码发来的短信。",
+              "startParagraph": 60,
+              "endParagraph": 76,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:三个月后",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-bf7750ddff",
+              "title": "场景07 现在他终于明白，那句话的真正含义——",
+              "summary": "现在他终于明白，那句话的真正含义——",
+              "startParagraph": 77,
+              "endParagraph": 91,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:现在",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-d6497ccb15",
+              "title": "场景08 几分钟后，回复来了",
+              "summary": "几分钟后，回复来了。",
+              "startParagraph": 92,
+              "endParagraph": 98,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:几分钟后",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            },
+            {
+              "id": "scene-bf0e7d3c48",
+              "title": "场景09 新的一天要开始了",
+              "summary": "新的一天要开始了。",
+              "startParagraph": 99,
+              "endParagraph": 100,
+              "source": "heuristic-detect",
+              "detectionMethod": "scene-candidate-v1",
+              "breakReason": "transition:新的一天",
+              "createdAt": "2026-04-23T14:13:16+08:00",
+              "updatedAt": "2026-04-23T14:13:16+08:00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

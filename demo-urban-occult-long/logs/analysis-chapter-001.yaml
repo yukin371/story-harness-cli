@@ -1,0 +1,150 @@
+{
+  "chapterId": "chapter-001",
+  "chapterTitle": "夜班接尸",
+  "analyzedAt": "2026-04-24T00:48:57+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 11,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 3,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 2,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-001::entity-zhou-qian::8cc71444cb",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "“铜钱不在嘴里，在脚底，这不是防走魂，是怕她回头找路。”抱着记录夹的@{白小刀}蹲在推床边，指尖挑开女尸脚踝上的淤泥，露出一排细得过分的钉痕，“还有这个，压煞钉。现在正经馆子已经没人这么干了。”她说话总像在念验尸报告，平得听不出情绪，可@{周祈安}还是听出了那一点不对劲，也开始怀疑今晚根本不是普通加班。一个普通溺亡，配不上这套旧规矩，更配不上这种像是专门冲着他来的秘密手法。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-bai::8cc71444cb",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "“铜钱不在嘴里，在脚底，这不是防走魂，是怕她回头找路。”抱着记录夹的@{白小刀}蹲在推床边，指尖挑开女尸脚踝上的淤泥，露出一排细得过分的钉痕，“还有这个，压煞钉。现在正经馆子已经没人这么干了。”她说话总像在念验尸报告，平得听不出情绪，可@{周祈安}还是听出了那一点不对劲，也开始怀疑今晚根本不是普通加班。一个普通溺亡，配不上这套旧规矩，更配不上这种像是专门冲着他来的秘密手法。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-zhou-qian::8f1b965fa3",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "@{周祈安}把推床往灯下再拽近一点，越看越觉得这具尸不像是从河里“捞”上来的，更像是被谁提前处理好再丢进去的。她指甲缝里没有正常溺亡常带的淤泥砂粒，反倒塞着细碎香灰；红绳也不是浸水后临时缠上的，而是按旧殡规打了死结，勒痕一直吃进踝骨。最刺眼的还是她嘴角那点淡得几乎看不见的蜡渍，像有人在她被送来之前，刚拿供灯油给她封过口。父亲失踪后，他一直逼自己别往旧规矩那头想，可只要这些细节一件件摆在眼前，那条早被他硬压下去的怀疑线还是自己浮了出来: 这女尸不是遇上了邪门，她本身就是某种被特地送进门的消息。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-zhou-qian::23917fbeed",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "疲惫；紧张",
+      "stateTags": [
+        "疲惫",
+        "紧张"
+      ],
+      "evidence": "更不对劲的是冷柜。女尸刚推进去，最里侧那扇编号“七”的柜门就轻轻震了一下，像有人从里面用指节敲了一记。@{周祈安}盯着那道门缝，后背一点点起凉。他明明已经疲惫，却还是因为这声敲门重新紧张起来。如果第三下再响，他就必须决定开柜确认；否则整间冷库都可能失控。他在殡仪馆干了四年，知道冷缩、结霜、金属回弹都是什么动静，可这种像敲门一样的响声，他只在父亲失踪前那几天听过一次。那时候@{周敬庵}半夜回家，把鞋上的香灰抖在门口，一句话没解释，只叮嘱他听见敲门别立刻开。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-father::23917fbeed",
+      "entityId": "entity-father",
+      "entityName": "周敬庵",
+      "proposedState": "疲惫；紧张",
+      "stateTags": [
+        "疲惫",
+        "紧张"
+      ],
+      "evidence": "更不对劲的是冷柜。女尸刚推进去，最里侧那扇编号“七”的柜门就轻轻震了一下，像有人从里面用指节敲了一记。@{周祈安}盯着那道门缝，后背一点点起凉。他明明已经疲惫，却还是因为这声敲门重新紧张起来。如果第三下再响，他就必须决定开柜确认；否则整间冷库都可能失控。他在殡仪馆干了四年，知道冷缩、结霜、金属回弹都是什么动静，可这种像敲门一样的响声，他只在父亲失踪前那几天听过一次。那时候@{周敬庵}半夜回家，把鞋上的香灰抖在门口，一句话没解释，只叮嘱他听见敲门别立刻开。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-001::entity-zhou-qian::entity-bai::8cc71444cb",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-bai",
+      "toName": "白小刀",
+      "label": "信任下降",
+      "severity": "high-risk",
+      "evidence": "“铜钱不在嘴里，在脚底，这不是防走魂，是怕她回头找路。”抱着记录夹的@{白小刀}蹲在推床边，指尖挑开女尸脚踝上的淤泥，露出一排细得过分的钉痕，“还有这个，压煞钉。现在正经馆子已经没人这么干了。”她说话总像在念验尸报告，平得听不出情绪，可@{周祈安}还是听出了那一点不对劲，也开始怀疑今晚根本不是普通加班。一个普通溺亡，配不上这套旧规矩，更配不上这种像是专门冲着他来的秘密手法。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-001::entity-zhou-qian::entity-shen::6b52dbf8ee",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-shen",
+      "toName": "沈观澜",
+      "label": "对立",
+      "severity": "high-risk",
+      "evidence": "@{周祈安}皱了皱眉，手还按在推床把手上，“我这里只负责接运，不负责抓鬼。”这句话说出口时他自己都知道没多少底气。因为@{沈观澜}已经把视线落到了他腰间那枚旧铜铃上。那是@{周敬庵}失踪前留下的唯一遗物，平时他只当个压兜的旧物件，从没在外人面前提过。可@{沈观澜}只扫一眼就认出来了，“你爹倒是给你留了个能进门的东西。今晚你要么继续装不知道，让整条旧巷的人替你挨敲；要么跟我走一趟，把这具尸送到该送的地方。”这不是协商，更像冷柜前第一次被摁到明面上的对立和威胁。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-001::entity-zhou-qian::entity-father::6b52dbf8ee",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-father",
+      "toName": "周敬庵",
+      "label": "对立",
+      "severity": "high-risk",
+      "evidence": "@{周祈安}皱了皱眉，手还按在推床把手上，“我这里只负责接运，不负责抓鬼。”这句话说出口时他自己都知道没多少底气。因为@{沈观澜}已经把视线落到了他腰间那枚旧铜铃上。那是@{周敬庵}失踪前留下的唯一遗物，平时他只当个压兜的旧物件，从没在外人面前提过。可@{沈观澜}只扫一眼就认出来了，“你爹倒是给你留了个能进门的东西。今晚你要么继续装不知道，让整条旧巷的人替你挨敲；要么跟我走一趟，把这具尸送到该送的地方。”这不是协商，更像冷柜前第一次被摁到明面上的对立和威胁。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-001::entity-shen::entity-father::6b52dbf8ee",
+      "fromId": "entity-shen",
+      "fromName": "沈观澜",
+      "toId": "entity-father",
+      "toName": "周敬庵",
+      "label": "对立",
+      "severity": "high-risk",
+      "evidence": "@{周祈安}皱了皱眉，手还按在推床把手上，“我这里只负责接运，不负责抓鬼。”这句话说出口时他自己都知道没多少底气。因为@{沈观澜}已经把视线落到了他腰间那枚旧铜铃上。那是@{周敬庵}失踪前留下的唯一遗物，平时他只当个压兜的旧物件，从没在外人面前提过。可@{沈观澜}只扫一眼就认出来了，“你爹倒是给你留了个能进门的东西。今晚你要么继续装不知道，让整条旧巷的人替你挨敲；要么跟我走一趟，把这具尸送到该送的地方。”这不是协商，更像冷柜前第一次被摁到明面上的对立和威胁。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-shen",
+      "entity-father",
+      "entity-bai"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "沈观澜",
+      "周敬庵",
+      "白小刀"
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "chapterId": "chapter-005",
+  "chapterTitle": "真相碎片",
+  "analyzedAt": "2026-04-23T00:17:41+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 12,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 7,
+      "source": "registry"
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 3,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-005::entity-shen-zhao::865677c075",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "疲惫",
+      "stateTags": [
+        "疲惫"
+      ],
+      "evidence": "\"因为@{赵局长}刚才给我打了电话，\"@{苏晴}的声音里有一种难以名状的疲惫，\"他说 @{沈昭} 叛变了，说你要找一样东西。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-su-qing::865677c075",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "疲惫",
+      "stateTags": [
+        "疲惫"
+      ],
+      "evidence": "\"因为@{赵局长}刚才给我打了电话，\"@{苏晴}的声音里有一种难以名状的疲惫，\"他说 @{沈昭} 叛变了，说你要找一样东西。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-zhao-juzhang::865677c075",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "疲惫",
+      "stateTags": [
+        "疲惫"
+      ],
+      "evidence": "\"因为@{赵局长}刚才给我打了电话，\"@{苏晴}的声音里有一种难以名状的疲惫，\"他说 @{沈昭} 叛变了，说你要找一样东西。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-shen-zhao::5598e8fa80",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "\"因为三年前我以为我无能为力，\"@{苏晴}说，\"但现在我知道了—— @{沈昭} 可以背叛组织，我也可以。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-su-qing::5598e8fa80",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "\"因为三年前我以为我无能为力，\"@{苏晴}说，\"但现在我知道了—— @{沈昭} 可以背叛组织，我也可以。\"",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-005::entity-shen-zhao::entity-su-qing::5598e8fa80",
+      "fromId": "entity-shen-zhao",
+      "fromName": "沈昭",
+      "toId": "entity-su-qing",
+      "toName": "苏晴",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "\"因为三年前我以为我无能为力，\"@{苏晴}说，\"但现在我知道了—— @{沈昭} 可以背叛组织，我也可以。\"",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-lin-zhou",
+      "entity-shen-zhao",
+      "entity-su-qing",
+      "entity-zhao-juzhang"
+    ],
+    "activeEntityNames": [
+      "林舟",
+      "沈昭",
+      "苏晴",
+      "赵局长"
+    ]
+  }
+}

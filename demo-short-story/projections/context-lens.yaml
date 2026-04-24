@@ -1,0 +1,155 @@
+{
+  "currentChapterId": "chapter-003",
+  "lenses": [
+    {
+      "chapterId": "chapter-001",
+      "chapterTitle": "停电夜",
+      "activeCharacters": [
+        {
+          "id": "entity-shen-he",
+          "name": "沈禾",
+          "currentState": {
+            "physicalState": "连日熬夜，肩颈僵硬",
+            "emotionalState": "紧绷却不愿示弱",
+            "locationState": "纸灯巷文具店",
+            "financialState": "勉强维持"
+          }
+        },
+        {
+          "id": "entity-lu-chuan",
+          "name": "陆川",
+          "currentState": {
+            "physicalState": "状态稳定",
+            "emotionalState": "表面冷静，内里一直在算风险",
+            "locationState": "纸灯巷片区",
+            "financialState": "稳定"
+          }
+        },
+        {
+          "id": "entity-shen-lan",
+          "name": "沈岚",
+          "currentState": {
+            "physicalState": "已故",
+            "emotionalState": "仅存于旧信与录音里",
+            "locationState": "缺席",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-chen-qiming",
+          "name": "陈启明",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "自信但越来越急躁",
+            "locationState": "旧巷改造项目现场",
+            "financialState": "充裕"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T16:16:22+08:00"
+    },
+    {
+      "chapterId": "chapter-002",
+      "chapterTitle": "第十七号信箱",
+      "activeCharacters": [
+        {
+          "id": "entity-shen-he",
+          "name": "沈禾",
+          "currentState": {
+            "physicalState": "连日熬夜，肩颈僵硬",
+            "emotionalState": "紧绷却不愿示弱",
+            "locationState": "纸灯巷文具店",
+            "financialState": "勉强维持"
+          }
+        },
+        {
+          "id": "entity-lu-chuan",
+          "name": "陆川",
+          "currentState": {
+            "physicalState": "状态稳定",
+            "emotionalState": "表面冷静，内里一直在算风险",
+            "locationState": "纸灯巷片区",
+            "financialState": "稳定"
+          }
+        },
+        {
+          "id": "entity-shen-lan",
+          "name": "沈岚",
+          "currentState": {
+            "physicalState": "已故",
+            "emotionalState": "仅存于旧信与录音里",
+            "locationState": "缺席",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-chen-qiming",
+          "name": "陈启明",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "自信但越来越急躁",
+            "locationState": "旧巷改造项目现场",
+            "financialState": "充裕"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T16:16:22+08:00"
+    },
+    {
+      "chapterId": "chapter-003",
+      "chapterTitle": "回信人",
+      "activeCharacters": [
+        {
+          "id": "entity-shen-he",
+          "name": "沈禾",
+          "currentState": {
+            "physicalState": "连日熬夜，肩颈僵硬",
+            "emotionalState": "紧绷却不愿示弱",
+            "locationState": "纸灯巷文具店",
+            "financialState": "勉强维持"
+          }
+        },
+        {
+          "id": "entity-lu-chuan",
+          "name": "陆川",
+          "currentState": {
+            "physicalState": "状态稳定",
+            "emotionalState": "表面冷静，内里一直在算风险",
+            "locationState": "纸灯巷片区",
+            "financialState": "稳定"
+          }
+        },
+        {
+          "id": "entity-chen-qiming",
+          "name": "陈启明",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "自信但越来越急躁",
+            "locationState": "旧巷改造项目现场",
+            "financialState": "充裕"
+          }
+        },
+        {
+          "id": "entity-shen-lan",
+          "name": "沈岚",
+          "currentState": {
+            "physicalState": "已故",
+            "emotionalState": "仅存于旧信与录音里",
+            "locationState": "缺席",
+            "financialState": ""
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T16:16:23+08:00"
+    }
+  ]
+}

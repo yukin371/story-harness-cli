@@ -13,6 +13,7 @@ story-project/
     draft-proposals.yaml
   reviews/
     change-requests.yaml
+    story-reviews.yaml
   projections/
     projection.yaml
     context-lens.yaml
@@ -23,3 +24,8 @@ story-project/
 
 All `*.yaml` files currently store JSON-formatted text. This keeps the prototype deterministic and stdlib-friendly while remaining YAML 1.2 compatible.
 
+`project.yaml` 现在除了基础的 `positioning` / `storyContract`，还可维护 `commercialPositioning`，用于记录连载项目的 premise、hook、平台、更新节奏和章节字数目标。
+
+`reviews/story-reviews.yaml` currently stores both `chapterReviews` and `sceneReviews`.
+
+`outline.yaml` 的章节条目可选维护 `scenePlans`，供 `review scene --scene-index` 优先读取显式场景边界。

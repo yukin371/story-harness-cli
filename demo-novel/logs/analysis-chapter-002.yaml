@@ -1,0 +1,59 @@
+{
+  "chapterId": "chapter-002",
+  "chapterTitle": "暗影追踪",
+  "analyzedAt": "2026-04-23T00:17:41+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 23,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 11,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 2,
+      "source": "registry"
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-002::entity-lin-zhou::b14bcb1e0c",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "@{林舟}把那本账本塞进风衣内袋，离开7号仓库时，天色已经彻底亮了。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-lin-zhou",
+      "entity-shen-zhao",
+      "entity-zhao-juzhang",
+      "entity-su-qing"
+    ],
+    "activeEntityNames": [
+      "林舟",
+      "沈昭",
+      "赵局长",
+      "苏晴"
+    ]
+  }
+}

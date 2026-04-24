@@ -1,0 +1,173 @@
+{
+  "entities": [
+    {
+      "id": "entity-ailin",
+      "name": "艾琳",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "见习邮差",
+        "hook": "总想把最后一件小事送成像样的冒险"
+      },
+      "profile": {
+        "role": "主角",
+        "summary": "晨星镇快递公会的见习邮差，行动快，嘴也快，但遇到真正要负责的事反而会先逞强。"
+      },
+      "currentState": {
+        "physicalState": "刚跑完夜班，腿酸但精神很亮",
+        "emotionalState": "既紧张又兴奋，急着证明自己",
+        "locationState": "晨星镇与北风塔之间",
+        "financialState": "见习薪水"
+      },
+      "arc": {
+        "want": "独立完成一趟像样的配送",
+        "need": "学会把求助和信任也当成能力的一部分",
+        "motivation": "她不想再被当成只能跑腿的见习生，希望靠这次任务证明自己能独当一面。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "commitment",
+            "description": "主动接下星铃配送，不再等别人替她决定"
+          },
+          {
+            "chapterId": "chapter-002",
+            "type": "trust",
+            "description": "在高空夜路中承认自己需要搭档，主动邀请诺瓦一起回收星铃"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "resolution",
+            "description": "拿到龙铃员铜牌，真正完成从见习生到搭档的跨步"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-nova",
+      "name": "诺瓦",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "刚孵化的见习龙",
+        "hook": "会在紧张时打喷嚏吐出一串火花"
+      },
+      "profile": {
+        "role": "搭档",
+        "summary": "抱着银色星铃出生的幼龙，食量惊人，怕高却不想被人看出来。"
+      },
+      "currentState": {
+        "physicalState": "刚破壳不久，翅膀还不稳",
+        "emotionalState": "对世界很好奇，也有一点嘴硬式胆小",
+        "locationState": "跟着艾琳行动",
+        "financialState": ""
+      },
+      "arc": {
+        "want": "跟上艾琳，不被当成行李",
+        "need": "学会把喷火和滑翔都变成可以控制的能力",
+        "motivation": "它想被当成真正的伙伴，而不是一只会闯祸的附带包裹。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "choice",
+            "description": "跟着艾琳离开快递公会，选择这次夜奔"
+          },
+          {
+            "chapterId": "chapter-002",
+            "type": "growth",
+            "description": "在维护桥上完成第一次滑翔，证明自己不是行李"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "resolution",
+            "description": "稳定吐息点活晨钟，完成认铃"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-renn",
+      "name": "伦恩",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "钟楼维修学徒",
+        "hook": "嘴上总先吐槽一句，手上却已经开始帮忙"
+      },
+      "profile": {
+        "role": "搭档",
+        "summary": "负责晨星镇钟楼保养的维修学徒，擅长机械和临场补洞，表面懒散，做事很稳。"
+      },
+      "currentState": {
+        "physicalState": "带着一整包工具，状态稳定",
+        "emotionalState": "表面嫌麻烦，实际上已经把夜奔当成项目接下",
+        "locationState": "与艾琳同行",
+        "financialState": "学徒津贴"
+      },
+      "arc": {
+        "want": "把星铃安全挂回北风塔，别让晨钟停摆",
+        "need": "承认自己也愿意为别人多走一步",
+        "motivation": "他嘴上嫌麻烦，但其实不想看着艾琳一个人把明显超纲的任务硬扛到底。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "commitment",
+            "description": "答应临时加入夜奔，成为技术支援"
+          },
+          {
+            "chapterId": "chapter-002",
+            "type": "support",
+            "description": "破解半张通行条的节拍码，帮队伍继续上塔"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "resolution",
+            "description": "在塔顶完成主齿轮修复，把晨钟真正点活"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-mira",
+      "name": "米拉院长",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "学院院长",
+        "hook": "总把入学考和人生课包装成看似普通的委托"
+      },
+      "profile": {
+        "role": "任务发布者",
+        "summary": "晨星驯龙院的院长，擅长把年轻人的第一次冒险布置得像一次普通差事。"
+      },
+      "currentState": {
+        "physicalState": "状态稳定",
+        "emotionalState": "在暗处观察，等着看结果",
+        "locationState": "晨星镇",
+        "financialState": "稳定"
+      },
+      "arc": {
+        "want": "找到能和诺瓦互相成全的新搭档",
+        "need": "让孩子们自己完成那一步，而不是替他们安排到底",
+        "motivation": "她希望这次委托能让艾琳和诺瓦在真实压力下决定是否愿意彼此选择。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "setup",
+            "description": "以委托形式发布认铃任务，把考试藏进夜班配送"
+          },
+          {
+            "chapterId": "chapter-002",
+            "type": "observation",
+            "description": "在暗处确认三人已经真正形成配合"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "resolution",
+            "description": "公布搭档资格测试结果，正式认可艾琳和诺瓦"
+          }
+        ]
+      }
+    }
+  ],
+  "enrichmentProposals": []
+}

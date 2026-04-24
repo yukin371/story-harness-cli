@@ -1,0 +1,47 @@
+{
+  "chapterId": "chapter-001",
+  "chapterTitle": "停电夜",
+  "analyzedAt": "2026-04-23T16:16:22+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-shen-he",
+      "name": "沈禾",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-lu-chuan",
+      "name": "陆川",
+      "mentionCount": 3,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-lan",
+      "name": "沈岚",
+      "mentionCount": 1,
+      "source": "registry"
+    },
+    {
+      "id": "entity-chen-qiming",
+      "name": "陈启明",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-shen-he",
+      "entity-lu-chuan",
+      "entity-shen-lan",
+      "entity-chen-qiming"
+    ],
+    "activeEntityNames": [
+      "沈禾",
+      "陆川",
+      "沈岚",
+      "陈启明"
+    ]
+  }
+}

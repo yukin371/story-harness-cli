@@ -1,0 +1,89 @@
+{
+  "chapterId": "chapter-006",
+  "chapterTitle": "井口第四人",
+  "analyzedAt": "2026-04-24T01:44:43+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 18,
+      "source": "registry"
+    },
+    {
+      "id": "entity-xu",
+      "name": "许见薇",
+      "mentionCount": 10,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 7,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-du",
+      "name": "杜魁",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-006::entity-zhou-qian::8d03d346b9",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "轿帘被水气一点点顶开，里面坐着的正是@{许见薇}。她眼睛睁着，人却像困在半梦里，嘴唇被冷气逼得发白，膝上压着一张写满错名的婚契。那婚契边角还系着一段黑线，另一头却不在她手里，而是绕回轿底，像在等外头那个补位的人自己把最后一圈系紧。“别让它们替我签字。”她声音轻得像下一秒就会散在水汽里，却偏偏让周祈安听得很清楚。此刻的许见薇已经虚弱得像随时会被那张婚契整个人压进水里，连发抖都像被人提前算进了流程。",
+      "confidence": 0.78
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-xu::8d03d346b9",
+      "entityId": "entity-xu",
+      "entityName": "许见薇",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "轿帘被水气一点点顶开，里面坐着的正是@{许见薇}。她眼睛睁着，人却像困在半梦里，嘴唇被冷气逼得发白，膝上压着一张写满错名的婚契。那婚契边角还系着一段黑线，另一头却不在她手里，而是绕回轿底，像在等外头那个补位的人自己把最后一圈系紧。“别让它们替我签字。”她声音轻得像下一秒就会散在水汽里，却偏偏让周祈安听得很清楚。此刻的许见薇已经虚弱得像随时会被那张婚契整个人压进水里，连发抖都像被人提前算进了流程。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-zhou-qian::99ab444c04",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "他很清楚，只要这一拽慢了半息，两个人都会被重新塞回轿里，第二单元案也会在他眼前彻底失控。可越是到了这一步，@{周祈安}反而越冷静，甚至能听清纸人鞋底拖过水面的细碎响声，听清轿底那张婚契每合上一分发出的轻响，像在听一套正在运行的机器哪里最可能卡住。殡仪馆那些年练出来的流程感在这一刻反倒成了救命的东西。他不再盲目硬扛，而是专盯轿门、黑线和婚契裂口这三个点，逼自己每一步都只做最值钱的动作。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-xu",
+      "entity-bai",
+      "entity-shen",
+      "entity-du"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "许见薇",
+      "白小刀",
+      "沈观澜",
+      "杜魁"
+    ]
+  }
+}

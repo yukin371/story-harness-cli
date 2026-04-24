@@ -1,0 +1,1890 @@
+{
+  "rubricVersion": "chapter-review-v1",
+  "sceneRubricVersion": "scene-review-v1",
+  "chapterReviews": [
+    {
+      "reviewId": "chapter-review-d9e75d660d",
+      "fingerprint": "chapter-review-v1:chapter-001:10aaadc3735bf96b",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "停电夜",
+      "summary": "结合分析结果和正文信号，本章总分 70/100。当前强项在场景清晰度，最需要补强的是冲突张力。",
+      "rating": "solid",
+      "scores": {
+        "total": 70,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "这一章更像铺垫，推进信号偏弱。",
+            "signals": [
+              "状态/关系推进信号 0 处",
+              "段落 7 段",
+              "转折连接词 1 处"
+            ],
+            "suggestions": [
+              "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。"
+            ]
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 13,
+            "maxScore": 20,
+            "comment": "人物出场了，但被逼到变化的力度还不够。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 0 个",
+              "心理/压力词 1 个"
+            ],
+            "suggestions": [
+              "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。"
+            ]
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 5,
+            "maxScore": 20,
+            "comment": "冲突张力偏平，读者的追读理由还不够强。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 0 个",
+              "疑问/感叹标记 1 个"
+            ],
+            "suggestions": [
+              "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 102",
+              "长段落 0 段",
+              "对话段 3 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "weightedScores": {
+        "profile": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ]
+        },
+        "appliedWeights": {
+          "plotMomentum": 20,
+          "characterPressure": 15,
+          "conflictTension": 35,
+          "sceneClarity": 15,
+          "proseControl": 15
+        },
+        "adjustments": [],
+        "total": 60.5,
+        "maxScore": 100,
+        "rating": "workable",
+        "breakdown": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "rawScore": 12,
+            "weight": 20,
+            "contribution": 12.0
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "rawScore": 13,
+            "weight": 15,
+            "contribution": 9.75
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "rawScore": 5,
+            "weight": 35,
+            "contribution": 8.75
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          }
+        ]
+      },
+      "strengths": [
+        "场景清晰度：这一幕的镜头和焦点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [
+        "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+        "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。",
+        "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。"
+      ],
+      "textMetrics": {
+        "wordCount": 625,
+        "paragraphCount": 7,
+        "averageParagraphLength": 102,
+        "dialogueParagraphs": 3,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "沈禾",
+          "陆川",
+          "沈岚",
+          "陈启明"
+        ]
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "at-risk",
+        "matched": [],
+        "risks": [
+          "当前主类型偏悬疑/惊悚，但章节张力还不够稳定。",
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺在本章里的人物拉扯偏弱。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-017c0396f4",
+      "fingerprint": "chapter-review-v1:chapter-002:5e9d9abf856d1dd1",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "第十七号信箱",
+      "summary": "结合分析结果和正文信号，本章总分 78/100。当前强项在场景清晰度，最需要补强的是冲突张力。",
+      "rating": "solid",
+      "scores": {
+        "total": 78,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 2 处",
+              "段落 8 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 2 个",
+              "心理/压力词 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 3,
+            "maxScore": 20,
+            "comment": "冲突张力偏平，读者的追读理由还不够强。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 0 个",
+              "疑问/感叹标记 0 个"
+            ],
+            "suggestions": [
+              "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+              "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 4 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 115",
+              "长段落 0 段",
+              "对话段 4 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "weightedScores": {
+        "profile": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ]
+        },
+        "appliedWeights": {
+          "plotMomentum": 20,
+          "characterPressure": 15,
+          "conflictTension": 35,
+          "sceneClarity": 15,
+          "proseControl": 15
+        },
+        "adjustments": [],
+        "total": 65.75,
+        "maxScore": 100,
+        "rating": "workable",
+        "breakdown": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "rawScore": 17,
+            "weight": 20,
+            "contribution": 17.0
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "rawScore": 18,
+            "weight": 15,
+            "contribution": 13.5
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "rawScore": 3,
+            "weight": 35,
+            "contribution": 5.25
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [
+        "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+        "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 806,
+        "paragraphCount": 8,
+        "averageParagraphLength": 115,
+        "dialogueParagraphs": 4,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 2,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "沈禾",
+          "陆川",
+          "沈岚",
+          "陈启明"
+        ]
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已得到人物压力支撑。"
+        ],
+        "risks": [
+          "当前主类型偏悬疑/惊悚，但章节张力还不够稳定。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-6fb3f0e349",
+      "fingerprint": "chapter-review-v1:chapter-003:a5d89c6364bfdf21",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T16:16:23+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "回信人",
+      "summary": "结合分析结果和正文信号，本章总分 67/100。当前强项在场景清晰度，最需要补强的是冲突张力。",
+      "rating": "workable",
+      "scores": {
+        "total": 67,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "这一章更像铺垫，推进信号偏弱。",
+            "signals": [
+              "状态/关系推进信号 0 处",
+              "段落 8 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": [
+              "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。"
+            ]
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "人物出场了，但被逼到变化的力度还不够。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 0 个",
+              "心理/压力词 0 个"
+            ],
+            "suggestions": [
+              "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。"
+            ]
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 3,
+            "maxScore": 20,
+            "comment": "冲突张力偏平，读者的追读理由还不够强。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 0 个",
+              "疑问/感叹标记 0 个"
+            ],
+            "suggestions": [
+              "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+              "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 5 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 108",
+              "长段落 0 段",
+              "对话段 4 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "weightedScores": {
+        "profile": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ]
+        },
+        "appliedWeights": {
+          "plotMomentum": 20,
+          "characterPressure": 15,
+          "conflictTension": 35,
+          "sceneClarity": 15,
+          "proseControl": 15
+        },
+        "adjustments": [],
+        "total": 56.25,
+        "maxScore": 100,
+        "rating": "workable",
+        "breakdown": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "rawScore": 12,
+            "weight": 20,
+            "contribution": 12.0
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "rawScore": 12,
+            "weight": 15,
+            "contribution": 9.0
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "rawScore": 3,
+            "weight": 35,
+            "contribution": 5.25
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "rawScore": 20,
+            "weight": 15,
+            "contribution": 15.0
+          }
+        ]
+      },
+      "strengths": [
+        "场景清晰度：这一幕的镜头和焦点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [
+        "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+        "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。",
+        "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。",
+        "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。"
+      ],
+      "textMetrics": {
+        "wordCount": 749,
+        "paragraphCount": 8,
+        "averageParagraphLength": 108,
+        "dialogueParagraphs": 4,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "沈禾",
+          "陆川",
+          "陈启明",
+          "沈岚"
+        ]
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "at-risk",
+        "matched": [],
+        "risks": [
+          "当前主类型偏悬疑/惊悚，但章节张力还不够稳定。",
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺在本章里的人物拉扯偏弱。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    }
+  ],
+  "sceneReviews": [
+    {
+      "reviewId": "scene-review-5798c7852b",
+      "fingerprint": "scene-review-v1:chapter-001:1:4:7405673de34fd688",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "停电夜",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 62/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 62,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕更像气氛切片，功能性还不够明确。",
+            "signals": [
+              "推进/变化信号 0 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": [
+              "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+            ]
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 2 个",
+              "承接/过渡词 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 9,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 2 个",
+              "决定/变化词 0 个"
+            ],
+            "suggestions": [
+              "补清楚“为什么现在发生这件事”，避免角色像被作者硬推着走。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 7,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "补清楚“为什么现在发生这件事”，避免角色像被作者硬推着走。",
+        "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+      ],
+      "textMetrics": {
+        "wordCount": 316,
+        "paragraphCount": 4,
+        "averageParagraphLength": 90,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-ac43e1da63",
+      "fingerprint": "scene-review-v1:chapter-001:5:7:8dc42b2a2e58f0dd",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "停电夜",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 7,
+        "paragraphCount": 3,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 59/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 59,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕更像气氛切片，功能性还不够明确。",
+            "signals": [
+              "推进/变化信号 0 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": [
+              "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+            ]
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 1 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 9,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 0 个",
+              "决定/变化词 0 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。",
+        "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+      ],
+      "textMetrics": {
+        "wordCount": 306,
+        "paragraphCount": 3,
+        "averageParagraphLength": 118,
+        "tagMentions": [
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-0d37ac5b8d",
+      "fingerprint": "scene-review-v1:chapter-002:1:4:453fe00f2809fdb9",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "第十七号信箱",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 72/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 72,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 2 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 1 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+      ],
+      "textMetrics": {
+        "wordCount": 421,
+        "paragraphCount": 4,
+        "averageParagraphLength": 121,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-7ce0915311",
+      "fingerprint": "scene-review-v1:chapter-002:5:8:79450f9620f7cb8f",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "第十七号信箱",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 80/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 80,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 3 处",
+              "状态候选 2 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 1 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 379,
+        "paragraphCount": 4,
+        "averageParagraphLength": 109,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 2,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-6a096d1bcf",
+      "fingerprint": "scene-review-v1:chapter-003:1:5:74a7c44412611e34",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "回信人",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 5,
+        "paragraphCount": 5,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 76/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 76,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 2 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 2 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 4 个",
+              "动机词 1 个",
+              "决定/变化词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 8,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 519,
+        "paragraphCount": 5,
+        "averageParagraphLength": 120,
+        "tagMentions": [
+          "沈岚",
+          "沈禾",
+          "陆川",
+          "陈启明"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-996434b889",
+      "fingerprint": "scene-review-v1:chapter-003:6:8:26c5093c519f0eb7",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T16:16:22+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "回信人",
+      "sceneRange": {
+        "startParagraph": 6,
+        "endParagraph": 8,
+        "paragraphCount": 3,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 62/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 62,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 1 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 8,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 4 个",
+              "出场角色 2 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+      ],
+      "textMetrics": {
+        "wordCount": 227,
+        "paragraphCount": 3,
+        "averageParagraphLength": 89,
+        "tagMentions": [
+          "沈禾",
+          "陆川"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 2,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "short-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "小体量内稳定回收线索",
+            "悬念推进和情感回响并行"
+          ],
+          "avoidances": [
+            "无意义支线扩张"
+          ],
+          "endingContract": "真相揭开且情感闭合",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "核心承诺“悬念推进和情感回响并行”：情感/关系承诺已被这一幕的承接与反应支撑。"
+        ],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“小体量内稳定回收线索”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    }
+  ]
+}

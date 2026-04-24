@@ -1,0 +1,613 @@
+{
+  "changeRequests": [
+    {
+      "id": "cr-fdb6ef02aa",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：怀疑；紧张",
+      "evidence": "@{周祈安}一眼就认出这地方不只是仓库，因为门口出入用的不是普通卸货板车，而是殡仪馆旧线才会用的转运滑轮架，连地上车辙都比市场别处深一寸。这里平时运的不是一般香烛，而是更重、更不能见光的东西。他心里本能一紧，紧张里还掺着一点越来越压不住的怀疑: 第三单元案真正的收口点，大概率就在这道卷帘门后面，而能把这种据点在城里藏这么久的人，绝不会只靠几个灰线跑腿。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "怀疑；紧张"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "snapshot::entity-zhou-qian::怀疑；紧张",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-7ba935e0a1",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：恐惧",
+      "evidence": "她脸色没变，语气却比平时更冷：“讨香火债的人最怕账跑了，所以先记脚，后记命。进去以后别乱碰，看到编号先记，不急着抢。”@{周祈安}点了点头，把压箱簿塞进外套里侧，先按殡仪馆夜班交接的习惯看出入口、看卸货线、看二次转运痕迹。他现在越来越发现，自己在这条线上最值钱的不是胆子，而是夜班留下的流程感。别人看到这种仓只会想到邪门，他先看到的是谁负责入库、谁负责拆包、谁负责把脏东西转成能流通的货。也正因为看懂了流程，他心里的恐惧反而更重了些: 这不是一处临时躲藏点，而是一套已经跑顺了很久的生意。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "恐惧"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::恐惧",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-7cb2bf7f0b",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：愤怒；震惊",
+      "evidence": "@{周祈安}伸手从“押解”箱里抽出一张旧票条，票边角落压着一枚残印拓痕，和第一案女尸吐出来那片纸角几乎同模。他胸口一沉，愤怒里还带着一点后知后觉的震惊，这才真正确定旧城隍印从来就不是一次丢失、一处藏匿，而是被人拆成若干能挂到不同行当里的零件，再靠棺材铺、婚契、戏班、纸马这几条灰线慢慢并网。换句话说，他们前面查的不是三个分开的异案，而是一条完整收债流水线上的三个岗位。前三案每一场拼命顶下来的危险，到这里都变成了别人账本上可以拆件、可以转卖、可以并库的货。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "愤怒；震惊"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::愤怒；震惊",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-a92865ff97",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：怀疑",
+      "evidence": "她把其中三张摊开给@{沈观澜}看，手指点在签名栏下沿：“这里不是假章，章是真的，编号也是真的，假的是用途。借走的是残印和婚契，回填成了木料、纸灰和封存戏服。能把这一步做得这么顺，说明不是外面有人偷着帮忙，是里面本来就有一条能碰夜巡扣押物的手。”@{周祈安}听完只觉得后背发凉，连对着@{沈观澜}时都生出一瞬本能的怀疑。不是怀疑她本人做了手脚，而是第一次真切意识到，凡是穿官皮、碰案卷、懂流程的人，现在都可能被拖进这笔债里。前面他们一直以为是在和一群靠民俗规矩挣钱的杂碎打交道，直到现在才发现，对面最贵的东西根本不是那些邪门手艺，而是这套能把脏货洗进明面的制度通道。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::怀疑",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-518a6e367e",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 沈观澜 当前状态",
+      "summary": "检测到 沈观澜 可能进入状态：怀疑",
+      "evidence": "她把其中三张摊开给@{沈观澜}看，手指点在签名栏下沿：“这里不是假章，章是真的，编号也是真的，假的是用途。借走的是残印和婚契，回填成了木料、纸灰和封存戏服。能把这一步做得这么顺，说明不是外面有人偷着帮忙，是里面本来就有一条能碰夜巡扣押物的手。”@{周祈安}听完只觉得后背发凉，连对着@{沈观澜}时都生出一瞬本能的怀疑。不是怀疑她本人做了手脚，而是第一次真切意识到，凡是穿官皮、碰案卷、懂流程的人，现在都可能被拖进这笔债里。前面他们一直以为是在和一群靠民俗规矩挣钱的杂碎打交道，直到现在才发现，对面最贵的东西根本不是那些邪门手艺，而是这套能把脏货洗进明面的制度通道。",
+      "targetIds": [
+        "entity-shen"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-shen",
+        "entityName": "沈观澜",
+        "state": "怀疑"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-shen::怀疑",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-7ecad0a038",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：冷静；愤怒",
+      "evidence": "@{周祈安}看到账尾那一栏“待补执牌人”时，呼吸还是不由自主紧了一下。因为顾算盘在戏班后台说的根本不是威胁，而是已经写进系统里的流程。只要夜巡这边一直缺一个能真正把旧账压死的人，对面就会反过来把“执牌人”这个位置也当成一项待收货。@{沈观澜}盯着账页沉了片刻，才低声说：“周敬庵当年不是没查到，他是查到了，所以有人必须让他从案卷里消失。”这句话落地后，仓里一时间静得只剩楼板吱呀。因为他们都明白，从这一页开始，案子就不只是追谁在收债，而是追谁有权把整座城市的夜间秩序写成一笔生意。@{周祈安}心里的愤怒这时反而冷了下来，冷静到只剩一个决定: 今晚无论谁来截口，他都得把能带走的账带走，不然前面三案就会被一起洗回黑暗里。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "冷静；愤怒"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::冷静；愤怒",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-822da313fb",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 沈观澜 当前状态",
+      "summary": "检测到 沈观澜 可能进入状态：冷静；愤怒",
+      "evidence": "@{周祈安}看到账尾那一栏“待补执牌人”时，呼吸还是不由自主紧了一下。因为顾算盘在戏班后台说的根本不是威胁，而是已经写进系统里的流程。只要夜巡这边一直缺一个能真正把旧账压死的人，对面就会反过来把“执牌人”这个位置也当成一项待收货。@{沈观澜}盯着账页沉了片刻，才低声说：“周敬庵当年不是没查到，他是查到了，所以有人必须让他从案卷里消失。”这句话落地后，仓里一时间静得只剩楼板吱呀。因为他们都明白，从这一页开始，案子就不只是追谁在收债，而是追谁有权把整座城市的夜间秩序写成一笔生意。@{周祈安}心里的愤怒这时反而冷了下来，冷静到只剩一个决定: 今晚无论谁来截口，他都得把能带走的账带走，不然前面三案就会被一起洗回黑暗里。",
+      "targetIds": [
+        "entity-shen"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-shen",
+        "entityName": "沈观澜",
+        "state": "冷静；愤怒"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-shen::冷静；愤怒",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-89f0b78303",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周敬庵 当前状态",
+      "summary": "检测到 周敬庵 可能进入状态：冷静；愤怒",
+      "evidence": "@{周祈安}看到账尾那一栏“待补执牌人”时，呼吸还是不由自主紧了一下。因为顾算盘在戏班后台说的根本不是威胁，而是已经写进系统里的流程。只要夜巡这边一直缺一个能真正把旧账压死的人，对面就会反过来把“执牌人”这个位置也当成一项待收货。@{沈观澜}盯着账页沉了片刻，才低声说：“周敬庵当年不是没查到，他是查到了，所以有人必须让他从案卷里消失。”这句话落地后，仓里一时间静得只剩楼板吱呀。因为他们都明白，从这一页开始，案子就不只是追谁在收债，而是追谁有权把整座城市的夜间秩序写成一笔生意。@{周祈安}心里的愤怒这时反而冷了下来，冷静到只剩一个决定: 今晚无论谁来截口，他都得把能带走的账带走，不然前面三案就会被一起洗回黑暗里。",
+      "targetIds": [
+        "entity-father"
+      ],
+      "confidence": 0.78,
+      "suggestedPayload": {
+        "entityId": "entity-father",
+        "entityName": "周敬庵",
+        "state": "冷静；愤怒"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-father::冷静；愤怒",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-b8c785c01c",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 顾算盘 当前状态",
+      "summary": "检测到 顾算盘 可能进入状态：冷静；愤怒",
+      "evidence": "@{周祈安}看到账尾那一栏“待补执牌人”时，呼吸还是不由自主紧了一下。因为顾算盘在戏班后台说的根本不是威胁，而是已经写进系统里的流程。只要夜巡这边一直缺一个能真正把旧账压死的人，对面就会反过来把“执牌人”这个位置也当成一项待收货。@{沈观澜}盯着账页沉了片刻，才低声说：“周敬庵当年不是没查到，他是查到了，所以有人必须让他从案卷里消失。”这句话落地后，仓里一时间静得只剩楼板吱呀。因为他们都明白，从这一页开始，案子就不只是追谁在收债，而是追谁有权把整座城市的夜间秩序写成一笔生意。@{周祈安}心里的愤怒这时反而冷了下来，冷静到只剩一个决定: 今晚无论谁来截口，他都得把能带走的账带走，不然前面三案就会被一起洗回黑暗里。",
+      "targetIds": [
+        "entity-gu"
+      ],
+      "confidence": 0.78,
+      "suggestedPayload": {
+        "entityId": "entity-gu",
+        "entityName": "顾算盘",
+        "state": "冷静；愤怒"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-gu::冷静；愤怒",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-b814187c2a",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 沈观澜 当前状态",
+      "summary": "检测到 沈观澜 可能进入状态：恐惧",
+      "evidence": "他一见楼上有人，第一反应不是跑，而是直接跪了半边身子，压着嗓子喊沈队，喊自己愿意吐干净，只求换一条活路。那股怕死的恐惧几乎写在他脸上。@{白小刀}下意识去拦，@{沈观澜}却抬手示意先让他说，因为能把杜魁这种只认钱的杂碎逼成这副样子，说明他手里一定还有比残印和香灰更要命的东西。杜魁果然没再绕，开口第一句就说这仓不是他的，是“上头收香火债的人”借他名头开的，他只负责收零件、分灰线、偶尔替人跑腿灭口，连真正的账主长什么样都没见过。",
+      "targetIds": [
+        "entity-shen"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-shen",
+        "entityName": "沈观澜",
+        "state": "恐惧"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-shen::恐惧",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-73e6a423f4",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 白小刀 当前状态",
+      "summary": "检测到 白小刀 可能进入状态：恐惧",
+      "evidence": "他一见楼上有人，第一反应不是跑，而是直接跪了半边身子，压着嗓子喊沈队，喊自己愿意吐干净，只求换一条活路。那股怕死的恐惧几乎写在他脸上。@{白小刀}下意识去拦，@{沈观澜}却抬手示意先让他说，因为能把杜魁这种只认钱的杂碎逼成这副样子，说明他手里一定还有比残印和香灰更要命的东西。杜魁果然没再绕，开口第一句就说这仓不是他的，是“上头收香火债的人”借他名头开的，他只负责收零件、分灰线、偶尔替人跑腿灭口，连真正的账主长什么样都没见过。",
+      "targetIds": [
+        "entity-bai"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-bai",
+        "entityName": "白小刀",
+        "state": "恐惧"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-bai::恐惧",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-7702995b29",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 杜魁 当前状态",
+      "summary": "检测到 杜魁 可能进入状态：恐惧",
+      "evidence": "他一见楼上有人，第一反应不是跑，而是直接跪了半边身子，压着嗓子喊沈队，喊自己愿意吐干净，只求换一条活路。那股怕死的恐惧几乎写在他脸上。@{白小刀}下意识去拦，@{沈观澜}却抬手示意先让他说，因为能把杜魁这种只认钱的杂碎逼成这副样子，说明他手里一定还有比残印和香灰更要命的东西。杜魁果然没再绕，开口第一句就说这仓不是他的，是“上头收香火债的人”借他名头开的，他只负责收零件、分灰线、偶尔替人跑腿灭口，连真正的账主长什么样都没见过。",
+      "targetIds": [
+        "entity-du"
+      ],
+      "confidence": 0.78,
+      "suggestedPayload": {
+        "entityId": "entity-du",
+        "entityName": "杜魁",
+        "state": "恐惧"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-du::恐惧",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-be972abf73",
+      "chapterId": "chapter-009",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：信任",
+      "evidence": "@{周祈安}没接话，只把那张值班表重新展开，盯住最后一栏被故意抹掉的姓氏首笔。纸面被血和灰糊得发暗，唯独编号还清清楚楚，正好对应旧庙开印前夜的值守调度。他本来只想确认编号，可灰血在指腹下一蹭，那道被抹掉的首笔却露出一小截偏冷的水痕，像一个被故意遮住的“沈”字起笔。他心里猛地一沉，连呼吸都跟着发冷。那当然不够当证据，却足够把所有刚稳住的信任重新拖回危险边上。也就是说，卷一后半真正要对付的，已经不是某个藏在帘后算账的人，而是一条能披着官皮、借体制手、甚至把夜巡自己人也写进账里的线。更糟的是，对方既然今晚敢当着他们的面灭口，就说明旧庙那一夜的门，已经快要被提前打开了。那张值班表上被血灰浸出的半截“沈”笔，到底是在故意栽赃，还是在提前点名下一个要清的名字？",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "信任"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::信任",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-4f6cc1b10a",
+      "chapterId": "chapter-009",
+      "kind": "relation",
+      "severity": "high-risk",
+      "title": "更新 周祈安 与 沈观澜 的关系",
+      "summary": "检测到两者关系可能变化为：信任下降",
+      "evidence": "她把其中三张摊开给@{沈观澜}看，手指点在签名栏下沿：“这里不是假章，章是真的，编号也是真的，假的是用途。借走的是残印和婚契，回填成了木料、纸灰和封存戏服。能把这一步做得这么顺，说明不是外面有人偷着帮忙，是里面本来就有一条能碰夜巡扣押物的手。”@{周祈安}听完只觉得后背发凉，连对着@{沈观澜}时都生出一瞬本能的怀疑。不是怀疑她本人做了手脚，而是第一次真切意识到，凡是穿官皮、碰案卷、懂流程的人，现在都可能被拖进这笔债里。前面他们一直以为是在和一群靠民俗规矩挣钱的杂碎打交道，直到现在才发现，对面最贵的东西根本不是那些邪门手艺，而是这套能把脏货洗进明面的制度通道。",
+      "targetIds": [
+        "entity-zhou-qian",
+        "entity-shen"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-zhou-qian",
+        "fromName": "周祈安",
+        "toId": "entity-shen",
+        "toName": "沈观澜",
+        "label": "信任下降"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "relation::entity-zhou-qian::entity-shen::信任下降",
+      "createdAt": "2026-04-23T23:26:50+08:00",
+      "updatedAt": "2026-04-23T23:27:35+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "id": "cr-df643c025d",
+      "chapterId": "chapter-010",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：愤怒",
+      "evidence": "那一瞬间，@{周祈安}心里不是害怕，反而生出一种越想越冷的愤怒：原来在对方眼里，前面他们拼命收下来的每一场险，都不过是今晚能拿出来复用的道具。他立刻改了布置，不再跟着异象跑，而是反过来盯住“谁在运货”。河桥口、戏台背街、旧巷牌楼这三处最容易被案子拖走视线的地方，全换成两人一组，一人盯异象，一人只看地面物流痕迹；凡是看到板车、纸灰袋、旧木箱，先截物，再追人。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "愤怒"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-zhou-qian::愤怒",
+      "createdAt": "2026-04-24T00:19:13+08:00",
+      "updatedAt": "2026-04-24T00:19:40+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-24T00:19:40+08:00"
+    },
+    {
+      "id": "cr-0cd25adc58",
+      "chapterId": "chapter-012",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 白小刀 当前状态",
+      "summary": "检测到 白小刀 可能进入状态：背叛",
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "targetIds": [
+        "entity-bai"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-bai",
+        "entityName": "白小刀",
+        "state": "背叛"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "snapshot::entity-bai::背叛",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，背叛指向体制内黑手，不是白小刀当前状态"
+    },
+    {
+      "id": "cr-62256aa12a",
+      "chapterId": "chapter-012",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 顾算盘 当前状态",
+      "summary": "检测到 顾算盘 可能进入状态：背叛",
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "targetIds": [
+        "entity-gu"
+      ],
+      "confidence": 0.78,
+      "suggestedPayload": {
+        "entityId": "entity-gu",
+        "entityName": "顾算盘",
+        "state": "背叛"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "snapshot::entity-gu::背叛",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，背叛是对账线性质的描述，不是顾算盘当前状态"
+    },
+    {
+      "id": "cr-5e75a17c79",
+      "chapterId": "chapter-012",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：背叛",
+      "evidence": "@{周祈安}却在这一刻忽然笑了一下，笑意很冷，像终于把对面最想藏的东西等到了：“你错了。我现在最担得起的，就是把这份假归档当场拆给你看。”他抬手一把抽出那张写着自己名字的补位页，当着印室和耳机另一头所有人的面，将它和半部巡夜录并排拍下，“你们能伪造东门验签，能伪造到库时间，能伪造今晚的回撤令，甚至能用我爸的旧字样给我做担保，可你们伪造不了一件事: 当年删名断签的人，不是为了逃值守，是为了不让你们把整条夜巡线一起拖下去。你们今晚开的不是旧规矩，是一条靠危险、背叛和失控吃饭的账线。”",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "背叛"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "snapshot::entity-zhou-qian::背叛",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，背叛描述的是敌方流程，不是周祈安状态"
+    },
+    {
+      "id": "cr-5f80abe880",
+      "chapterId": "chapter-012",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 顾算盘 当前状态",
+      "summary": "检测到 顾算盘 可能进入状态：愤怒",
+      "evidence": "印室里最后剩下的，只有那具还披着旧夜巡长褂的补位壳和半枚被逼出原形的旧印残角。@{周祈安}盯着它们，忽然不再觉得愤怒冲头，只觉得一种很慢、很沉的冷。他终于明白自己这一卷一路追到今天，到底追的是什么。不是某一只鬼，不是某一个灰线中介，甚至不只是顾算盘那条账路，而是一套拿人命和职责做生意的流程。父亲失踪，也不是单纯被谁害没了，而是他先把自己从那套流程里砍出去，才给后来的人留下重新改写的机会。",
+      "targetIds": [
+        "entity-gu"
+      ],
+      "confidence": 0.78,
+      "suggestedPayload": {
+        "entityId": "entity-gu",
+        "entityName": "顾算盘",
+        "state": "愤怒"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "snapshot::entity-gu::愤怒",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，结尾体现的是协作与提醒，不是关系亲近升级"
+    },
+    {
+      "id": "cr-ced297f36c",
+      "chapterId": "chapter-012",
+      "kind": "snapshot",
+      "severity": "suggestion",
+      "title": "更新 周祈安 当前状态",
+      "summary": "检测到 周祈安 可能进入状态：疲惫",
+      "evidence": "他把半部巡夜录压到印台最上方，又把临牌翻了过来。铜牌背面原本空着，此刻却在旧印灰里慢慢浮出一行极淡的小字：`临牌顶岗，今夜可代执。`不是谁的声音，也不是谁的命令，更像旧城隍辖区那条早被撕得七零八落的底层规矩，在今夜终于认了一次人。@{周祈安}看着那行字，没觉得热血，只觉得疲惫从骨头缝里一起翻上来。可他手上却比任何时候都稳。因为他知道，自己终于不是被推上来的那个替补，而是能决定这条夜路今晚怎么走的人。",
+      "targetIds": [
+        "entity-zhou-qian"
+      ],
+      "confidence": 0.92,
+      "suggestedPayload": {
+        "entityId": "entity-zhou-qian",
+        "entityName": "周祈安",
+        "state": "疲惫"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "snapshot::entity-zhou-qian::疲惫",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，文本没有建立沈观澜与顾算盘的亲近关系"
+    },
+    {
+      "id": "cr-011cc06c64",
+      "chapterId": "chapter-012",
+      "kind": "relation",
+      "severity": "high-risk",
+      "title": "更新 白小刀 与 顾算盘 的关系",
+      "summary": "检测到两者关系可能变化为：裂痕",
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "targetIds": [
+        "entity-bai",
+        "entity-gu"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-bai",
+        "fromName": "白小刀",
+        "toId": "entity-gu",
+        "toName": "顾算盘",
+        "label": "裂痕"
+      },
+      "status": "ignored",
+      "projectionStatus": "ignored",
+      "fingerprint": "relation::entity-bai::entity-gu::裂痕",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "误判，文本没有建立白小刀与顾算盘的亲近关系"
+    },
+    {
+      "id": "cr-ccef49f4d2",
+      "chapterId": "chapter-012",
+      "kind": "relation",
+      "severity": "suggestion",
+      "title": "更新 沈观澜 与 白小刀 的关系",
+      "summary": "检测到两者关系可能变化为：亲近",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "targetIds": [
+        "entity-shen",
+        "entity-bai"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-shen",
+        "fromName": "沈观澜",
+        "toId": "entity-bai",
+        "toName": "白小刀",
+        "label": "亲近"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "relation::entity-shen::entity-bai::亲近",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-24T00:41:27+08:00"
+    },
+    {
+      "id": "cr-32f29aa8bb",
+      "chapterId": "chapter-012",
+      "kind": "relation",
+      "severity": "suggestion",
+      "title": "更新 沈观澜 与 顾算盘 的关系",
+      "summary": "检测到两者关系可能变化为：亲近",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "targetIds": [
+        "entity-shen",
+        "entity-gu"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-shen",
+        "fromName": "沈观澜",
+        "toId": "entity-gu",
+        "toName": "顾算盘",
+        "label": "亲近"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "relation::entity-shen::entity-gu::亲近",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-24T00:41:27+08:00"
+    },
+    {
+      "id": "cr-7b7c039fc7",
+      "chapterId": "chapter-012",
+      "kind": "relation",
+      "severity": "suggestion",
+      "title": "更新 白小刀 与 顾算盘 的关系",
+      "summary": "检测到两者关系可能变化为：亲近",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "targetIds": [
+        "entity-bai",
+        "entity-gu"
+      ],
+      "confidence": 0.84,
+      "suggestedPayload": {
+        "fromId": "entity-bai",
+        "fromName": "白小刀",
+        "toId": "entity-gu",
+        "toName": "顾算盘",
+        "label": "亲近"
+      },
+      "status": "accepted",
+      "projectionStatus": "applied",
+      "fingerprint": "relation::entity-bai::entity-gu::亲近",
+      "createdAt": "2026-04-24T00:41:11+08:00",
+      "updatedAt": "2026-04-24T00:41:27+08:00",
+      "decisionReason": "",
+      "projectionAppliedAt": "2026-04-24T00:41:27+08:00"
+    }
+  ]
+}

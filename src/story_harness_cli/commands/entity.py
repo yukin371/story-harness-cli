@@ -73,11 +73,14 @@ def command_entity_list(args) -> int:
             continue
         if args.source and entity.get("source") != args.source:
             continue
+        seed = entity.get("seed")
+        archetype = seed.get("archetype") if isinstance(seed, dict) else None
         summaries.append({
             "id": entity.get("id"),
             "name": entity.get("name"),
             "source": entity.get("source"),
-            "seed": entity.get("seed") if not isinstance(entity.get("seed"), dict) else True,
+            "seed": seed if not isinstance(seed, dict) else True,
+            "archetype": archetype,
             "status": entity.get("currentState", {}).get("status") if isinstance(entity.get("currentState"), dict) else None,
             "lastChapter": entity.get("currentState", {}).get("lastUpdatedChapter") if isinstance(entity.get("currentState"), dict) else None,
         })

@@ -1,0 +1,204 @@
+{
+  "snapshotProjections": [
+    {
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "scopeRef": "chapter-009",
+      "currentState": "信任",
+      "sourceChangeIds": [
+        "cr-be972abf73"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-shen",
+      "entityName": "沈观澜",
+      "scopeRef": "chapter-009",
+      "currentState": "恐惧",
+      "sourceChangeIds": [
+        "cr-b814187c2a"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-father",
+      "entityName": "周敬庵",
+      "scopeRef": "chapter-009",
+      "currentState": "冷静；愤怒",
+      "sourceChangeIds": [
+        "cr-89f0b78303"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-gu",
+      "entityName": "顾算盘",
+      "scopeRef": "chapter-009",
+      "currentState": "冷静；愤怒",
+      "sourceChangeIds": [
+        "cr-b8c785c01c"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "scopeRef": "chapter-009",
+      "currentState": "恐惧",
+      "sourceChangeIds": [
+        "cr-73e6a423f4"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-du",
+      "entityName": "杜魁",
+      "scopeRef": "chapter-009",
+      "currentState": "恐惧",
+      "sourceChangeIds": [
+        "cr-7702995b29"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "scopeRef": "chapter-010",
+      "currentState": "愤怒",
+      "sourceChangeIds": [
+        "cr-df643c025d"
+      ],
+      "updatedAt": "2026-04-24T00:19:40+08:00"
+    },
+    {
+      "entityId": "entity-gu",
+      "entityName": "顾算盘",
+      "scopeRef": "chapter-012",
+      "currentState": "愤怒",
+      "sourceChangeIds": [
+        "cr-5f80abe880"
+      ],
+      "updatedAt": "2026-04-24T00:41:27+08:00"
+    },
+    {
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "scopeRef": "chapter-012",
+      "currentState": "疲惫",
+      "sourceChangeIds": [
+        "cr-ced297f36c"
+      ],
+      "updatedAt": "2026-04-24T00:41:27+08:00"
+    }
+  ],
+  "relationProjections": [
+    {
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-shen",
+      "toName": "沈观澜",
+      "scopeRef": "chapter-009",
+      "label": "信任下降",
+      "sourceChangeIds": [
+        "cr-4f6cc1b10a"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "fromId": "entity-bai",
+      "fromName": "白小刀",
+      "toId": "entity-gu",
+      "toName": "顾算盘",
+      "scopeRef": "chapter-012",
+      "label": "裂痕",
+      "sourceChangeIds": [
+        "cr-011cc06c64"
+      ],
+      "updatedAt": "2026-04-24T00:41:27+08:00"
+    }
+  ],
+  "sceneScopeProjections": [
+    {
+      "chapterId": "chapter-001",
+      "activeEntityIds": [
+        "entity-zhou-qian",
+        "entity-father",
+        "entity-shen",
+        "entity-bai"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T20:09:28+08:00"
+    },
+    {
+      "chapterId": "chapter-009",
+      "activeEntityIds": [
+        "entity-zhou-qian",
+        "entity-du",
+        "entity-shen",
+        "entity-bai",
+        "entity-gu",
+        "entity-father"
+      ],
+      "sourceChangeIds": [
+        "cr-fdb6ef02aa",
+        "cr-7ba935e0a1",
+        "cr-7cb2bf7f0b",
+        "cr-a92865ff97",
+        "cr-518a6e367e",
+        "cr-7ecad0a038",
+        "cr-822da313fb",
+        "cr-89f0b78303",
+        "cr-b8c785c01c",
+        "cr-b814187c2a",
+        "cr-73e6a423f4",
+        "cr-7702995b29",
+        "cr-be972abf73",
+        "cr-4f6cc1b10a"
+      ],
+      "updatedAt": "2026-04-23T23:27:35+08:00"
+    },
+    {
+      "chapterId": "chapter-010",
+      "activeEntityIds": [
+        "entity-zhou-qian",
+        "entity-bai",
+        "entity-shen",
+        "entity-father"
+      ],
+      "sourceChangeIds": [
+        "cr-df643c025d"
+      ],
+      "updatedAt": "2026-04-24T00:19:40+08:00"
+    },
+    {
+      "chapterId": "chapter-011",
+      "activeEntityIds": [
+        "entity-zhou-qian",
+        "entity-father",
+        "entity-bai",
+        "entity-shen",
+        "entity-gu"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-24T00:30:43+08:00"
+    },
+    {
+      "chapterId": "chapter-012",
+      "activeEntityIds": [
+        "entity-zhou-qian",
+        "entity-shen",
+        "entity-bai",
+        "entity-father",
+        "entity-gu"
+      ],
+      "sourceChangeIds": [
+        "cr-5f80abe880",
+        "cr-ced297f36c",
+        "cr-011cc06c64"
+      ],
+      "updatedAt": "2026-04-24T00:41:27+08:00"
+    }
+  ],
+  "timelineProjections": [],
+  "causalityProjections": []
+}

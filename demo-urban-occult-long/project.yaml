@@ -1,0 +1,55 @@
+{
+  "title": "夜巡收煞录",
+  "genre": "奇幻",
+  "defaultMode": "driving",
+  "activeChapterId": "chapter-012",
+  "positioning": {
+    "primaryGenre": "fantasy",
+    "subGenre": "urban-occult",
+    "styleTags": [
+      "web-serial",
+      "folk-occult",
+      "career-fiction"
+    ],
+    "targetAudience": [
+      "qidian-reader",
+      "urban-fantasy-reader",
+      "folk-occult-reader"
+    ]
+  },
+  "storyContract": {
+    "corePromises": [
+      "每2到3章解决一个单元异案并抬升主线认知",
+      "职业流程必须持续制造冲突、线索和代价",
+      "每章结尾保留一个足以支撑连载追读的钩子"
+    ],
+    "avoidances": [
+      "只堆民俗设定不推动案件",
+      "主角长期被动旁观"
+    ],
+    "endingContract": "卷一完成从临时夜巡到正式执牌人的跃迁，并确认父亲失踪与旧城隍案有关",
+    "paceContract": "中快节奏"
+  },
+  "commercialPositioning": {
+    "premise": "殡仪馆夜班接运员意外继承父亲留下的城隍夜巡差事，在一座现代都市里处理民俗异案、追查旧城隍印失窃案，并一步步摸到失踪父亲留下的真相。",
+    "hookLine": "夜班接尸人抬到一具不该入库的空棺，当晚就被迫接过城隍夜巡牌，从送尸打工人变成处理都市异案的临时阴差。",
+    "hookStack": [
+      "career-entry-hook",
+      "unit-case-payoff",
+      "mainline-escalation",
+      "cliffhanger-end"
+    ],
+    "benchmarkWorks": [
+      "都市职业捉诡文",
+      "民俗单元案连载文",
+      "中式志怪成长文"
+    ],
+    "targetPlatform": "qidian",
+    "serializationModel": "网站连载型长篇，2到3章一个单元异案，单元案持续抬升旧城隍印、父亲失踪和执牌晋升三条主线。",
+    "releaseCadence": "日更两章，单章 2000 到 3200 字，章末必须留追读钩子。",
+    "chapterWordFloor": 2000,
+    "chapterWordTarget": 3000
+  },
+  "createdAt": "2026-04-23T19:50:14+08:00",
+  "updatedAt": "2026-04-24T02:01:59+08:00"
+}

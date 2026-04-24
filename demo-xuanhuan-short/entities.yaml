@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "id": "inferred::宁灼",
+      "name": "宁灼",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": {
+        "status": "在外门试锋中上升",
+        "lastUpdatedChapter": "chapter-003"
+      },
+      "profile": {},
+      "source": "inferred",
+      "registeredAt": "2026-04-23T19:00:32+08:00"
+    },
+    {
+      "id": "inferred::赵北辰",
+      "name": "赵北辰",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": {
+        "status": "仍在针对宁灼",
+        "lastUpdatedChapter": "chapter-003"
+      },
+      "profile": {},
+      "source": "inferred",
+      "registeredAt": "2026-04-23T19:00:32+08:00"
+    },
+    {
+      "id": "inferred::陆小棠",
+      "name": "陆小棠",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": {
+        "status": "继续在外门支撑宁灼",
+        "lastUpdatedChapter": "chapter-003"
+      },
+      "profile": {},
+      "source": "inferred",
+      "registeredAt": "2026-04-23T19:00:32+08:00"
+    },
+    {
+      "id": "inferred::韩执事",
+      "name": "韩执事",
+      "type": "character",
+      "aliases": [],
+      "summary": "",
+      "currentState": {
+        "status": "开始重新评估宁灼",
+        "lastUpdatedChapter": "chapter-003"
+      },
+      "profile": {},
+      "source": "inferred",
+      "registeredAt": "2026-04-23T19:00:32+08:00"
+    }
+  ],
+  "enrichmentProposals": []
+}

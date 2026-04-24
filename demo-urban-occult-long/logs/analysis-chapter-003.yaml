@@ -1,0 +1,79 @@
+{
+  "chapterId": "chapter-003",
+  "chapterTitle": "城隍借火",
+  "analyzedAt": "2026-04-24T01:13:24+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 15,
+      "source": "registry"
+    },
+    {
+      "id": "entity-du",
+      "name": "杜魁",
+      "mentionCount": 10,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 9,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 3,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-003::entity-bai::006889b577",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "@{白小刀}守在偏门，把工具袋一件件摊开，动作比白天排手术盘还细。缝尸黑线、止血夹、一次性手套、两支装了朱砂盐水的针筒，甚至连殡仪馆搬尸时用来固定指骨的小夹片都带上了。“纸人怕散架，也怕被重新缝回去。”她头也没抬，像在给一场解剖做术前交代，“待会儿真起阵，你别逞能去撞火，优先把它们的脚步拆开。能走的东西先拆节奏，不能走的再拆骨架。”她说得冷静，却也把危险说得极具体，逼得人没有一点侥幸空间。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-003::entity-zhou-qian::entity-bai::dc6adbff64",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-bai",
+      "toName": "白小刀",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "@{白小刀}趁乱从侧面切进去，黑线一抖，先把两个快扑到神台前的纸人缝死在一块。她下手快得近乎冷酷，线一过就直接勒断了纸人膝弯的承力点。@{白小刀}和@{周祈安}这一刻算是被迫联手，谁慢半拍都会让局面崩溃。她甚至头也不抬地扔过来一句，“左边第三个，胸口牌号是假的，先拆它。假的最容易借火成形。”这句话比任何安慰都有用，因为它给了周祈安一个足够具体的目标，让他知道自己此刻不是乱撞，而是在和真正懂这套流程的人配合做事。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-du",
+      "entity-shen",
+      "entity-bai",
+      "entity-father"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "杜魁",
+      "沈观澜",
+      "白小刀",
+      "周敬庵"
+    ]
+  }
+}

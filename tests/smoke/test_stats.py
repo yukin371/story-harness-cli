@@ -42,10 +42,10 @@ class StatsCommandTest(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.temp_dir, ignore_errors=True)
 
-    def _run_stats(self):
+    def _run_stats(self, *extra_args):
         buf = StringIO()
         with redirect_stdout(buf):
-            result = main(["stats", "--root", str(self.temp_dir)])
+            result = main(["stats", "--root", str(self.temp_dir), *extra_args])
         self.assertEqual(result, 0)
         return json.loads(buf.getvalue())
 
@@ -58,8 +58,22 @@ class StatsCommandTest(unittest.TestCase):
     def test_stats_word_count(self):
         data = self._run_stats()
         self.assertGreater(data["wordCount"]["total"], 0)
+        self.assertEqual(data["wordCount"]["targets"]["minimumPerChapter"], 2000)
+        self.assertEqual(data["wordCount"]["targets"]["recommendedPerChapter"], 3000)
         chapters = data["wordCount"]["byChapter"]
         self.assertTrue(any(c["chapterId"] == "chapter-001" for c in chapters))
+        chapter = next(c for c in chapters if c["chapterId"] == "chapter-001")
+        self.assertIn("status", chapter)
+        self.assertIn("missingToMinimum", chapter)
+        self.assertIn("missingToTarget", chapter)
+        self.assertEqual(chapter["status"], "below-minimum")
+
+    def test_stats_word_count_supports_custom_thresholds(self):
+        data = self._run_stats("--min-chapter-words", "10", "--target-chapter-words", "20")
+        chapter = next(c for c in data["wordCount"]["byChapter"] if c["chapterId"] == "chapter-001")
+        self.assertEqual(data["wordCount"]["targets"]["minimumPerChapter"], 10)
+        self.assertEqual(data["wordCount"]["targets"]["recommendedPerChapter"], 20)
+        self.assertEqual(chapter["status"], "meets-recommended")
 
     def test_stats_progress(self):
         data = self._run_stats()

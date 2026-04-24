@@ -1,0 +1,48 @@
+{
+  "title": "炉火照天门",
+  "genre": "玄幻",
+  "defaultMode": "driving",
+  "activeChapterId": "chapter-002",
+  "positioning": {
+    "primaryGenre": "fantasy",
+    "subGenre": "xuanhuan",
+    "styleTags": [
+      "web-serial"
+    ],
+    "targetAudience": [
+      "qidian-reader",
+      "progression-fantasy-reader"
+    ]
+  },
+  "storyContract": {
+    "corePromises": [
+      "每章都有一次境界或处境推进",
+      "压制与反压制必须给出兑现"
+    ],
+    "avoidances": [
+      "空转讲设定"
+    ],
+    "endingContract": "完成一次小型宗门危机并拿到新的晋升资格",
+    "paceContract": "快节奏"
+  },
+  "commercialPositioning": {
+    "premise": "废脉少年借炉火残篇重开修行路，在宗门压制中连破三关，夺回入内门的资格。",
+    "hookLine": "废脉弟子被押上废炉祭台，却在将死之际点燃了只有古修才会认出的那一缕真火。",
+    "hookStack": [
+      "upgrade-payoff",
+      "suppression-reversal",
+      "cliffhanger-end"
+    ],
+    "benchmarkWorks": [
+      "升级流玄幻短篇",
+      "宗门竞争成长文"
+    ],
+    "targetPlatform": "qidian",
+    "serializationModel": "每章至少一次推进，三章完成一次压制到反压制的小闭环。",
+    "releaseCadence": "日更一到两章",
+    "chapterWordFloor": 2000,
+    "chapterWordTarget": 3000
+  },
+  "createdAt": "2026-04-23T18:56:53+08:00",
+  "updatedAt": "2026-04-23T19:11:44+08:00"
+}

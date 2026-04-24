@@ -1,0 +1,267 @@
+{
+  "volumes": [
+    {
+      "id": "volume-001",
+      "title": "第一卷 炉火试锋",
+      "theme": "让一个被压在外门废炉的少年，用一次次小胜把命火烧到天门前。",
+      "chapters": [
+        {
+          "id": "chapter-001",
+          "title": "火种入骨",
+          "status": "completed",
+          "direction": "先建立压制、贫弱处境和宗门规则，再让主角拿到真正改变处境的火种。",
+          "beats": [
+            {
+              "id": "beat-c001-01",
+              "summary": "宁灼被罚去清理废炉并被扣走外门月例"
+            },
+            {
+              "id": "beat-c001-02",
+              "summary": "废炉深处出现异火余烬，引来旧阵崩裂"
+            },
+            {
+              "id": "beat-c001-03",
+              "summary": "宁灼以伤换火，把离火种压进经脉"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c001-01",
+              "title": "废炉领罚",
+              "summary": "宁灼在赤铜谷被罚守废炉，清楚看到外门弟子的压制链条和生存代价。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            },
+            {
+              "id": "scene-c001-02",
+              "title": "离火入骨",
+              "summary": "宁灼在废炉深处冒险取火，把离火种炼进体内，第一次真正拥有翻盘资本。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-002",
+          "title": "赤桥试榜",
+          "status": "completed",
+          "direction": "让主角在公开试榜里吃足压制，再靠新火和临场判断完成第一次正面反击。",
+          "beats": [
+            {
+              "id": "beat-c002-01",
+              "summary": "赵北辰当众压名，想把宁灼逐出试榜"
+            },
+            {
+              "id": "beat-c002-02",
+              "summary": "宁灼在赤桥试炼里以离火种稳住失控炉砂"
+            },
+            {
+              "id": "beat-c002-03",
+              "summary": "他拿下末位名额，也逼出赵北辰的真正敌意"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c002-01",
+              "title": "试榜压名",
+              "summary": "赵北辰在外门试榜前当众卡掉宁灼的名额，让矛盾从暗压转为明压。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            },
+            {
+              "id": "scene-c002-02",
+              "title": "赤桥反击",
+              "summary": "赤桥炉砂暴走时，宁灼靠新火反控局面，拿下试榜末位并保住自己。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-003",
+          "title": "天门一炷香",
+          "status": "completed",
+          "direction": "在宗门小危机中兑现前两章的火种、试榜和人情线，让主角拿到下一段成长资格。",
+          "beats": [
+            {
+              "id": "beat-c003-01",
+              "summary": "护山火炉失衡，外门天门只剩一炷香就会闭锁"
+            },
+            {
+              "id": "beat-c003-02",
+              "summary": "宁灼逆着火压入阵，逼赵北辰不得不配合"
+            },
+            {
+              "id": "beat-c003-03",
+              "summary": "韩执事给出晋升资格，宁灼拿到进内山的门票"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c003-01",
+              "title": "护山炉崩",
+              "summary": "护山火炉濒临炸裂，宗门秩序和外门弟子的命同时被推到边缘。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            },
+            {
+              "id": "scene-c003-02",
+              "title": "赤纹登阶",
+              "summary": "宁灼带着离火种稳住大阵，拿到进天门副试的资格，完成短篇阶段性跃迁。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T19:05:00+08:00",
+              "updatedAt": "2026-04-23T19:05:00+08:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-001",
+      "title": "火种入骨",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c001-01",
+          "summary": "宁灼被罚去清理废炉并被扣走外门月例"
+        },
+        {
+          "id": "beat-c001-02",
+          "summary": "废炉深处出现异火余烬，引来旧阵崩裂"
+        },
+        {
+          "id": "beat-c001-03",
+          "summary": "宁灼以伤换火，把离火种压进经脉"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c001-01",
+          "title": "废炉领罚",
+          "summary": "宁灼在赤铜谷被罚守废炉，清楚看到外门弟子的压制链条和生存代价。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        },
+        {
+          "id": "scene-c001-02",
+          "title": "离火入骨",
+          "summary": "宁灼在废炉深处冒险取火，把离火种炼进体内，第一次真正拥有翻盘资本。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-002",
+      "title": "赤桥试榜",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c002-01",
+          "summary": "赵北辰当众压名，想把宁灼逐出试榜"
+        },
+        {
+          "id": "beat-c002-02",
+          "summary": "宁灼在赤桥试炼里以离火种稳住失控炉砂"
+        },
+        {
+          "id": "beat-c002-03",
+          "summary": "他拿下末位名额，也逼出赵北辰的真正敌意"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c002-01",
+          "title": "试榜压名",
+          "summary": "赵北辰在外门试榜前当众卡掉宁灼的名额，让矛盾从暗压转为明压。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        },
+        {
+          "id": "scene-c002-02",
+          "title": "赤桥反击",
+          "summary": "赤桥炉砂暴走时，宁灼靠新火反控局面，拿下试榜末位并保住自己。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-003",
+      "title": "天门一炷香",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c003-01",
+          "summary": "护山火炉失衡，外门天门只剩一炷香就会闭锁"
+        },
+        {
+          "id": "beat-c003-02",
+          "summary": "宁灼逆着火压入阵，逼赵北辰不得不配合"
+        },
+        {
+          "id": "beat-c003-03",
+          "summary": "韩执事给出晋升资格，宁灼拿到进内山的门票"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c003-01",
+          "title": "护山炉崩",
+          "summary": "护山火炉濒临炸裂，宗门秩序和外门弟子的命同时被推到边缘。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        },
+        {
+          "id": "scene-c003-02",
+          "title": "赤纹登阶",
+          "summary": "宁灼带着离火种稳住大阵，拿到进天门副试的资格，完成短篇阶段性跃迁。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T19:05:00+08:00",
+          "updatedAt": "2026-04-23T19:05:00+08:00"
+        }
+      ]
+    }
+  ],
+  "chapterDirections": [
+    {
+      "chapterId": "chapter-001",
+      "title": "火种入骨",
+      "summary": "先建立压制、贫弱处境和宗门规则，再让主角拿到真正改变处境的火种。"
+    },
+    {
+      "chapterId": "chapter-002",
+      "title": "赤桥试榜",
+      "summary": "让主角在公开试榜里吃足压制，再靠新火和临场判断完成第一次正面反击。"
+    },
+    {
+      "chapterId": "chapter-003",
+      "title": "天门一炷香",
+      "summary": "在宗门小危机中兑现前两章的火种、试榜和人情线，让主角拿到下一段成长资格。"
+    }
+  ]
+}

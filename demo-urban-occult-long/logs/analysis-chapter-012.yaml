@@ -1,0 +1,167 @@
+{
+  "chapterId": "chapter-012",
+  "chapterTitle": "执牌上任",
+  "analyzedAt": "2026-04-24T00:39:54+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 20,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 8,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 7,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-gu",
+      "name": "顾算盘",
+      "mentionCount": 3,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-012::entity-bai::266c4758d7",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-012::entity-gu::266c4758d7",
+      "entityId": "entity-gu",
+      "entityName": "顾算盘",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "confidence": 0.78
+    },
+    {
+      "candidateId": "snapshot::chapter-012::entity-zhou-qian::4a4ad8abbd",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "@{周祈安}却在这一刻忽然笑了一下，笑意很冷，像终于把对面最想藏的东西等到了：“你错了。我现在最担得起的，就是把这份假归档当场拆给你看。”他抬手一把抽出那张写着自己名字的补位页，当着印室和耳机另一头所有人的面，将它和半部巡夜录并排拍下，“你们能伪造东门验签，能伪造到库时间，能伪造今晚的回撤令，甚至能用我爸的旧字样给我做担保，可你们伪造不了一件事: 当年删名断签的人，不是为了逃值守，是为了不让你们把整条夜巡线一起拖下去。你们今晚开的不是旧规矩，是一条靠危险、背叛和失控吃饭的账线。”",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-012::entity-zhou-qian::8e49718e41",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "印室里最后剩下的，只有那具还披着旧夜巡长褂的补位壳和半枚被逼出原形的旧印残角。@{周祈安}盯着它们，忽然不再觉得愤怒冲头，只觉得一种很慢、很沉的冷。他终于明白自己这一卷一路追到今天，到底追的是什么。不是某一只鬼，不是某一个灰线中介，甚至不只是顾算盘那条账路，而是一套拿人命和职责做生意的流程。父亲失踪，也不是单纯被谁害没了，而是他先把自己从那套流程里砍出去，才给后来的人留下重新改写的机会。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-012::entity-gu::8e49718e41",
+      "entityId": "entity-gu",
+      "entityName": "顾算盘",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "印室里最后剩下的，只有那具还披着旧夜巡长褂的补位壳和半枚被逼出原形的旧印残角。@{周祈安}盯着它们，忽然不再觉得愤怒冲头，只觉得一种很慢、很沉的冷。他终于明白自己这一卷一路追到今天，到底追的是什么。不是某一只鬼，不是某一个灰线中介，甚至不只是顾算盘那条账路，而是一套拿人命和职责做生意的流程。父亲失踪，也不是单纯被谁害没了，而是他先把自己从那套流程里砍出去，才给后来的人留下重新改写的机会。",
+      "confidence": 0.78
+    },
+    {
+      "candidateId": "snapshot::chapter-012::entity-zhou-qian::be2e2f97b8",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "疲惫",
+      "stateTags": [
+        "疲惫"
+      ],
+      "evidence": "他把半部巡夜录压到印台最上方，又把临牌翻了过来。铜牌背面原本空着，此刻却在旧印灰里慢慢浮出一行极淡的小字：`临牌顶岗，今夜可代执。`不是谁的声音，也不是谁的命令，更像旧城隍辖区那条早被撕得七零八落的底层规矩，在今夜终于认了一次人。@{周祈安}看着那行字，没觉得热血，只觉得疲惫从骨头缝里一起翻上来。可他手上却比任何时候都稳。因为他知道，自己终于不是被推上来的那个替补，而是能决定这条夜路今晚怎么走的人。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-012::entity-bai::entity-gu::266c4758d7",
+      "fromId": "entity-bai",
+      "fromName": "白小刀",
+      "toId": "entity-gu",
+      "toName": "顾算盘",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "@{白小刀}已经绕到印台侧面，一手捏着缝尸线，一手把那几页残账飞快翻了两遍，脸色越看越冷：“不止是补位壳，连印台边这三只灰盒都是按今晚现做的。顾算盘那条账线不只是想借旧印收尾，它想把你在卷一里追回来的每一样证物都洗成‘到库旧件’。一旦让验签簿盖满，后面就算天亮了，案卷室也能说今晚不是非法开印，而是正式夜巡收口时的正常损耗。”她顿了顿，直接把最关键那句说破，“这不是邪门，这是背叛，而且是体制内有人替它开门的背叛。”",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-012::entity-shen::entity-bai::6f7cd64413",
+      "fromId": "entity-shen",
+      "fromName": "沈观澜",
+      "toId": "entity-bai",
+      "toName": "白小刀",
+      "label": "亲近",
+      "severity": "suggestion",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-012::entity-shen::entity-gu::6f7cd64413",
+      "fromId": "entity-shen",
+      "fromName": "沈观澜",
+      "toId": "entity-gu",
+      "toName": "顾算盘",
+      "label": "亲近",
+      "severity": "suggestion",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-012::entity-bai::entity-gu::6f7cd64413",
+      "fromId": "entity-bai",
+      "fromName": "白小刀",
+      "toId": "entity-gu",
+      "toName": "顾算盘",
+      "label": "亲近",
+      "severity": "suggestion",
+      "evidence": "会议散后，@{白小刀}抱着证物箱先走，临出门时只回头丢下一句：“北关渡口那地方我不喜欢，听着就危险。你最好别以为卷一过了，下一卷就能轻松。”@{沈观澜}则把案卷室副归档权那条还没完全掀开的线压进新档盒，低声道：“顾算盘不会是最上头的人。你爸既然把路引留到北关，说明那边还有比旧城西更深的库。南明这边我先替你压着，你把牌带好，别像上一代那样把自己从名册里砍没了。”这句比命令更像提醒，也第一次不像上司对新人，而像一个真正把后背交出来的前辈。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-shen",
+      "entity-bai",
+      "entity-father",
+      "entity-gu"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "沈观澜",
+      "白小刀",
+      "周敬庵",
+      "顾算盘"
+    ]
+  }
+}

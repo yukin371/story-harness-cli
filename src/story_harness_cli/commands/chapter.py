@@ -6,7 +6,7 @@ from pathlib import Path
 from story_harness_cli.protocol import ensure_project_root, load_project_state, save_state
 from story_harness_cli.protocol.io import load_json_compatible_yaml
 from story_harness_cli.protocol.keywords import load_keywords
-from story_harness_cli.services import analyze_chapter, generate_change_requests
+from story_harness_cli.services import analyze_chapter, evaluate_chapter_outline_readiness, generate_change_requests
 from story_harness_cli.utils import now_iso
 from story_harness_cli.utils.text import set_keywords
 
@@ -60,11 +60,24 @@ def command_chapter_suggest(args) -> int:
     ensure_project_root(root)
     state = load_project_state(root)
     chapter_id = args.chapter_id or state["project"].get("activeChapterId")
+    if not chapter_id:
+        raise SystemExit("缺少 chapter id")
     analysis_path = root / "logs" / (f"analysis-{chapter_id}.yaml" if chapter_id else "latest-analysis.yaml")
     if not analysis_path.exists():
         analysis_path = root / "logs" / "latest-analysis.yaml"
     if not analysis_path.exists():
         raise SystemExit("还没有分析结果，请先运行 chapter analyze")
+
+    readiness = evaluate_chapter_outline_readiness(state, chapter_id)
+    if not readiness["ready"] and not args.allow_without_outline:
+        missing = "、".join(item["message"] for item in readiness["missing"]) or "缺少前置大纲"
+        raise SystemExit(
+            (
+                f"章节 {chapter_id} 尚未通过大纲前置检查：{missing}。"
+                f"请先运行 outline check --root {root} --chapter-id {chapter_id} 并补齐大纲；"
+                "如需跳过该门禁，请显式传入 --allow-without-outline"
+            )
+        )
 
     analysis = load_json_compatible_yaml(analysis_path, {})
     result = generate_change_requests(state, analysis)
@@ -85,5 +98,10 @@ def register_chapter_commands(subparsers) -> None:
     suggest_parser = chapter_subparsers.add_parser("suggest", help="Generate change requests from latest analysis")
     suggest_parser.add_argument("--root", required=True)
     suggest_parser.add_argument("--chapter-id")
+    suggest_parser.add_argument(
+        "--allow-without-outline",
+        action="store_true",
+        help="Skip outline-first guard for legacy or imported drafts",
+    )
     suggest_parser.set_defaults(func=command_chapter_suggest)
 

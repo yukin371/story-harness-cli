@@ -1,0 +1,144 @@
+{
+  "chapterId": "chapter-007",
+  "chapterTitle": "信任危机",
+  "analyzedAt": "2026-04-23T00:17:42+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 35,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 24,
+      "source": "registry"
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 19,
+      "source": "registry"
+    },
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 15,
+      "source": "registry"
+    },
+    {
+      "id": "inferred::赵继业",
+      "name": "赵继业",
+      "mentionCount": 6,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::苏明",
+      "name": "苏明",
+      "mentionCount": 3,
+      "source": "inferred"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-007::entity-su-qing::23c2d3ba6f",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "信任；背叛",
+      "stateTags": [
+        "信任",
+        "背叛"
+      ],
+      "evidence": "但 @{赵局长} 不会给他这个机会。芒镇岛的行动失败了，@{苏晴} 的背叛也暴露了——现在整个雾港的警察系统都在找他。他没法去警局，没法去任何公共机构，甚至没法去找任何一个曾经信任他的人。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhao-juzhang::23c2d3ba6f",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "信任；背叛",
+      "stateTags": [
+        "信任",
+        "背叛"
+      ],
+      "evidence": "但 @{赵局长} 不会给他这个机会。芒镇岛的行动失败了，@{苏晴} 的背叛也暴露了——现在整个雾港的警察系统都在找他。他没法去警局，没法去任何公共机构，甚至没法去找任何一个曾经信任他的人。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-shen-zhao::df463d1e55",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "\"@{苏晴} 把我救出来的，\"@{沈昭}的声音很虚弱，\"她在 @{赵局长} 的人赶到之前，偷偷给我松了绑。然后她跟我说，你去了芒镇岛。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-su-qing::df463d1e55",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "\"@{苏晴} 把我救出来的，\"@{沈昭}的声音很虚弱，\"她在 @{赵局长} 的人赶到之前，偷偷给我松了绑。然后她跟我说，你去了芒镇岛。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhao-juzhang::df463d1e55",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "\"@{苏晴} 把我救出来的，\"@{沈昭}的声音很虚弱，\"她在 @{赵局长} 的人赶到之前，偷偷给我松了绑。然后她跟我说，你去了芒镇岛。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-007::entity-zhao-juzhang::bcd722e05e",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "信任",
+      "stateTags": [
+        "信任"
+      ],
+      "evidence": "他需要把证据送出去——但 @{赵局长} 在找他，警察系统在找他，他无法相信任何人。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-007::entity-su-qing::entity-zhao-juzhang::23c2d3ba6f",
+      "fromId": "entity-su-qing",
+      "fromName": "苏晴",
+      "toId": "entity-zhao-juzhang",
+      "toName": "赵局长",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "但 @{赵局长} 不会给他这个机会。芒镇岛的行动失败了，@{苏晴} 的背叛也暴露了——现在整个雾港的警察系统都在找他。他没法去警局，没法去任何公共机构，甚至没法去找任何一个曾经信任他的人。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-shen-zhao",
+      "entity-zhao-juzhang",
+      "entity-su-qing",
+      "entity-lin-zhou",
+      "inferred::赵继业",
+      "inferred::苏明"
+    ],
+    "activeEntityNames": [
+      "沈昭",
+      "赵局长",
+      "苏晴",
+      "林舟",
+      "赵继业",
+      "苏明"
+    ]
+  }
+}

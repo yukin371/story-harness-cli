@@ -1,0 +1,67 @@
+{
+  "chapterId": "chapter-002",
+  "chapterTitle": "空棺敲门",
+  "analyzedAt": "2026-04-24T01:03:14+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 13,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 10,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-du",
+      "name": "杜魁",
+      "mentionCount": 3,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-002::entity-bai::f3e36d0f34",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "他们把女尸暂时送进巷尾一间废弃香烛铺。门一关上，屋里立刻只剩纸灰、潮木和陈年供油的味道。@{白小刀}拆开塑封手套，把黑布一角掀到灯下，动作还是白天做勘验时那种冷静，“脚踝的旧伤和这颗棺钉的型号一致，都是老式压煞钉。再看这层香灰，里头掺了殡仪馆焚化炉的细灰，不是外行能顺手凑出来的东西。”",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-shen",
+      "entity-father",
+      "entity-bai",
+      "entity-du"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "沈观澜",
+      "周敬庵",
+      "白小刀",
+      "杜魁"
+    ]
+  }
+}

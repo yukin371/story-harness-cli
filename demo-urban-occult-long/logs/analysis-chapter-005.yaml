@@ -1,0 +1,89 @@
+{
+  "chapterId": "chapter-005",
+  "chapterTitle": "河灯招魂",
+  "analyzedAt": "2026-04-24T01:37:29+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 14,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-xu",
+      "name": "许见薇",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-005::entity-zhou-qian::1c5d88d750",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "@{周祈安}盯着那个只剩半边的“周”字，掌心旧红痕又热了一下。他本来还抱着一丝侥幸，觉得对方可能只是顺着父亲旧案抓人来逼他们露面，可现在婚书上连姓都提前留好了，事情便再清楚不过: 对方一开始找的就不是哪个合适的替身，而是一个姓周、能替周家旧债补上最后一手的人。想到这里，他反而比在井口时更冷静，因为真正的危险已经不再藏着掖着，而是开始按流程写进文书里。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-zhou-qian::48c50aad58",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "运河最亮的那盏灯在他们身后无声熄灭，只剩灯芯里那一点焦黑的线头像没说完的话。三人转身离开旧仓时，桥洞外的回水已经明显开始倒灌，像在替井口提前铺路。@{周祈安}知道，等子时一到，他们面对的就不会再是“会不会被点名”，而是“要不要亲手把自己放进那个位置里”。而旧井口等着他的，也许不只是@{许见薇}和那顶红轿，更可能是父亲很多年前就没来得及走完的那一步。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-005::entity-xu::48c50aad58",
+      "entityId": "entity-xu",
+      "entityName": "许见薇",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "运河最亮的那盏灯在他们身后无声熄灭，只剩灯芯里那一点焦黑的线头像没说完的话。三人转身离开旧仓时，桥洞外的回水已经明显开始倒灌，像在替井口提前铺路。@{周祈安}知道，等子时一到，他们面对的就不会再是“会不会被点名”，而是“要不要亲手把自己放进那个位置里”。而旧井口等着他的，也许不只是@{许见薇}和那顶红轿，更可能是父亲很多年前就没来得及走完的那一步。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-shen",
+      "entity-bai",
+      "entity-xu",
+      "entity-father"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "沈观澜",
+      "白小刀",
+      "许见薇",
+      "周敬庵"
+    ]
+  }
+}

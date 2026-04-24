@@ -1,0 +1,78 @@
+{
+  "chapterId": "chapter-011",
+  "chapterTitle": "旧庙开印",
+  "analyzedAt": "2026-04-24T00:29:44+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 13,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-gu",
+      "name": "顾算盘",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-011::entity-zhou-qian::9a8df0cc9e",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "这句话像一根钉子，直接把@{周祈安}脑子里所有乱响的怀疑钉成了一条线。前面几案回流、假调拨单、案卷封蜡、真签牌，全都不是为了吓人，是为了把旧城隍的“开印”重新做回一套能验签、能转运、能对账的流程。换句话说，对面今晚想开的根本不是一扇庙门，而是一条能继续收债、随时会把整片封街拖进失控的业务线。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-011::entity-bai::dbc90ab099",
+      "entityId": "entity-bai",
+      "entityName": "白小刀",
+      "proposedState": "恐惧",
+      "stateTags": [
+        "恐惧"
+      ],
+      "evidence": "“它们不是守门的，是替流程占位的壳。”@{白小刀}踢开脚边木牌，眼里那点困倦彻底没了，“谁把流程写完整，谁就能拿这些壳去填人位。今晚要是让对面把补位序拿走，临牌、协勤、甚至外圈还在值守的人，都会被它按成该补的空缺。”她这话说得太明白，明白到连恐惧都变得具体起来。原来所谓开印夜最狠的地方，从来不是突然冒出来多凶的邪门，而是有人能把活人一格格填进既定岗位，让你自己替它把整套脏流程跑完。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-father",
+      "entity-bai",
+      "entity-shen",
+      "entity-gu"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "周敬庵",
+      "白小刀",
+      "沈观澜",
+      "顾算盘"
+    ]
+  }
+}

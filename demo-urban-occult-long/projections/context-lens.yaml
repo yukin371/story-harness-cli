@@ -1,0 +1,366 @@
+{
+  "currentChapterId": "chapter-012",
+  "lenses": [
+    {
+      "chapterId": "chapter-001",
+      "chapterTitle": "夜班接尸",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": {
+            "physicalState": "长期夜班，疲惫但耐熬",
+            "emotionalState": "嘴上冷淡，心里一直没放下父亲失踪这笔旧账",
+            "locationState": "南明市安宁殡仪馆与旧城隍辖区之间",
+            "financialState": "靠夜班工资勉强维持生活"
+          }
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": {
+            "physicalState": "下落不明",
+            "emotionalState": "未知",
+            "locationState": "未知",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": {
+            "physicalState": "状态稳定，常年夜巡留下轻微旧伤",
+            "emotionalState": "表面冷静克制，实际一直在压旧案风险",
+            "locationState": "负责南明市旧城隍辖区",
+            "financialState": "编制内稳定"
+          }
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": {
+            "physicalState": "常年熬夜，精神稳定",
+            "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+            "locationState": "殡仪馆、案发现场和民俗事务科之间",
+            "financialState": "编外薪资"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T19:58:04+08:00"
+    },
+    {
+      "chapterId": "chapter-004",
+      "chapterTitle": "雨夜抬轿",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "entity-zhou-qian",
+          "currentState": ""
+        },
+        {
+          "id": "entity-shen",
+          "name": "entity-shen",
+          "currentState": ""
+        },
+        {
+          "id": "entity-father",
+          "name": "entity-father",
+          "currentState": ""
+        },
+        {
+          "id": "entity-bai",
+          "name": "entity-bai",
+          "currentState": ""
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T20:09:07+08:00"
+    },
+    {
+      "chapterId": "chapter-008",
+      "chapterTitle": "chapter-008",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": {
+            "physicalState": "长期夜班，疲惫但耐熬",
+            "emotionalState": "对父亲旧案既怀疑又放不下，接案后逐渐从被动转向主动",
+            "locationState": "南明市旧城隍辖区",
+            "financialState": "靠夜班工资勉强维持生活"
+          }
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": {
+            "physicalState": "常年熬夜，精神稳定",
+            "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+            "locationState": "殡仪馆、案发现场和民俗事务科之间",
+            "financialState": "编外薪资"
+          }
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": {
+            "physicalState": "状态稳定，常年夜巡留下旧伤",
+            "emotionalState": "表面冷静，实际一直在压旧案风险",
+            "locationState": "负责南明市旧城隍辖区",
+            "financialState": "编制内稳定"
+          }
+        },
+        {
+          "id": "entity-gu",
+          "name": "顾算盘",
+          "currentState": {
+            "physicalState": "未知",
+            "emotionalState": "冷静、精算、几乎不留个人痕迹",
+            "locationState": "常以代声、代签和代理人形式出现",
+            "financialState": "灰色账目核心获利者"
+          }
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": {
+            "physicalState": "下落不明",
+            "emotionalState": "未知",
+            "locationState": "未知",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-du",
+          "name": "杜魁",
+          "currentState": {
+            "physicalState": "行动灵活，常年沾香灰纸屑",
+            "emotionalState": "贪婪、谨慎、怕死",
+            "locationState": "游走在棺材铺、旧庙和灰色承包线之间",
+            "financialState": "灰色收入丰厚"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T20:31:03+08:00"
+    },
+    {
+      "chapterId": "chapter-009",
+      "chapterTitle": "香火债主",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": "信任"
+        },
+        {
+          "id": "entity-du",
+          "name": "杜魁",
+          "currentState": "恐惧"
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": "恐惧"
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": "恐惧"
+        },
+        {
+          "id": "entity-gu",
+          "name": "顾算盘",
+          "currentState": "冷静；愤怒"
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": "冷静；愤怒"
+        }
+      ],
+      "activeRelations": [
+        {
+          "fromId": "entity-zhou-qian",
+          "fromName": "周祈安",
+          "toId": "entity-shen",
+          "toName": "沈观澜",
+          "label": "信任下降"
+        }
+      ],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T23:27:54+08:00"
+    },
+    {
+      "chapterId": "chapter-010",
+      "chapterTitle": "封街夜巡",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": "愤怒"
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": {
+            "physicalState": "常年熬夜，精神稳定",
+            "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+            "locationState": "殡仪馆、案发现场和民俗事务科之间",
+            "financialState": "编外薪资"
+          }
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": {
+            "physicalState": "状态稳定，常年夜巡留下旧伤",
+            "emotionalState": "表面冷静，实际一直在压旧案风险",
+            "locationState": "负责南明市旧城隍辖区",
+            "financialState": "编制内稳定"
+          }
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": {
+            "physicalState": "下落不明",
+            "emotionalState": "未知",
+            "locationState": "未知",
+            "financialState": ""
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-24T00:19:53+08:00"
+    },
+    {
+      "chapterId": "chapter-011",
+      "chapterTitle": "旧庙开印",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": {
+            "physicalState": "长期夜班，疲惫但耐熬",
+            "emotionalState": "对父亲旧案既怀疑又放不下，接案后逐渐从被动转向主动",
+            "locationState": "南明市旧城隍辖区",
+            "financialState": "靠夜班工资勉强维持生活"
+          }
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": {
+            "physicalState": "下落不明",
+            "emotionalState": "未知",
+            "locationState": "未知",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": {
+            "physicalState": "常年熬夜，精神稳定",
+            "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+            "locationState": "殡仪馆、案发现场和民俗事务科之间",
+            "financialState": "编外薪资"
+          }
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": {
+            "physicalState": "状态稳定，常年夜巡留下旧伤",
+            "emotionalState": "表面冷静，实际一直在压旧案风险",
+            "locationState": "负责南明市旧城隍辖区",
+            "financialState": "编制内稳定"
+          }
+        },
+        {
+          "id": "entity-gu",
+          "name": "顾算盘",
+          "currentState": {
+            "physicalState": "未知",
+            "emotionalState": "冷静、精算、几乎不留个人痕迹",
+            "locationState": "常以代声、代签和代理人形式出现",
+            "financialState": "灰色账目核心获利者"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-24T00:30:51+08:00"
+    },
+    {
+      "chapterId": "chapter-012",
+      "chapterTitle": "执牌上任",
+      "activeCharacters": [
+        {
+          "id": "entity-zhou-qian",
+          "name": "周祈安",
+          "currentState": "疲惫"
+        },
+        {
+          "id": "entity-shen",
+          "name": "沈观澜",
+          "currentState": {
+            "physicalState": "状态稳定，常年夜巡留下旧伤",
+            "emotionalState": "表面冷静，实际一直在压旧案风险",
+            "locationState": "负责南明市旧城隍辖区",
+            "financialState": "编制内稳定"
+          }
+        },
+        {
+          "id": "entity-bai",
+          "name": "白小刀",
+          "currentState": {
+            "physicalState": "常年熬夜，精神稳定",
+            "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+            "locationState": "殡仪馆、案发现场和民俗事务科之间",
+            "financialState": "编外薪资"
+          }
+        },
+        {
+          "id": "entity-father",
+          "name": "周敬庵",
+          "currentState": {
+            "physicalState": "下落不明",
+            "emotionalState": "未知",
+            "locationState": "未知",
+            "financialState": ""
+          }
+        },
+        {
+          "id": "entity-gu",
+          "name": "顾算盘",
+          "currentState": "愤怒"
+        }
+      ],
+      "activeRelations": [
+        {
+          "fromId": "entity-bai",
+          "fromName": "白小刀",
+          "toId": "entity-gu",
+          "toName": "顾算盘",
+          "label": "裂痕"
+        }
+      ],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-24T00:43:35+08:00"
+    }
+  ]
+}

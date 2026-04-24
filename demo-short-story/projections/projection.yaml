@@ -1,0 +1,19 @@
+{
+  "snapshotProjections": [],
+  "relationProjections": [],
+  "sceneScopeProjections": [
+    {
+      "chapterId": "chapter-001",
+      "activeEntityIds": [
+        "entity-shen-he",
+        "entity-lu-chuan",
+        "entity-shen-lan",
+        "entity-chen-qiming"
+      ],
+      "sourceChangeIds": [],
+      "updatedAt": "2026-04-23T16:06:43+08:00"
+    }
+  ],
+  "timelineProjections": [],
+  "causalityProjections": []
+}

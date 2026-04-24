@@ -1,0 +1,181 @@
+{
+  "chapterId": "chapter-006",
+  "chapterTitle": "暗流涌动",
+  "analyzedAt": "2026-04-23T00:17:42+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 30,
+      "source": "registry"
+    },
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 25,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 16,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 15,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-006::entity-lin-zhou::9126c050fa",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "@{林舟}把文件收好，正准备离开，口袋里的手机突然震动起来。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-shen-zhao::1c2575f68f",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "\"还活着，\"@{沈昭}的声音很虚弱，像是在很远的地方说话，\"但情况不太好。@{赵局长}的人抓到了我，现在在一个废弃的工业区……\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-zhao-juzhang::1c2575f68f",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "虚弱",
+      "stateTags": [
+        "虚弱"
+      ],
+      "evidence": "\"还活着，\"@{沈昭}的声音很虚弱，像是在很远的地方说话，\"但情况不太好。@{赵局长}的人抓到了我，现在在一个废弃的工业区……\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-lin-zhou::a04cb7fd0b",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "@{林舟}快速离开图书馆，在街角找到了一辆共享单车。他骑上车，朝着码头的方向狂奔，同时在脑子里飞速计算着时间。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-shen-zhao::2bb05dfffc",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-su-qing::2bb05dfffc",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-zhao-juzhang::2bb05dfffc",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-su-qing::574b54a782",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "\"半小时左右，\"@{苏晴}说，\"我在海边留了一艘快艇，你可以用它离开。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-006::entity-zhao-juzhang::d06523d947",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "\"我留下来拖延时间，\"她说，\"@{赵局长} 不知道我已经背叛了他。我可以说是你威胁我来的。\"",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-006::entity-shen-zhao::entity-su-qing::2bb05dfffc",
+      "fromId": "entity-shen-zhao",
+      "fromName": "沈昭",
+      "toId": "entity-su-qing",
+      "toName": "苏晴",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-006::entity-shen-zhao::entity-zhao-juzhang::2bb05dfffc",
+      "fromId": "entity-shen-zhao",
+      "fromName": "沈昭",
+      "toId": "entity-zhao-juzhang",
+      "toName": "赵局长",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-006::entity-su-qing::entity-zhao-juzhang::2bb05dfffc",
+      "fromId": "entity-su-qing",
+      "fromName": "苏晴",
+      "toId": "entity-zhao-juzhang",
+      "toName": "赵局长",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "就像 @{沈昭} 说的那样——有些事情，比你想象的要深得多。@{苏晴} 在这个局里待了三年，她知道的比任何人都多。如果她真的想背叛 @{赵局长}，她早就有机会了，为什么要等到现在？",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-su-qing",
+      "entity-lin-zhou",
+      "entity-zhao-juzhang",
+      "entity-shen-zhao"
+    ],
+    "activeEntityNames": [
+      "苏晴",
+      "林舟",
+      "赵局长",
+      "沈昭"
+    ]
+  }
+}

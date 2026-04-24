@@ -1,0 +1,59 @@
+{
+  "chapterId": "chapter-003",
+  "chapterTitle": "天门一炷香",
+  "analyzedAt": "2026-04-23T19:08:26+08:00",
+  "activeEntities": [
+    {
+      "id": "inferred::赵北辰",
+      "name": "赵北辰",
+      "mentionCount": 3,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::陆小棠",
+      "name": "陆小棠",
+      "mentionCount": 2,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::韩执事",
+      "name": "韩执事",
+      "mentionCount": 2,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::宁灼",
+      "name": "宁灼",
+      "mentionCount": 1,
+      "source": "inferred"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-003::inferred::赵北辰::39dd52c632",
+      "entityId": "inferred::赵北辰",
+      "entityName": "赵北辰",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "@{赵北辰}带着自己那一脉的人先试了一次，只走到第二道火纹就被逼退，袖口都烧出一条黑口子。他回头看见宁灼时，眼里那点压不住的愤怒和恼意几乎要溢出来，却又不得不承认，如今整个外门最能贴近炉心的人，除了他自己，就只剩昨夜才在赤桥上露过锋芒的宁灼。赵北辰咬着牙说，若宁灼进去后也压不住火脉，今天谁都别想活着下山。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "inferred::赵北辰",
+      "inferred::陆小棠",
+      "inferred::韩执事",
+      "inferred::宁灼"
+    ],
+    "activeEntityNames": [
+      "赵北辰",
+      "陆小棠",
+      "韩执事",
+      "宁灼"
+    ]
+  }
+}

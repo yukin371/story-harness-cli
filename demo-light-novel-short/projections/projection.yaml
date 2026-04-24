@@ -1,0 +1,59 @@
+{
+  "snapshotProjections": [
+    {
+      "entityId": "entity-ailin",
+      "entityName": "艾琳",
+      "scopeRef": "chapter-001",
+      "currentState": "怀疑",
+      "sourceChangeIds": [
+        "cr-5a5b832089"
+      ],
+      "updatedAt": "2026-04-23T17:51:06+08:00"
+    },
+    {
+      "entityId": "entity-renn",
+      "entityName": "伦恩",
+      "scopeRef": "chapter-001",
+      "currentState": "怀疑",
+      "sourceChangeIds": [
+        "cr-25da5cbbc2"
+      ],
+      "updatedAt": "2026-04-23T17:51:06+08:00"
+    }
+  ],
+  "relationProjections": [
+    {
+      "fromId": "entity-ailin",
+      "fromName": "艾琳",
+      "toId": "entity-renn",
+      "toName": "伦恩",
+      "scopeRef": "chapter-001",
+      "label": "信任下降",
+      "sourceChangeIds": [
+        "cr-42124637fc"
+      ],
+      "updatedAt": "2026-04-23T17:51:06+08:00"
+    }
+  ],
+  "sceneScopeProjections": [
+    {
+      "chapterId": "chapter-001",
+      "activeEntityIds": [
+        "entity-ailin",
+        "entity-renn",
+        "entity-mira",
+        "entity-nova"
+      ],
+      "sourceChangeIds": [
+        "cr-d4d93a1129",
+        "cr-06e732d786",
+        "cr-5a5b832089",
+        "cr-25da5cbbc2",
+        "cr-42124637fc"
+      ],
+      "updatedAt": "2026-04-23T17:51:06+08:00"
+    }
+  ],
+  "timelineProjections": [],
+  "causalityProjections": []
+}

@@ -1,0 +1,294 @@
+{
+  "entities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "殡仪馆夜班接运员",
+        "hook": "本来只想把夜班工资熬到发薪日，却被父亲留下的夜巡债硬拽进旧城隍体系"
+      },
+      "profile": {
+        "role": "主角",
+        "summary": "南明市安宁殡仪馆的夜班接运员，熟悉冷柜、接运、交接单和夜间规矩。父亲周敬庵失踪后，他一直靠夜班工资勉强撑住生活，直到第一具会喊他名字的尸体把他拉进夜巡这条线。"
+      },
+      "currentState": {
+        "physicalState": "长期夜班，疲惫但耐熬",
+        "emotionalState": "对父亲旧案既怀疑又放不下，接案后逐渐从被动转向主动",
+        "locationState": "南明市旧城隍辖区",
+        "financialState": "靠夜班工资勉强维持生活"
+      },
+      "arc": {
+        "want": "查明父亲失踪真相，并决定自己是否要接下夜巡这份差事",
+        "need": "承认自己已经站到城市夜间秩序的责任线上，不能再只当旁观者",
+        "motivation": "他原本只想活得别太狼狈，但旧城隍印、婚契税号和父亲留下的夜路逼着他明白，继续装作无关只会让更多人替上一代还债。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "inciting-incident",
+            "description": "女尸在冷柜前喊出周敬庵的名字，周祈安第一次被旧城隍案正面点名。"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "promotion",
+            "description": "完成第一单元案后，拿到临时夜巡牌。"
+          },
+          {
+            "chapterId": "chapter-006",
+            "type": "agency",
+            "description": "在井口第四人案里主动补位下井，不再只被案子推着走。"
+          },
+          {
+            "chapterId": "chapter-012",
+            "type": "resolution",
+            "description": "卷一结尾正式执牌，确认自己会继续追周敬庵留下的后续地址。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "民俗事务科夜巡负责人",
+        "hook": "说话像在签工作流，真正出事时却永远是第一个往前站的人"
+      },
+      "profile": {
+        "role": "导师 / 上司",
+        "summary": "南明市民俗事务科夜巡负责人，熟悉旧城隍辖区的规则、漏洞和体制内遮掩过的旧账。她处理案件像排流程，对周敬庵当年的事故知道得比她愿意承认的更多。"
+      },
+      "currentState": {
+        "physicalState": "状态稳定，常年夜巡留下旧伤",
+        "emotionalState": "表面冷静，实际一直在压旧案风险",
+        "locationState": "负责南明市旧城隍辖区",
+        "financialState": "编制内稳定"
+      },
+      "arc": {
+        "want": "在不引爆旧城隍旧账的前提下守住整座城市的夜间秩序",
+        "need": "接受周祈安不是需要被保护的遗属，而是真能接得住夜巡牌的人",
+        "motivation": "她见过上一代夜巡人如何被事故和体制一起吞掉，因此既想保护周祈安，又不能阻止他继续往下查。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "recruitment",
+            "description": "在殡仪馆第一次向周祈安揭示夜巡体系。"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "authorization",
+            "description": "推动周祈安拿到临时夜巡牌。"
+          },
+          {
+            "chapterId": "chapter-010",
+            "type": "pressure",
+            "description": "被调离一线，迫使周祈安独立承担整片街区的夜巡责任。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "缝尸学徒兼现场勘验员",
+        "hook": "拿缝尸针像拿手术刀，话不多，但每次开口都能把案子往前拨一截"
+      },
+      "profile": {
+        "role": "搭档",
+        "summary": "民俗事务科的年轻缝尸学徒，负责遗体勘验、符线缝合和现场痕迹拆解。她看起来总像刚睡醒，真正碰到尸口和线头时比谁都稳。"
+      },
+      "currentState": {
+        "physicalState": "常年熬夜，精神稳定",
+        "emotionalState": "对主角先观察再接纳，对案子比对人更直接",
+        "locationState": "殡仪馆、案发现场和民俗事务科之间",
+        "financialState": "编外薪资"
+      },
+      "arc": {
+        "want": "把每具异常遗体背后的真相缝回去，不让他们只剩处理编号",
+        "need": "学会把对真相的执念和对活人的信任放到同一条线上",
+        "motivation": "她不相信任何没有证据的解释，因此比任何人都在乎周祈安身上的证据究竟来自血缘、记忆还是案子本身。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "introduction",
+            "description": "在冷柜前指出女尸身上的压煞钉痕并提醒周祈安别硬碰。"
+          },
+          {
+            "chapterId": "chapter-002",
+            "type": "trust",
+            "description": "与周祈安合作拆出杜魁的棺材铺线索。"
+          },
+          {
+            "chapterId": "chapter-006",
+            "type": "breakthrough",
+            "description": "在井口第四人案中找出婚煞规则被改写的证据。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-du",
+      "name": "杜魁",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "殡葬承包人 / 黑灰中介",
+        "hook": "把民俗规矩当成生意来做，哪边能挣钱就替哪边收命"
+      },
+      "profile": {
+        "role": "前期单元反派",
+        "summary": "承包南明市多条灰色殡葬线路的中间人，熟悉棺材、香灰、纸扎和假账，靠替更高层的人跑腿换取生意地盘。他知道周敬庵留下的旧案痕迹，却不掌握整盘棋。"
+      },
+      "currentState": {
+        "physicalState": "行动灵活，常年沾香灰纸屑",
+        "emotionalState": "贪婪、谨慎、怕死",
+        "locationState": "游走在棺材铺、旧庙和灰色承包线之间",
+        "financialState": "灰色收入丰厚"
+      },
+      "arc": {
+        "want": "在不被灭口的前提下把旧城隍印残件的生意做大",
+        "need": "无成长线，只承担把案件推向更高操盘层的功能",
+        "motivation": "他不信城隍，也不信规矩，只信残印、婚契和香火债带来的钱与保护。",
+        "milestones": [
+          {
+            "chapterId": "chapter-002",
+            "type": "reveal",
+            "description": "作为空棺案背后的具体执行人被锁定。"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "defeat",
+            "description": "在废庙借火案中败退，吐出周敬庵可能仍活着的情报。"
+          },
+          {
+            "chapterId": "chapter-009",
+            "type": "elimination",
+            "description": "被更高层灭口，反过来证明真正的敌人已经浮到台前。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "失踪的前代夜巡人",
+        "hook": "表面是失踪父亲，实际是整部书最早埋下的未结责任"
+      },
+      "profile": {
+        "role": "主线缺席核心",
+        "summary": "周祈安的父亲，旧城隍辖区上一代夜巡人。多年前在一次开印事故后失踪，只留下一枚没能上交的旧铜铃和半截巡夜记录。"
+      },
+      "currentState": {
+        "physicalState": "下落不明",
+        "emotionalState": "未知",
+        "locationState": "未知",
+        "financialState": ""
+      },
+      "arc": {
+        "want": "TBD",
+        "need": "TBD",
+        "motivation": "他是卷一到卷多的持续钩子，现阶段只确认他当年主动截断过一次旧庙开印。",
+        "milestones": [
+          {
+            "chapterId": "chapter-001",
+            "type": "echo",
+            "description": "被女尸点名，重新进入主角视野。"
+          },
+          {
+            "chapterId": "chapter-003",
+            "type": "hint",
+            "description": "杜魁暗示他可能还活着。"
+          },
+          {
+            "chapterId": "chapter-011",
+            "type": "partial-reveal",
+            "description": "旧庙地下的半部巡夜录说明他不是单纯失踪，而是主动截断事故后消失。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-xu",
+      "name": "许见薇",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "夜班护士 / 第二单元案幸存者",
+        "hook": "原本只是被借走的一名普通护士，却意外握着雨轿案最关键的一段口供"
+      },
+      "profile": {
+        "role": "单元关键证人",
+        "summary": "城西医院的夜班护士，在雨轿借道案中被拖入婚煞流程。她看似只是受害者，实际上在被抬走前已经接触过旧井名册和一页被调包的巡夜抄本。"
+      },
+      "currentState": {
+        "physicalState": "从雨轿案中脱身后虚弱失眠",
+        "emotionalState": "惊惧未消，但愿意配合夜巡提供细节",
+        "locationState": "城西医院与民俗事务科保护点之间",
+        "financialState": "普通工薪"
+      },
+      "arc": {
+        "want": "活下来并弄清自己为什么会被婚煞点名",
+        "need": "从被动受害者转为能提供关键证词的人",
+        "motivation": "她本不属于这条线，却因为一页错名婚册看到了别人不该看到的东西。",
+        "milestones": [
+          {
+            "chapterId": "chapter-004",
+            "type": "abduction",
+            "description": "被红轿从医院门口带走，成为第二单元案核心受害者。"
+          },
+          {
+            "chapterId": "chapter-006",
+            "type": "rescue",
+            "description": "从井下送亲场脱身，留下关键口供。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity-gu",
+      "name": "顾算盘",
+      "type": "character",
+      "source": "seed",
+      "seed": {
+        "archetype": "香火债主代理人 / 中层操盘手",
+        "hook": "从不正面露面，只通过账页、票簿和收债话术把人命折成可流转的数字"
+      },
+      "profile": {
+        "role": "中层反派",
+        "summary": "隐藏在多条灰色民俗生意背后的代理人，负责把旧城隍印残件、婚契税页和借寿票簿串成一套收债系统。杜魁替他跑腿，戏班和纸马只是他递账的不同渠道。"
+      },
+      "currentState": {
+        "physicalState": "未知",
+        "emotionalState": "冷静、精算、几乎不留个人痕迹",
+        "locationState": "常以代声、代签和代理人形式出现",
+        "financialState": "灰色账目核心获利者"
+      },
+      "arc": {
+        "want": "把旧城隍旧账彻底商业化，并借体制漏洞让收债系统重新运转",
+        "need": "无成长线，承担把主线从执行层抬到制度层的功能",
+        "motivation": "他相信一切香火、寿数与夜路都可以折现成账，真正值钱的不是规矩，而是掌握规矩的人。",
+        "milestones": [
+          {
+            "chapterId": "chapter-008",
+            "type": "voice-reveal",
+            "description": "第一次以声音和行话在戏班幕后出现。"
+          },
+          {
+            "chapterId": "chapter-009",
+            "type": "system-reveal",
+            "description": "通过收债据点证明自己不是单个反派，而是一套生意的代理人。"
+          }
+        ]
+      }
+    }
+  ],
+  "enrichmentProposals": []
+}

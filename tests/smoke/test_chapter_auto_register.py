@@ -105,6 +105,38 @@ class ChapterAutoRegisterTest(unittest.TestCase):
         finally:
             shutil.rmtree(tmp2, ignore_errors=True)
 
+    def test_alias_matched_entity_does_not_create_inferred_duplicate(self):
+        """Alias hit should resolve to existing entity instead of registering a duplicate inferred one."""
+        seed_entities = {
+            "entities": [
+                {
+                    "id": "char-zhao",
+                    "name": "赵局长",
+                    "type": "character",
+                    "aliases": ["赵继明"],
+                    "seed": {"archetype": "幕后黑手"},
+                    "source": "seed",
+                }
+            ],
+            "enrichmentProposals": [],
+        }
+        tmp2 = Path(tempfile.mkdtemp(prefix="story-harness-chapter-alias-"))
+        try:
+            _setup_project(tmp2, entities_data=seed_entities)
+            (tmp2 / "chapters" / "chapter-001.md").write_text(
+                "# 第一章\n\n@{赵继明}站在办公室窗前，没有回头。\n",
+                encoding="utf-8",
+            )
+            main(["chapter", "analyze", "--root", str(tmp2), "--chapter-id", "chapter-001"])
+
+            state = load_project_state(tmp2)
+            entities = state["entities"]["entities"]
+            self.assertEqual(len(entities), 1)
+            self.assertEqual(entities[0]["id"], "char-zhao")
+            self.assertEqual(entities[0]["name"], "赵局长")
+        finally:
+            shutil.rmtree(tmp2, ignore_errors=True)
+
 
 if __name__ == "__main__":
     unittest.main()

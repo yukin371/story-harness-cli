@@ -1,0 +1,259 @@
+{
+  "volumes": [
+    {
+      "id": "volume-001",
+      "title": "第一卷 纸灯巷",
+      "theme": "从失踪真相到旧巷回声",
+      "chapters": [
+        {
+          "id": "chapter-001",
+          "title": "停电夜",
+          "status": "completed",
+          "direction": "用突发停电和旧信箱线索启动主谜团，让沈禾与陆川结成临时同盟。",
+          "beats": [
+            {
+              "id": "beat-c001-01",
+              "summary": "停电夜里收到失踪哥哥的旧信封"
+            },
+            {
+              "id": "beat-c001-02",
+              "summary": "打开十七号信箱，发现纸灯楼顶的新线索"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c001-01",
+              "title": "雨夜来信",
+              "summary": "沈禾在停电夜收到沈岚留下的信封，并决定去开十七号信箱。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            },
+            {
+              "id": "scene-c001-02",
+              "title": "纸灯楼顶",
+              "summary": "陆川加入调查，两人沿着纸灯线索去废戏台楼顶继续追查。",
+              "startParagraph": 5,
+              "endParagraph": 7,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-002",
+          "title": "第十七号信箱",
+          "status": "completed",
+          "direction": "在废戏台楼顶回收旧信箱线索，拿到能撬动听证会的关键证据。",
+          "beats": [
+            {
+              "id": "beat-c002-01",
+              "summary": "找到十七封旧信和录音磁带"
+            },
+            {
+              "id": "beat-c002-02",
+              "summary": "确认陈启明与当年水闸事故有关"
+            },
+            {
+              "id": "beat-c002-03",
+              "summary": "带着最终信件从废戏台撤离"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c002-01",
+              "title": "屋顶铁盒",
+              "summary": "沈禾和陆川在楼顶找到沈岚留下的铁盒、旧信和磁带。",
+              "startParagraph": 1,
+              "endParagraph": 4,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            },
+            {
+              "id": "scene-c002-02",
+              "title": "未寄出的最后一封信",
+              "summary": "录音证明陈启明涉案，沈禾读到哥哥留给自己的最后一封信。",
+              "startParagraph": 5,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            }
+          ]
+        },
+        {
+          "id": "chapter-003",
+          "title": "回信人",
+          "status": "completed",
+          "direction": "在听证会上公开证据和真相，让沈禾完成对哥哥的迟来回应。",
+          "beats": [
+            {
+              "id": "beat-c003-01",
+              "summary": "听证会现场与陈启明对峙"
+            },
+            {
+              "id": "beat-c003-02",
+              "summary": "公开录音与旧信，洗清沈岚的污名"
+            },
+            {
+              "id": "beat-c003-03",
+              "summary": "在十七号信箱里写下回信"
+            }
+          ],
+          "scenePlans": [
+            {
+              "id": "scene-c003-01",
+              "title": "听证会翻案",
+              "summary": "沈禾在旧巷改造听证会上拿出录音和旧信，迫使陈启明失守。",
+              "startParagraph": 1,
+              "endParagraph": 5,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            },
+            {
+              "id": "scene-c003-02",
+              "title": "写给回声的回信",
+              "summary": "风波后，沈禾修好十七号信箱，给哥哥写下迟来的回信。",
+              "startParagraph": 6,
+              "endParagraph": 8,
+              "createdAt": "2026-04-23T16:08:00+08:00",
+              "updatedAt": "2026-04-23T16:08:00+08:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-001",
+      "title": "停电夜",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c001-01",
+          "summary": "停电夜里收到失踪哥哥的旧信封"
+        },
+        {
+          "id": "beat-c001-02",
+          "summary": "打开十七号信箱，发现纸灯楼顶的新线索"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c001-01",
+          "title": "雨夜来信",
+          "summary": "沈禾在停电夜收到沈岚留下的信封，并决定去开十七号信箱。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        },
+        {
+          "id": "scene-c001-02",
+          "title": "纸灯楼顶",
+          "summary": "陆川加入调查，两人沿着纸灯线索去废戏台楼顶继续追查。",
+          "startParagraph": 5,
+          "endParagraph": 7,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-002",
+      "title": "第十七号信箱",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c002-01",
+          "summary": "找到十七封旧信和录音磁带"
+        },
+        {
+          "id": "beat-c002-02",
+          "summary": "确认陈启明与当年水闸事故有关"
+        },
+        {
+          "id": "beat-c002-03",
+          "summary": "带着最终信件从废戏台撤离"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c002-01",
+          "title": "屋顶铁盒",
+          "summary": "沈禾和陆川在楼顶找到沈岚留下的铁盒、旧信和磁带。",
+          "startParagraph": 1,
+          "endParagraph": 4,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        },
+        {
+          "id": "scene-c002-02",
+          "title": "未寄出的最后一封信",
+          "summary": "录音证明陈启明涉案，沈禾读到哥哥留给自己的最后一封信。",
+          "startParagraph": 5,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "chapter-003",
+      "title": "回信人",
+      "status": "completed",
+      "beats": [
+        {
+          "id": "beat-c003-01",
+          "summary": "听证会现场与陈启明对峙"
+        },
+        {
+          "id": "beat-c003-02",
+          "summary": "公开录音与旧信，洗清沈岚的污名"
+        },
+        {
+          "id": "beat-c003-03",
+          "summary": "在十七号信箱里写下回信"
+        }
+      ],
+      "scenePlans": [
+        {
+          "id": "scene-c003-01",
+          "title": "听证会翻案",
+          "summary": "沈禾在旧巷改造听证会上拿出录音和旧信，迫使陈启明失守。",
+          "startParagraph": 1,
+          "endParagraph": 5,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        },
+        {
+          "id": "scene-c003-02",
+          "title": "写给回声的回信",
+          "summary": "风波后，沈禾修好十七号信箱，给哥哥写下迟来的回信。",
+          "startParagraph": 6,
+          "endParagraph": 8,
+          "createdAt": "2026-04-23T16:08:00+08:00",
+          "updatedAt": "2026-04-23T16:08:00+08:00"
+        }
+      ]
+    }
+  ],
+  "chapterDirections": [
+    {
+      "chapterId": "chapter-001",
+      "title": "停电夜",
+      "summary": "用突发停电和旧信箱线索启动主谜团，让沈禾与陆川结成临时同盟。"
+    },
+    {
+      "chapterId": "chapter-002",
+      "title": "第十七号信箱",
+      "summary": "在废戏台楼顶回收旧信箱线索，拿到能撬动听证会的关键证据。"
+    },
+    {
+      "chapterId": "chapter-003",
+      "title": "回信人",
+      "summary": "在听证会上公开证据和真相，让沈禾完成对哥哥的迟来回应。"
+    }
+  ]
+}

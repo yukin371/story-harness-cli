@@ -1,5 +1,8 @@
 # Quickstart
 
+如果你要先看“完整创作闭环”，直接读 [创作流程指南](./creative-workflow.md)。
+如果你要先决定“跑哪个样例工程”，直接读 [样例工程矩阵](./sample-matrix.md)。
+
 ## 1. Install
 
 ```powershell
@@ -11,6 +14,78 @@ uv sync
 ```powershell
 uv run story-harness init --root .\demo --title "Fog Harbor" --genre "Mystery"
 ```
+
+如果你准备直接进入严格写作闭环，初始化时就把项目门禁字段一并写上：
+
+```powershell
+uv run story-harness init `
+  --root .\demo `
+  --title "Fog Harbor" `
+  --genre "Mystery" `
+  --primary-genre mystery `
+  --target-audience mystery-reader `
+  --core-promise "每章推进账本谜团" `
+  --pace-contract "中快节奏"
+```
+
+`chapter suggest` 默认不会接受“先写再补约束”的流程。
+进入细化前，`outline check` 默认要求项目先具备 `primaryGenre`、`targetAudience`、`corePromises`、`paceContract`，章节再具备 `direction`、`beats`、`scenePlans`。
+
+如果你做的是网站连载或商业长篇，不要只填基础定位，建议把 `commercialPositioning` 也在初始化时写上：
+
+```powershell
+uv run story-harness init `
+  --root .\demo `
+  --title "夜巡收煞录" `
+  --genre "奇幻" `
+  --primary-genre fantasy `
+  --sub-genre urban-occult `
+  --style-tag web-serial `
+  --target-audience qidian-reader `
+  --core-promise "每章结尾保留追读钩子" `
+  --pace-contract "中快节奏" `
+  --premise "夜班接尸人继承城隍夜巡牌，处理都市异案并追查失踪父亲真相" `
+  --hook-line "接尸抬到空棺的当夜，他被迫上岗做城隍夜巡。" `
+  --hook-stack career-entry-hook `
+  --hook-stack cliffhanger-end `
+  --benchmark-work "都市职业捉诡文" `
+  --target-platform qidian `
+  --serialization-model "2到3章一个单元异案，持续抬升主线阴谋" `
+  --release-cadence "日更两章" `
+  --chapter-word-floor 2000 `
+  --chapter-word-target 3000
+```
+
+`doctor` 会在识别到 `web-serial` / 平台连载项目后，额外检查 `premise`、`hookLine`、`hookStack`、`targetPlatform`、`serializationModel`、`releaseCadence`，并优先采用项目里配置的章节字数目标。
+
+如果你想直接跑一个仓库内已验证样例，而不是先自己写正文，优先使用 `demo-short-story`：
+
+```powershell
+uv run story-harness doctor --root .\demo-short-story
+uv run story-harness chapter analyze --root .\demo-short-story --chapter-id chapter-001
+uv run story-harness review chapter --root .\demo-short-story --chapter-id chapter-001
+uv run story-harness review scene --root .\demo-short-story --chapter-id chapter-001 --scene-index 1
+```
+
+如果你要验证“类型 / 子类型 / 风格标签 / 目标读者”是否进入评审链路，改用 `demo-light-novel-short`：
+
+```powershell
+uv run story-harness doctor --root .\demo-light-novel-short
+uv run story-harness chapter analyze --root .\demo-light-novel-short --chapter-id chapter-001
+uv run story-harness review chapter --root .\demo-light-novel-short --chapter-id chapter-001
+uv run story-harness review scene --root .\demo-light-novel-short --chapter-id chapter-001 --scene-index 1
+```
+
+如果你要验证“玄幻 + 网文节奏”的定位层和中短篇升级驱动，改用 `demo-xuanhuan-short`：
+
+```powershell
+uv run story-harness doctor --root .\demo-xuanhuan-short
+uv run story-harness chapter analyze --root .\demo-xuanhuan-short --chapter-id chapter-001
+uv run story-harness review chapter --root .\demo-xuanhuan-short --chapter-id chapter-001
+uv run story-harness review scene --root .\demo-xuanhuan-short --chapter-id chapter-001 --scene-index 1
+```
+
+这三个样例的定位差异与扩展策略，统一以 [样例工程矩阵](./sample-matrix.md) 为准。
 
 ## 3. Replace the first chapter with tagged prose
 
@@ -25,21 +100,115 @@ Prefer `@{实体}` in Chinese prose:
 ## 4. Run the chapter loop
 
 ```powershell
+uv run story-harness outline check --root .\demo --chapter-id chapter-001
 uv run story-harness chapter analyze --root .\demo --chapter-id chapter-001
 uv run story-harness chapter suggest --root .\demo --chapter-id chapter-001
 uv run story-harness review apply --root .\demo --chapter-id chapter-001 --all-pending --decision accepted
 uv run story-harness projection apply --root .\demo --chapter-id chapter-001
 uv run story-harness context refresh --root .\demo --chapter-id chapter-001
+uv run story-harness review chapter --root .\demo --chapter-id chapter-001
+uv run story-harness outline scene-detect --root .\demo --chapter-id chapter-001
+uv run story-harness review scene --root .\demo --chapter-id chapter-001 --scene-index 1
 uv run story-harness doctor --root .\demo
 ```
 
-## 5. Inspect machine-facing state
+如果你想先按经典结构把整本书的节拍骨架定下来，而不是直接手写章节方向，可以先跑：
+
+```powershell
+uv run story-harness structure list --root .\demo
+uv run story-harness structure apply --root .\demo --template three-act
+uv run story-harness structure show --root .\demo
+uv run story-harness structure scaffold --root .\demo
+uv run story-harness outline check --root .\demo
+uv run story-harness structure check --root .\demo
+```
+
+当前内置模板包含：`three-act`、`five-act`、`hero-journey`、`save-the-cat`。
+
+`structure scaffold` 会把当前模板的 beat 直接落到 `outline.yaml` 的章节 `beats` 和 `direction` 上。
+默认会优先使用 `structure map` 的显式映射；没有映射时，会按 beat 位置自动建议章节。
+如果章节已经有手工 `direction`，默认保留；需要覆盖时加 `--replace-directions`。
+`outline check` 默认会检查“项目定位 / 故事契约 + 章节 direction + beats + scenePlans”是否齐备，再决定是否进入正文细化。
+只有在明确接受放宽约束时，才使用 `--allow-missing-project-gate`、`--allow-missing-beats`、`--allow-missing-scene-plans`。
+
+如果你在做网站连载，还建议把字数检查放进每轮闭环：
+
+```powershell
+uv run story-harness stats --root .\demo --min-chapter-words 2000 --target-chapter-words 3000
+uv run story-harness doctor --root .\demo --min-chapter-words 2000 --target-chapter-words 3000
+```
+
+If `story-harness` is not available in your environment yet, use the repository fallback:
+
+```powershell
+$env:PYTHONPATH='src'
+python -m story_harness_cli outline check --root .\demo --chapter-id chapter-001
+python -m story_harness_cli chapter analyze --root .\demo --chapter-id chapter-001
+python -m story_harness_cli chapter suggest --root .\demo --chapter-id chapter-001
+python -m story_harness_cli review apply --root .\demo --chapter-id chapter-001 --all-pending --decision accepted
+python -m story_harness_cli projection apply --root .\demo --chapter-id chapter-001
+python -m story_harness_cli context refresh --root .\demo --chapter-id chapter-001
+python -m story_harness_cli review chapter --root .\demo --chapter-id chapter-001
+python -m story_harness_cli outline scene-detect --root .\demo --chapter-id chapter-001
+python -m story_harness_cli review scene --root .\demo --chapter-id chapter-001 --scene-index 1
+python -m story_harness_cli doctor --root .\demo
+```
+
+Validated sample fallback:
+
+```powershell
+$env:PYTHONPATH='src'
+python -m story_harness_cli doctor --root .\demo-short-story
+python -m story_harness_cli chapter analyze --root .\demo-short-story --chapter-id chapter-001
+python -m story_harness_cli outline check --root .\demo-short-story --chapter-id chapter-001
+python -m story_harness_cli review chapter --root .\demo-short-story --chapter-id chapter-001
+python -m story_harness_cli review scene --root .\demo-short-story --chapter-id chapter-001 --scene-index 1
+```
+
+Style-driven sample fallback:
+
+```powershell
+$env:PYTHONPATH='src'
+python -m story_harness_cli doctor --root .\demo-light-novel-short
+python -m story_harness_cli chapter analyze --root .\demo-light-novel-short --chapter-id chapter-001
+python -m story_harness_cli review chapter --root .\demo-light-novel-short --chapter-id chapter-001
+python -m story_harness_cli review scene --root .\demo-light-novel-short --chapter-id chapter-001 --scene-index 1
+```
+
+Xuanhuan sample fallback:
+
+```powershell
+$env:PYTHONPATH='src'
+python -m story_harness_cli doctor --root .\demo-xuanhuan-short
+python -m story_harness_cli chapter analyze --root .\demo-xuanhuan-short --chapter-id chapter-001
+python -m story_harness_cli review chapter --root .\demo-xuanhuan-short --chapter-id chapter-001
+python -m story_harness_cli review scene --root .\demo-xuanhuan-short --chapter-id chapter-001 --scene-index 1
+```
+
+## 5. Close The Loop
+
+If `review chapter` or `review scene` gives a weak result, do not stop at the first score.
+
+Standard close-the-loop sequence:
+
+1. Run `review chapter`
+2. Run `review scene`
+3. Inspect the lowest-scoring dimensions and `priorityActions`
+4. For commercial serials, also inspect `commercialAlignment`, `weightedScores.profile.targetPlatform`, and chapter word-count warnings
+5. Revise `chapters/*.md` or explicit `scenePlans`
+6. Re-run `outline check` if you changed positioning, contract, beats, or `scenePlans`
+7. Re-run `chapter analyze`
+8. Re-run `review chapter` and `review scene`
+9. Only stop when the score is good enough for the current target, or when the remaining risk is explicitly accepted
+
+## 6. Inspect machine-facing state
 
 - `demo/reviews/change-requests.yaml`
+- `demo/reviews/story-reviews.yaml`
 - `demo/projections/projection.yaml`
 - `demo/projections/context-lens.yaml`
 
-## 6. Validate the project shape
+## 7. Validate the project shape
 
 ```powershell
 uv run story-harness doctor --root .\demo

@@ -1,0 +1,116 @@
+{
+  "chapterId": "chapter-004",
+  "chapterTitle": "棋局初现",
+  "analyzedAt": "2026-04-23T00:17:41+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 23,
+      "source": "registry"
+    },
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 19,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 19,
+      "source": "registry"
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 4,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-004::entity-zhao-juzhang::b0a0a923ef",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "愤怒；离开",
+      "stateTags": [
+        "愤怒",
+        "离开"
+      ],
+      "evidence": "\"我知道你很愤怒，\"@{赵局长}的语气平静得可怕，\"但这就是代价——代价是你自己选择的。三年前如果你选择闭嘴，选择拿那笔钱，选择听你老婆的话离开雾港，你今天会活得好好的。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-004::entity-shen-zhao::46985afccb",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "@{赵局长}转过身，看着@{沈昭}的眼神变得异常复杂——有愤怒，有失望，还有某种更深的东西。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-004::entity-zhao-juzhang::46985afccb",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "@{赵局长}转过身，看着@{沈昭}的眼神变得异常复杂——有愤怒，有失望，还有某种更深的东西。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-004::entity-shen-zhao::9005563e72",
+      "entityId": "entity-shen-zhao",
+      "entityName": "沈昭",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "\"@{沈昭}，\"@{赵局长}的声音变得很轻很轻，\"你想清楚了？背叛组织的后果？\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-004::entity-zhao-juzhang::9005563e72",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "背叛",
+      "stateTags": [
+        "背叛"
+      ],
+      "evidence": "\"@{沈昭}，\"@{赵局长}的声音变得很轻很轻，\"你想清楚了？背叛组织的后果？\"",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-004::entity-shen-zhao::entity-zhao-juzhang::9005563e72",
+      "fromId": "entity-shen-zhao",
+      "fromName": "沈昭",
+      "toId": "entity-zhao-juzhang",
+      "toName": "赵局长",
+      "label": "裂痕",
+      "severity": "high-risk",
+      "evidence": "\"@{沈昭}，\"@{赵局长}的声音变得很轻很轻，\"你想清楚了？背叛组织的后果？\"",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-shen-zhao",
+      "entity-lin-zhou",
+      "entity-zhao-juzhang",
+      "entity-su-qing"
+    ],
+    "activeEntityNames": [
+      "沈昭",
+      "林舟",
+      "赵局长",
+      "苏晴"
+    ]
+  }
+}

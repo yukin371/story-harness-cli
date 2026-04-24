@@ -1,0 +1,53 @@
+{
+  "currentChapterId": "chapter-001",
+  "lenses": [
+    {
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "activeCharacters": [
+        {
+          "id": "entity-ailin",
+          "name": "艾琳",
+          "currentState": "怀疑"
+        },
+        {
+          "id": "entity-renn",
+          "name": "伦恩",
+          "currentState": "怀疑"
+        },
+        {
+          "id": "entity-mira",
+          "name": "米拉院长",
+          "currentState": {
+            "physicalState": "状态稳定",
+            "emotionalState": "在暗处观察，等着看结果",
+            "locationState": "晨星镇",
+            "financialState": "稳定"
+          }
+        },
+        {
+          "id": "entity-nova",
+          "name": "诺瓦",
+          "currentState": {
+            "physicalState": "刚破壳不久，翅膀还不稳",
+            "emotionalState": "对世界很好奇，也有一点嘴硬式胆小",
+            "locationState": "跟着艾琳行动",
+            "financialState": ""
+          }
+        }
+      ],
+      "activeRelations": [
+        {
+          "fromId": "entity-ailin",
+          "fromName": "艾琳",
+          "toId": "entity-renn",
+          "toName": "伦恩",
+          "label": "信任下降"
+        }
+      ],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T17:51:06+08:00"
+    }
+  ]
+}

@@ -1,0 +1,1683 @@
+{
+  "rubricVersion": "chapter-review-v1",
+  "sceneRubricVersion": "scene-review-v1",
+  "chapterReviews": [
+    {
+      "reviewId": "chapter-review-e6aac89263",
+      "fingerprint": "chapter-review-v1:chapter-001:ad5b6715e3726da3",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "裂痕之夜",
+      "summary": "结合分析结果和正文信号，本章总分 93/100。当前强项在情节推进，最需要补强的是冲突张力。",
+      "rating": "strong",
+      "scores": {
+        "total": 93,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 4 处",
+              "段落 64 段",
+              "转折连接词 3 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 2 个",
+              "状态候选 3 个",
+              "心理/压力词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 3 个",
+              "疑问/感叹标记 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 4 个",
+              "场景焦点角色 2 个",
+              "开头是否带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 45",
+              "长段落 0 段",
+              "对话段 14 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2521,
+        "paragraphCount": 64,
+        "averageParagraphLength": 45,
+        "dialogueParagraphs": 14,
+        "tagMentions": [
+          "林舟"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 2,
+        "snapshotCandidateCount": 3,
+        "relationCandidateCount": 1,
+        "sceneEntityNames": [
+          "林舟",
+          "赵局长"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-f3638a31f3",
+      "fingerprint": "chapter-review-v1:chapter-002:6dec8da53983fec4",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "暗影追踪",
+      "summary": "结合分析结果和正文信号，本章总分 84/100。当前强项在表达控制，最需要补强的是冲突张力。",
+      "rating": "solid",
+      "scores": {
+        "total": 84,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 1 处",
+              "段落 73 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 1 个",
+              "心理/压力词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 2 个",
+              "疑问/感叹标记 17 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "场景焦点角色 4 个",
+              "开头是否带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 36",
+              "长段落 0 段",
+              "对话段 33 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2246,
+        "paragraphCount": 73,
+        "averageParagraphLength": 36,
+        "dialogueParagraphs": 33,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 1,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "林舟",
+          "沈昭",
+          "赵局长",
+          "苏晴"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-4616401d8a",
+      "fingerprint": "chapter-review-v1:chapter-003:75a5ff0875396657",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "雾中往事",
+      "summary": "结合分析结果和正文信号，本章总分 89/100。当前强项在情节推进，最需要补强的是冲突张力。",
+      "rating": "strong",
+      "scores": {
+        "total": 89,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 3 处",
+              "段落 82 段",
+              "转折连接词 3 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 3 个",
+              "心理/压力词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 3 个",
+              "疑问/感叹标记 22 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "场景焦点角色 4 个",
+              "开头是否带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 30",
+              "长段落 0 段",
+              "对话段 32 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2092,
+        "paragraphCount": 82,
+        "averageParagraphLength": 30,
+        "dialogueParagraphs": 32,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 3,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "林舟",
+          "苏晴",
+          "沈昭",
+          "赵局长"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-b13b42dd3f",
+      "fingerprint": "chapter-review-v1:chapter-004:7a9e460c3d05d136",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-004",
+      "chapterTitle": "棋局初现",
+      "summary": "结合分析结果和正文信号，本章总分 94/100。当前强项在情节推进，最需要补强的是冲突张力。",
+      "rating": "strong",
+      "scores": {
+        "total": 94,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 6 处",
+              "段落 104 段",
+              "转折连接词 4 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 5 个",
+              "心理/压力词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 1 处",
+              "张力关键词 1 个",
+              "疑问/感叹标记 13 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "场景焦点角色 4 个",
+              "开头是否带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 29",
+              "长段落 0 段",
+              "对话段 41 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2493,
+        "paragraphCount": 104,
+        "averageParagraphLength": 29,
+        "dialogueParagraphs": 41,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 5,
+        "relationCandidateCount": 1,
+        "sceneEntityNames": [
+          "沈昭",
+          "林舟",
+          "赵局长",
+          "苏晴"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-e047d49de7",
+      "fingerprint": "chapter-review-v1:chapter-005:79c4a43af925d73c",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-005",
+      "chapterTitle": "真相碎片",
+      "summary": "结合分析结果和正文信号，本章总分 91/100。当前强项在情节推进，最需要补强的是表达控制。",
+      "rating": "strong",
+      "scores": {
+        "total": 91,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 6 处",
+              "段落 63 段",
+              "转折连接词 1 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 5 个",
+              "心理/压力词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 1 处",
+              "张力关键词 1 个",
+              "疑问/感叹标记 10 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "场景焦点角色 4 个",
+              "开头是否带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 32",
+              "长段落 1 段",
+              "对话段 23 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 1718,
+        "paragraphCount": 63,
+        "averageParagraphLength": 32,
+        "dialogueParagraphs": 23,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 5,
+        "relationCandidateCount": 1,
+        "sceneEntityNames": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-c04e03bfbb",
+      "fingerprint": "chapter-review-v1:chapter-006:a24c3b95a103b58e",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-006",
+      "chapterTitle": "暗流涌动",
+      "summary": "结合分析结果和正文信号，本章总分 94/100。当前强项在冲突张力，最需要补强的是场景清晰度。",
+      "rating": "strong",
+      "scores": {
+        "total": 94,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 12 处",
+              "段落 135 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 9 个",
+              "心理/压力词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 3 处",
+              "张力关键词 4 个",
+              "疑问/感叹标记 15 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 4 个",
+              "场景焦点角色 4 个",
+              "开头是否带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 30",
+              "长段落 0 段",
+              "对话段 40 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 3409,
+        "paragraphCount": 135,
+        "averageParagraphLength": 30,
+        "dialogueParagraphs": 40,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏晴",
+          "赵局长"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 9,
+        "relationCandidateCount": 3,
+        "sceneEntityNames": [
+          "苏晴",
+          "林舟",
+          "赵局长",
+          "沈昭"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-3c34d751e7",
+      "fingerprint": "chapter-review-v1:chapter-007:35d90b6a88e36065",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-007",
+      "chapterTitle": "信任危机",
+      "summary": "结合分析结果和正文信号，本章总分 94/100。当前强项在冲突张力，最需要补强的是场景清晰度。",
+      "rating": "strong",
+      "scores": {
+        "total": 94,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 7 处",
+              "段落 87 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 6 个",
+              "状态候选 6 个",
+              "心理/压力词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 1 处",
+              "张力关键词 3 个",
+              "疑问/感叹标记 19 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "场景焦点角色 6 个",
+              "开头是否带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 34",
+              "长段落 0 段",
+              "对话段 50 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2342,
+        "paragraphCount": 87,
+        "averageParagraphLength": 34,
+        "dialogueParagraphs": 50,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏明",
+          "苏晴",
+          "赵局长",
+          "赵继业"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 6,
+        "snapshotCandidateCount": 6,
+        "relationCandidateCount": 1,
+        "sceneEntityNames": [
+          "沈昭",
+          "赵局长",
+          "苏晴",
+          "林舟",
+          "赵继业",
+          "苏明"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-bdc209bc14",
+      "fingerprint": "chapter-review-v1:chapter-008:99c39f78c8bcac74",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T11:58:17+08:00",
+      "chapterId": "chapter-008",
+      "chapterTitle": "雾散",
+      "summary": "结合分析结果和正文信号，本章总分 86/100。当前强项在场景清晰度，最需要补强的是冲突张力。",
+      "rating": "strong",
+      "scores": {
+        "total": 86,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 2 处",
+              "段落 100 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 7 个",
+              "状态候选 1 个",
+              "心理/压力词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 1 个",
+              "疑问/感叹标记 21 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "场景锚点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "场景焦点角色 6 个",
+              "开头是否带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 27",
+              "长段落 0 段",
+              "对话段 39 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：场景锚点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 2184,
+        "paragraphCount": 100,
+        "averageParagraphLength": 27,
+        "dialogueParagraphs": 39,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "苏明",
+          "苏晴",
+          "赵局长",
+          "赵继业",
+          "赵继明"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 7,
+        "snapshotCandidateCount": 1,
+        "relationCandidateCount": 1,
+        "sceneEntityNames": [
+          "林舟",
+          "赵局长",
+          "沈昭",
+          "苏晴",
+          "赵继业",
+          "苏明"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    }
+  ],
+  "sceneReviews": [
+    {
+      "reviewId": "scene-review-c9cf7e45e8",
+      "fingerprint": "scene-review-v1:chapter-008:59:72:81244dae17647a38",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T13:32:58+08:00",
+      "chapterId": "chapter-008",
+      "chapterTitle": "雾散",
+      "sceneRange": {
+        "startParagraph": 59,
+        "endParagraph": 72,
+        "paragraphCount": 14,
+        "totalChapterParagraphs": 100
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 74/100。当前最稳的是连续性，最需要补强的是场景清晰度。",
+      "rating": "solid",
+      "scores": {
+        "total": 74,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一幕兼顾了悬念维持或局部兑现。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 3 个",
+              "疑问钩子 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 11,
+            "maxScore": 20,
+            "comment": "读者能跟上大意，但场景锚点还可以更稳。",
+            "signals": [
+              "环境锚点 0 个",
+              "出场角色 3 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": [
+              "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。"
+            ]
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "伏笔与回收：这一幕兼顾了悬念维持或局部兑现。"
+      ],
+      "priorityActions": [
+        "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。"
+      ],
+      "textMetrics": {
+        "wordCount": 289,
+        "paragraphCount": 14,
+        "averageParagraphLength": 25,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "赵局长"
+        ],
+        "totalChapterParagraphs": 100
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-54be39a06b",
+      "fingerprint": "scene-review-v1:chapter-008:60:74:1c51c455c41889e2",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T13:57:35+08:00",
+      "chapterId": "chapter-008",
+      "chapterTitle": "雾散",
+      "sceneRange": {
+        "startParagraph": 60,
+        "endParagraph": 74,
+        "paragraphCount": 15,
+        "totalChapterParagraphs": 100,
+        "sceneIndex": 6,
+        "source": "heuristic"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 69/100。当前最稳的是伏笔与回收，最需要补强的是逻辑性。",
+      "rating": "workable",
+      "scores": {
+        "total": 69,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 15,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": [
+              "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+            ]
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "这一幕兼顾了悬念维持或局部兑现。",
+            "signals": [
+              "伏笔信号 2 个",
+              "回收信号 2 个",
+              "疑问钩子 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 11,
+            "maxScore": 20,
+            "comment": "读者能跟上大意，但场景锚点还可以更稳。",
+            "signals": [
+              "环境锚点 0 个",
+              "出场角色 3 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": [
+              "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。"
+            ]
+          }
+        ]
+      },
+      "strengths": [
+        "伏笔与回收：这一幕兼顾了悬念维持或局部兑现。"
+      ],
+      "priorityActions": [
+        "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。",
+        "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+      ],
+      "textMetrics": {
+        "wordCount": 290,
+        "paragraphCount": 15,
+        "averageParagraphLength": 23,
+        "tagMentions": [
+          "林舟",
+          "沈昭",
+          "赵局长"
+        ],
+        "totalChapterParagraphs": 100
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "",
+          "subGenre": "",
+          "styleTags": [],
+          "targetAudience": []
+        },
+        "storyContract": {
+          "corePromises": [],
+          "avoidances": [],
+          "endingContract": "",
+          "paceContract": ""
+        }
+      },
+      "contractAlignment": {
+        "status": "missing-contract",
+        "matched": [],
+        "risks": [],
+        "notes": []
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-73bd75e81d",
+      "fingerprint": "scene-review-v1:chapter-008:1:8:0671a20907867f2c",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T15:51:11+08:00",
+      "chapterId": "chapter-008",
+      "chapterTitle": "雾散",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 8,
+        "paragraphCount": 8,
+        "totalChapterParagraphs": 100,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-95b834b1c7"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 58/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 58,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 2 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 13,
+            "maxScore": 20,
+            "comment": "这一幕单独可读，但与前后文的承接还可以更明显。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": [
+              "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+            ]
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 8,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 0 个",
+              "决定/变化词 2 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 5 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。",
+        "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+      ],
+      "textMetrics": {
+        "wordCount": 318,
+        "paragraphCount": 8,
+        "averageParagraphLength": 47,
+        "tagMentions": [
+          "林舟",
+          "苏明",
+          "苏晴",
+          "赵局长",
+          "赵继业"
+        ],
+        "totalChapterParagraphs": 100
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 5,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "悬疑",
+        "positioning": {
+          "primaryGenre": "mystery",
+          "subGenre": "urban-mystery",
+          "styleTags": [
+            "web-serial"
+          ],
+          "targetAudience": [
+            "mystery-reader",
+            "web-fiction-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "主线谜团持续推进",
+            "稳定提供新线索与阶段性反转",
+            "调查推进同时拉动人物关系变化"
+          ],
+          "avoidances": [
+            "长时间脱离核心案件",
+            "集中灌输过量背景设定"
+          ],
+          "endingContract": "阶段性破案并揭开更大阴谋",
+          "paceContract": "中快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "at-risk",
+        "matched": [],
+        "risks": [
+          "主类型偏悬疑/惊悚，但这一幕的悬念维持还不够强。",
+          "核心承诺“稳定提供新线索与阶段性反转”：悬疑/反转承诺在这一幕里的钩子偏弱。",
+          "核心承诺“调查推进同时拉动人物关系变化”：情感/关系承诺在这一幕里的承接还不够强。"
+        ],
+        "notes": [
+          "已记录节奏承诺：中快节奏。",
+          "核心承诺“主线谜团持续推进”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    }
+  ]
+}

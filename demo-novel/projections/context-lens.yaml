@@ -1,0 +1,275 @@
+{
+  "currentChapterId": "chapter-008",
+  "lenses": [
+    {
+      "chapterId": "chapter-008",
+      "chapterTitle": "chapter-008",
+      "activeCharacters": [
+        {
+          "id": "entity-lin-zhou",
+          "name": "林舟",
+          "currentState": {
+            "physicalState": "左肩旧伤偶发疼痛，失眠",
+            "emotionalState": "压抑的愤怒，近乎偏执的执念",
+            "locationState": "旧仓库住所/雾港码头区域",
+            "financialState": "拮据"
+          }
+        },
+        {
+          "id": "entity-zhao-juzhang",
+          "name": "赵局长",
+          "currentState": {
+            "physicalState": "良好",
+            "emotionalState": "自信，掌控一切",
+            "locationState": "雾港市公安局",
+            "financialState": "不明"
+          }
+        },
+        {
+          "id": "entity-shen-zhao",
+          "name": "沈昭",
+          "currentState": {
+            "physicalState": "左手旧伤隐痛",
+            "emotionalState": "矛盾、挣扎",
+            "locationState": "雾港地区活动",
+            "financialState": "富足"
+          }
+        },
+        {
+          "id": "entity-su-qing",
+          "name": "苏晴",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "压抑的负罪感",
+            "locationState": "雾港市公安局法医中心",
+            "financialState": "中产"
+          }
+        },
+        {
+          "id": "inferred::赵继业",
+          "name": "赵继业",
+          "currentState": ""
+        },
+        {
+          "id": "inferred::苏明",
+          "name": "苏明",
+          "currentState": ""
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T00:18:36+08:00"
+    },
+    {
+      "chapterId": "chapter-002",
+      "chapterTitle": "chapter-002",
+      "activeCharacters": [
+        {
+          "id": "entity-lin-zhou",
+          "name": "林舟",
+          "currentState": {
+            "physicalState": "左肩旧伤偶发疼痛，失眠",
+            "emotionalState": "压抑的愤怒，近乎偏执的执念",
+            "locationState": "旧仓库住所/雾港码头区域",
+            "financialState": "拮据"
+          }
+        },
+        {
+          "id": "entity-shen-zhao",
+          "name": "沈昭",
+          "currentState": {
+            "physicalState": "左手旧伤隐痛",
+            "emotionalState": "矛盾、挣扎",
+            "locationState": "雾港地区活动",
+            "financialState": "富足"
+          }
+        },
+        {
+          "id": "entity-zhao-juzhang",
+          "name": "赵局长",
+          "currentState": {
+            "physicalState": "良好",
+            "emotionalState": "自信，掌控一切",
+            "locationState": "雾港市公安局",
+            "financialState": "不明"
+          }
+        },
+        {
+          "id": "entity-su-qing",
+          "name": "苏晴",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "压抑的负罪感",
+            "locationState": "雾港市公安局法医中心",
+            "financialState": "中产"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T00:18:36+08:00"
+    },
+    {
+      "chapterId": "chapter-004",
+      "chapterTitle": "chapter-004",
+      "activeCharacters": [
+        {
+          "id": "entity-shen-zhao",
+          "name": "沈昭",
+          "currentState": {
+            "physicalState": "左手旧伤隐痛",
+            "emotionalState": "矛盾、挣扎",
+            "locationState": "雾港地区活动",
+            "financialState": "富足"
+          }
+        },
+        {
+          "id": "entity-lin-zhou",
+          "name": "林舟",
+          "currentState": {
+            "physicalState": "左肩旧伤偶发疼痛，失眠",
+            "emotionalState": "压抑的愤怒，近乎偏执的执念",
+            "locationState": "旧仓库住所/雾港码头区域",
+            "financialState": "拮据"
+          }
+        },
+        {
+          "id": "entity-zhao-juzhang",
+          "name": "赵局长",
+          "currentState": {
+            "physicalState": "良好",
+            "emotionalState": "自信，掌控一切",
+            "locationState": "雾港市公安局",
+            "financialState": "不明"
+          }
+        },
+        {
+          "id": "entity-su-qing",
+          "name": "苏晴",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "压抑的负罪感",
+            "locationState": "雾港市公安局法医中心",
+            "financialState": "中产"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T00:18:36+08:00"
+    },
+    {
+      "chapterId": "chapter-006",
+      "chapterTitle": "chapter-006",
+      "activeCharacters": [
+        {
+          "id": "entity-su-qing",
+          "name": "苏晴",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "压抑的负罪感",
+            "locationState": "雾港市公安局法医中心",
+            "financialState": "中产"
+          }
+        },
+        {
+          "id": "entity-lin-zhou",
+          "name": "林舟",
+          "currentState": {
+            "physicalState": "左肩旧伤偶发疼痛，失眠",
+            "emotionalState": "压抑的愤怒，近乎偏执的执念",
+            "locationState": "旧仓库住所/雾港码头区域",
+            "financialState": "拮据"
+          }
+        },
+        {
+          "id": "entity-zhao-juzhang",
+          "name": "赵局长",
+          "currentState": {
+            "physicalState": "良好",
+            "emotionalState": "自信，掌控一切",
+            "locationState": "雾港市公安局",
+            "financialState": "不明"
+          }
+        },
+        {
+          "id": "entity-shen-zhao",
+          "name": "沈昭",
+          "currentState": {
+            "physicalState": "左手旧伤隐痛",
+            "emotionalState": "矛盾、挣扎",
+            "locationState": "雾港地区活动",
+            "financialState": "富足"
+          }
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T00:18:36+08:00"
+    },
+    {
+      "chapterId": "chapter-007",
+      "chapterTitle": "chapter-007",
+      "activeCharacters": [
+        {
+          "id": "entity-shen-zhao",
+          "name": "沈昭",
+          "currentState": {
+            "physicalState": "左手旧伤隐痛",
+            "emotionalState": "矛盾、挣扎",
+            "locationState": "雾港地区活动",
+            "financialState": "富足"
+          }
+        },
+        {
+          "id": "entity-zhao-juzhang",
+          "name": "赵局长",
+          "currentState": {
+            "physicalState": "良好",
+            "emotionalState": "自信，掌控一切",
+            "locationState": "雾港市公安局",
+            "financialState": "不明"
+          }
+        },
+        {
+          "id": "entity-su-qing",
+          "name": "苏晴",
+          "currentState": {
+            "physicalState": "健康",
+            "emotionalState": "压抑的负罪感",
+            "locationState": "雾港市公安局法医中心",
+            "financialState": "中产"
+          }
+        },
+        {
+          "id": "entity-lin-zhou",
+          "name": "林舟",
+          "currentState": {
+            "physicalState": "左肩旧伤偶发疼痛，失眠",
+            "emotionalState": "压抑的愤怒，近乎偏执的执念",
+            "locationState": "旧仓库住所/雾港码头区域",
+            "financialState": "拮据"
+          }
+        },
+        {
+          "id": "inferred::赵继业",
+          "name": "赵继业",
+          "currentState": ""
+        },
+        {
+          "id": "inferred::苏明",
+          "name": "苏明",
+          "currentState": ""
+        }
+      ],
+      "activeRelations": [],
+      "pendingChangeRequestCount": 0,
+      "pendingChangeRequests": [],
+      "updatedAt": "2026-04-23T00:18:36+08:00"
+    }
+  ]
+}

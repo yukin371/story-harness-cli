@@ -1,0 +1,2855 @@
+{
+  "rubricVersion": "chapter-review-v1",
+  "sceneRubricVersion": "scene-review-v1",
+  "chapterReviews": [
+    {
+      "reviewId": "chapter-review-dd1ea3ce2a",
+      "fingerprint": "chapter-review-v1:chapter-001:c4241ea3186e11a1",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T17:29:23+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "summary": "仅基于正文启发式信号，本章总分 61/100。当前强项在表达控制，最需要补强的是冲突张力。",
+      "rating": "workable",
+      "scores": {
+        "total": 61,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "这一章更像铺垫，推进信号偏弱。",
+            "signals": [
+              "状态/关系推进信号 0 处",
+              "段落 7 段",
+              "转折连接词 2 处"
+            ],
+            "suggestions": [
+              "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。"
+            ]
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 9,
+            "maxScore": 20,
+            "comment": "人物出场了，但被逼到变化的力度还不够。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 0 个",
+              "心理/压力词 0 个"
+            ],
+            "suggestions": [
+              "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。"
+            ]
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 3,
+            "maxScore": 20,
+            "comment": "冲突张力偏平，读者的追读理由还不够强。",
+            "signals": [
+              "高风险关系变化 0 处",
+              "张力关键词 0 个",
+              "疑问/感叹标记 0 个"
+            ],
+            "suggestions": [
+              "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+              "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 4 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "段落和强调基本受控。",
+            "signals": [
+              "平均段长 121",
+              "长段落 0 段",
+              "对话段 7 段"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "weightedScores": {
+        "profile": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ]
+        },
+        "appliedWeights": {
+          "plotMomentum": 23,
+          "characterPressure": 18,
+          "conflictTension": 14,
+          "sceneClarity": 31,
+          "proseControl": 14
+        },
+        "adjustments": [
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "sceneClarity",
+            "delta": 10
+          },
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "plotMomentum",
+            "delta": -5
+          },
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "proseControl",
+            "delta": -5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "plotMomentum",
+            "delta": 10
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "characterPressure",
+            "delta": 5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "proseControl",
+            "delta": 5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "sceneClarity",
+            "delta": -5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "conflictTension",
+            "delta": -5
+          }
+        ],
+        "total": 64.35,
+        "maxScore": 100,
+        "rating": "workable",
+        "breakdown": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "rawScore": 12,
+            "weight": 23,
+            "contribution": 13.8
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "rawScore": 9,
+            "weight": 18,
+            "contribution": 8.1
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "rawScore": 3,
+            "weight": 14,
+            "contribution": 2.1
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "rawScore": 17,
+            "weight": 31,
+            "contribution": 26.35
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "rawScore": 20,
+            "weight": 14,
+            "contribution": 14.0
+          }
+        ]
+      },
+      "strengths": [
+        "场景清晰度：这一幕的镜头和焦点比较清楚。",
+        "表达控制：段落和强调基本受控。"
+      ],
+      "priorityActions": [
+        "补一个明确阻力：对手、风险、时间压力或信息缺口，避免章节太平。",
+        "考虑留下一个未解答的问题或悬念钩子，提高章末牵引力。",
+        "补一处人物状态变化或代价反馈，让角色不是只在场而是真的被事件推动。",
+        "补一个明确的状态变化、关系变化或决定性动作，让章节前后产生落差。"
+      ],
+      "textMetrics": {
+        "wordCount": 742,
+        "paragraphCount": 7,
+        "averageParagraphLength": 121,
+        "dialogueParagraphs": 7,
+        "tagMentions": [
+          "伦恩",
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0,
+        "sceneEntityNames": [
+          "伦恩",
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ]
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，场景与世界锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但本章推进或牵引还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在本章里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    },
+    {
+      "reviewId": "chapter-review-15bbc4559f",
+      "fingerprint": "chapter-review-v1:chapter-001:ee547079f8cbbe62",
+      "rubricVersion": "chapter-review-v1",
+      "generatedAt": "2026-04-23T17:51:06+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "summary": "结合分析结果和正文信号，本章总分 93/100。当前强项在情节推进，最需要补强的是表达控制。",
+      "rating": "strong",
+      "scores": {
+        "total": 93,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一章能看到明确推进。",
+            "signals": [
+              "状态/关系推进信号 6 处",
+              "段落 7 段",
+              "转折连接词 4 处"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "人物承压和状态变化可感知。",
+            "signals": [
+              "活跃角色 4 个",
+              "状态候选 4 个",
+              "心理/压力词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "文本有明确阻力和悬念。",
+            "signals": [
+              "高风险关系变化 2 处",
+              "张力关键词 4 个",
+              "疑问/感叹标记 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "score": 15,
+            "maxScore": 20,
+            "comment": "表达有亮点，但节奏和强调还可以再收。",
+            "signals": [
+              "平均段长 163",
+              "长段落 2 段",
+              "对话段 6 段"
+            ],
+            "suggestions": [
+              "拆分过长段落，把动作、信息和情绪分开承载，节奏会更稳。"
+            ]
+          }
+        ]
+      },
+      "weightedScores": {
+        "profile": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ]
+        },
+        "appliedWeights": {
+          "plotMomentum": 23,
+          "characterPressure": 18,
+          "conflictTension": 14,
+          "sceneClarity": 31,
+          "proseControl": 14
+        },
+        "adjustments": [
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "sceneClarity",
+            "delta": 10
+          },
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "plotMomentum",
+            "delta": -5
+          },
+          {
+            "source": "subGenre:western-fantasy",
+            "dimension": "proseControl",
+            "delta": -5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "plotMomentum",
+            "delta": 10
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "characterPressure",
+            "delta": 5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "proseControl",
+            "delta": 5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "sceneClarity",
+            "delta": -5
+          },
+          {
+            "source": "styleTag:light-novel",
+            "dimension": "conflictTension",
+            "delta": -5
+          }
+        ],
+        "total": 94.9,
+        "maxScore": 100,
+        "rating": "strong",
+        "breakdown": [
+          {
+            "id": "plotMomentum",
+            "label": "情节推进",
+            "rawScore": 20,
+            "weight": 23,
+            "contribution": 23.0
+          },
+          {
+            "id": "characterPressure",
+            "label": "人物压力",
+            "rawScore": 19,
+            "weight": 18,
+            "contribution": 17.1
+          },
+          {
+            "id": "conflictTension",
+            "label": "冲突张力",
+            "rawScore": 19,
+            "weight": 14,
+            "contribution": 13.3
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "rawScore": 20,
+            "weight": 31,
+            "contribution": 31.0
+          },
+          {
+            "id": "proseControl",
+            "label": "表达控制",
+            "rawScore": 15,
+            "weight": 14,
+            "contribution": 10.5
+          }
+        ]
+      },
+      "strengths": [
+        "情节推进：这一章能看到明确推进。",
+        "人物压力：人物承压和状态变化可感知。",
+        "冲突张力：文本有明确阻力和悬念。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "拆分过长段落，把动作、信息和情绪分开承载，节奏会更稳。"
+      ],
+      "textMetrics": {
+        "wordCount": 1009,
+        "paragraphCount": 7,
+        "averageParagraphLength": 163,
+        "dialogueParagraphs": 6,
+        "tagMentions": [
+          "伦恩",
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ]
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 4,
+        "relationCandidateCount": 2,
+        "sceneEntityNames": [
+          "艾琳",
+          "伦恩",
+          "米拉院长",
+          "诺瓦"
+        ]
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "aligned",
+        "matched": [
+          "主类型偏设定型，场景与世界锚点基本清楚。",
+          "节奏承诺为快节奏，本章推进和牵引基本对位。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺已得到推进和张力共同支撑。"
+        ],
+        "risks": [],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "plotMomentum",
+          "label": "情节推进",
+          "maxScore": 20,
+          "focus": "这一章是否产生了明确推进或落点"
+        },
+        {
+          "id": "characterPressure",
+          "label": "人物压力",
+          "maxScore": 20,
+          "focus": "人物是否承受了新的压力、状态变化或选择"
+        },
+        {
+          "id": "conflictTension",
+          "label": "冲突张力",
+          "maxScore": 20,
+          "focus": "文本里是否存在阻力、风险、悬念或对抗"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否快速抓到场景、角色和叙事焦点"
+        },
+        {
+          "id": "proseControl",
+          "label": "表达控制",
+          "maxScore": 20,
+          "focus": "段落节奏、句式负担和强调是否受控"
+        }
+      ]
+    }
+  ],
+  "sceneReviews": [
+    {
+      "reviewId": "scene-review-0f60e24d08",
+      "fingerprint": "scene-review-v1:chapter-001:1:4:9581b878e44d7532",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:41+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 52/100。当前最稳的是连续性，最需要补强的是伏笔与回收。",
+      "rating": "needs-revision",
+      "scores": {
+        "total": 52,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕更像气氛切片，功能性还不够明确。",
+            "signals": [
+              "推进/变化信号 0 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": [
+              "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+            ]
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 7,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 1 个",
+              "决定/变化词 0 个"
+            ],
+            "suggestions": [
+              "补清楚“为什么现在发生这件事”，避免角色像被作者硬推着走。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 15,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "补清楚“为什么现在发生这件事”，避免角色像被作者硬推着走。",
+        "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+      ],
+      "textMetrics": {
+        "wordCount": 395,
+        "paragraphCount": 4,
+        "averageParagraphLength": 112,
+        "tagMentions": [
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-3831521454",
+      "fingerprint": "scene-review-v1:chapter-001:5:7:012e20319d69a293",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:41+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 7,
+        "paragraphCount": 3,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 59/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 59,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕更像气氛切片，功能性还不够明确。",
+            "signals": [
+              "推进/变化信号 0 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": [
+              "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+            ]
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 9,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 0 个",
+              "决定/变化词 0 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。",
+        "补一个明确变化：决定、冲突升级、信息揭示或关系转向，让这一幕承担任务。"
+      ],
+      "textMetrics": {
+        "wordCount": 340,
+        "paragraphCount": 3,
+        "averageParagraphLength": 133,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-1ebb06304b",
+      "fingerprint": "scene-review-v1:chapter-002:1:4:db9727b68ad9e1b2",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:42+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "风车塔的夜路",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 66/100。当前最稳的是场景清晰度，最需要补强的是逻辑性。",
+      "rating": "workable",
+      "scores": {
+        "total": 66,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 8,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 1 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 383,
+        "paragraphCount": 4,
+        "averageParagraphLength": 110,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-8e3be0527c",
+      "fingerprint": "scene-review-v1:chapter-002:5:8:354741fa3ad7eaa2",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:42+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "风车塔的夜路",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 67/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 67,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 12,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 7,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+      ],
+      "textMetrics": {
+        "wordCount": 450,
+        "paragraphCount": 4,
+        "averageParagraphLength": 128,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-5ba642e6d0",
+      "fingerprint": "scene-review-v1:chapter-003:1:4:50684379e923235d",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:42+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "晨钟前的试飞",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 68/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "workable",
+      "scores": {
+        "total": 68,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 2 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 1 个",
+              "动机词 2 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 425,
+        "paragraphCount": 4,
+        "averageParagraphLength": 121,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-303c16b09f",
+      "fingerprint": "scene-review-v1:chapter-003:5:8:31bc6bcc58cb8004",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:40:42+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "晨钟前的试飞",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 73/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 73,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 3 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 7,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。"
+      ],
+      "textMetrics": {
+        "wordCount": 464,
+        "paragraphCount": 4,
+        "averageParagraphLength": 134,
+        "tagMentions": [
+          "伦恩",
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-259caf6d86",
+      "fingerprint": "scene-review-v1:chapter-001:1:4:e6d2807c0c413c54",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:51:07+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 71/100。当前最稳的是场景清晰度，最需要补强的是逻辑性。",
+      "rating": "solid",
+      "scores": {
+        "total": 71,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 8,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 13,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 2 个",
+              "回收信号 0 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 3 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+      ],
+      "textMetrics": {
+        "wordCount": 514,
+        "paragraphCount": 4,
+        "averageParagraphLength": 144,
+        "tagMentions": [
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-fed5e8b99c",
+      "fingerprint": "scene-review-v1:chapter-001:5:7:683757066b4e0b70",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:43:39+08:00",
+      "chapterId": "chapter-001",
+      "chapterTitle": "会打喷嚏的包裹",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 7,
+        "paragraphCount": 3,
+        "totalChapterParagraphs": 7,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c001-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 89/100。当前最稳的是场景清晰度，最需要补强的是场景功能。",
+      "rating": "strong",
+      "scores": {
+        "total": 89,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 4 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 3 个",
+              "动机词 2 个",
+              "决定/变化词 4 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 19,
+            "maxScore": 20,
+            "comment": "这一幕兼顾了悬念维持或局部兑现。",
+            "signals": [
+              "伏笔信号 2 个",
+              "回收信号 1 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "伏笔与回收：这一幕兼顾了悬念维持或局部兑现。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 488,
+        "paragraphCount": 3,
+        "averageParagraphLength": 189,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 7
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "aligned",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。",
+          "节奏承诺为快节奏，这一幕的推进和钩子基本对位。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺已被这一幕的推进和钩子支撑。"
+        ],
+        "risks": [],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-7e19654eb5",
+      "fingerprint": "scene-review-v1:chapter-002:1:4:6d939aa7e3e41670",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:43:39+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "风车塔的夜路",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 78/100。当前最稳的是场景清晰度，最需要补强的是场景功能。",
+      "rating": "solid",
+      "scores": {
+        "total": 78,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 0 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 1 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 457,
+        "paragraphCount": 4,
+        "averageParagraphLength": 131,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。",
+          "节奏承诺为快节奏，这一幕的推进和钩子基本对位。"
+        ],
+        "risks": [
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-b8dc72483e",
+      "fingerprint": "scene-review-v1:chapter-002:5:8:03ce41bd466cda19",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:43:39+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "风车塔的夜路",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 77/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 77,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 2 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 13,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 1 个",
+              "疑问钩子 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 522,
+        "paragraphCount": 4,
+        "averageParagraphLength": 148,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-a71771f570",
+      "fingerprint": "scene-review-v1:chapter-003:1:4:5579b458a640a0e2",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:43:40+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "晨钟前的试飞",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 72/100。当前最稳的是逻辑性，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 72,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 2 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 2 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 3 个",
+              "决定/变化词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 4,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 0 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "考虑种下一个后续要兑现的信息点，或让当前冲突形成更明确的回收钩子。",
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+      ],
+      "textMetrics": {
+        "wordCount": 521,
+        "paragraphCount": 4,
+        "averageParagraphLength": 148,
+        "tagMentions": [
+          "伦恩",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-6431e4bc92",
+      "fingerprint": "scene-review-v1:chapter-003:5:8:e8938fdc8a15bf53",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T17:43:40+08:00",
+      "chapterId": "chapter-003",
+      "chapterTitle": "晨钟前的试飞",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c003-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 77/100。当前最稳的是场景清晰度，最需要补强的是伏笔与回收。",
+      "rating": "solid",
+      "scores": {
+        "total": 77,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 3 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 2 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 11,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 0 个",
+              "疑问钩子 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 506,
+        "paragraphCount": 4,
+        "averageParagraphLength": 146,
+        "tagMentions": [
+          "伦恩",
+          "米拉院长",
+          "艾琳",
+          "诺瓦"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": false,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "奇幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "western-fantasy",
+          "styleTags": [
+            "light-novel",
+            "short-fiction"
+          ],
+          "targetAudience": [
+            "ya-reader",
+            "light-novel-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "队伍互动轻快且有化学反应",
+            "每章都有一个明确兑现点"
+          ],
+          "avoidances": [
+            "沉重设定长篇讲解"
+          ],
+          "endingContract": "完成一次小冒险并建立新的搭档关系",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "mixed",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。"
+        ],
+        "risks": [
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“每章都有一个明确兑现点”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“队伍互动轻快且有化学反应”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    }
+  ]
+}

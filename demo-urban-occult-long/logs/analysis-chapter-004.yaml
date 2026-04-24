@@ -1,0 +1,126 @@
+{
+  "chapterId": "chapter-004",
+  "chapterTitle": "雨夜抬轿",
+  "analyzedAt": "2026-04-24T01:26:02+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 14,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 8,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 5,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-004::entity-zhou-qian::af20cacb7b",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "怀疑",
+      "stateTags": [
+        "怀疑"
+      ],
+      "evidence": "@{周祈安}站在雨里，手心那道被残印烫出的红痕忽然又热了一下。他抬眼去看水洼里的轿影，发现轿顶边沿正有一圈极浅的朱纹在雨里时隐时现，和昨晚那片旧城隍印残件边缘的纹路像出自同一副模子。因此@{周祈安}立刻怀疑这不是普通撞邪，而是有人明目张胆地把新案子接在旧案子后头，像故意告诉他: 你昨晚抢回来的东西，只不过是整笔旧债里最小的一块。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-004::entity-zhou-qian::entity-shen::a25ec7b769",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-shen",
+      "toName": "沈观澜",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-004::entity-zhou-qian::entity-bai::a25ec7b769",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-bai",
+      "toName": "白小刀",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-004::entity-zhou-qian::entity-father::a25ec7b769",
+      "fromId": "entity-zhou-qian",
+      "fromName": "周祈安",
+      "toId": "entity-father",
+      "toName": "周敬庵",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-004::entity-shen::entity-bai::a25ec7b769",
+      "fromId": "entity-shen",
+      "fromName": "沈观澜",
+      "toId": "entity-bai",
+      "toName": "白小刀",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-004::entity-shen::entity-father::a25ec7b769",
+      "fromId": "entity-shen",
+      "fromName": "沈观澜",
+      "toId": "entity-father",
+      "toName": "周敬庵",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    },
+    {
+      "candidateId": "relation::chapter-004::entity-bai::entity-father::a25ec7b769",
+      "fromId": "entity-bai",
+      "fromName": "白小刀",
+      "toId": "entity-father",
+      "toName": "周敬庵",
+      "label": "合作",
+      "severity": "suggestion",
+      "evidence": "因为没人想替鬼抬轿，所以@{周祈安}和@{白小刀}只能联手把这条线先追到底。@{沈观澜}则留在巷口，用伞尖在地上划了个简短封界，防止轿路回头借医院的死人气再起一次。她做这件事时语速很快，却没有一句废话，“你们进去只认三样: 抬轿缺口、失踪护士、和任何跟周敬庵旧案有关的旧称。别乱碰轿帘，别先碰井水。真要出手，先拆轿脚，再救人。”她把优先级说得极死，因为这一案已经开始把主线和单元案绞在一起，任何犹豫都会直接错过最值钱的线索。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-shen",
+      "entity-bai",
+      "entity-father"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "沈观澜",
+      "白小刀",
+      "周敬庵"
+    ]
+  }
+}

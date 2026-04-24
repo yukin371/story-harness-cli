@@ -88,6 +88,9 @@
       "id": "entity-shen-zhao",
       "name": "沈昭",
       "type": "character",
+      "aliases": [
+        "星探"
+      ],
       "seed": true,
       "profile": {
         "role": "情报人员",
@@ -145,7 +148,32 @@
           "chapterId": "chapter-001",
           "description": "表面身份"
         }
-      ]
+      ],
+      "arc": {
+        "motivation": "背叛组织，保住账本真本，并把林舟推到能掀桌的位置",
+        "internalConflict": "组织旧忠诚 vs 对林舟与真相的个人选择",
+        "milestones": [
+          {
+            "id": "milestone-shenzhao-001",
+            "chapterId": "chapter-002",
+            "type": "试探盟友",
+            "description": "在面包车里向林舟透露赵局长背后还有更大网络。"
+          },
+          {
+            "id": "milestone-shenzhao-002",
+            "chapterId": "chapter-004",
+            "type": "公开背叛",
+            "description": "在联络办地下室拒绝执行命令，持枪对准赵局长。"
+          },
+          {
+            "id": "milestone-shenzhao-003",
+            "chapterId": "chapter-007",
+            "type": "转交关键情报",
+            "description": "重伤后仍向林舟交代赵继业与苏明的线索，把主动权交出去。"
+          }
+        ],
+        "resolutionChapterId": null
+      }
     },
     {
       "id": "entity-su-qing",
@@ -213,6 +241,9 @@
       "id": "entity-zhao-juzhang",
       "name": "赵局长",
       "type": "character",
+      "aliases": [
+        "赵继明"
+      ],
       "seed": true,
       "profile": {
         "role": "幕后黑手",
@@ -261,37 +292,72 @@
           "chapterId": "chapter-001",
           "description": "犯罪集团核心"
         }
-      ]
+      ],
+      "arc": {
+        "motivation": "维持雾港地下秩序与个人权力，确保账本和网络不被外界揭开",
+        "internalConflict": "绝对掌控欲 vs 体系失控后的恐惧",
+        "milestones": [
+          {
+            "id": "milestone-zhao-001",
+            "chapterId": "chapter-001",
+            "type": "幕后现身",
+            "description": "被明确指向为账本签名者和林舟旧案的操盘者。"
+          },
+          {
+            "id": "milestone-zhao-002",
+            "chapterId": "chapter-004",
+            "type": "正面对峙",
+            "description": "在联络办地下室亲自逼迫沈昭处理林舟。"
+          },
+          {
+            "id": "milestone-zhao-003",
+            "chapterId": "chapter-008",
+            "type": "权力崩塌",
+            "description": "在审讯室里被省纪委带走，长期布局正式失控。"
+          }
+        ],
+        "resolutionChapterId": "chapter-008"
+      }
     },
     {
       "id": "inferred::赵继业",
       "name": "赵继业",
       "type": "character",
       "aliases": [],
+      "seed": true,
       "summary": "",
       "currentState": "",
       "source": "inferred",
-      "registeredAt": "2026-04-22T23:56:36+08:00"
+      "registeredAt": "2026-04-22T23:56:36+08:00",
+      "profile": {
+        "role": "",
+        "fullName": "赵继业",
+        "appearance": [],
+        "abilities": [],
+        "background": "",
+        "motivation": "",
+        "weakness": ""
+      }
     },
     {
       "id": "inferred::苏明",
       "name": "苏明",
       "type": "character",
       "aliases": [],
+      "seed": true,
       "summary": "",
       "currentState": "",
       "source": "inferred",
-      "registeredAt": "2026-04-22T23:56:36+08:00"
-    },
-    {
-      "id": "inferred::赵继明",
-      "name": "赵继明",
-      "type": "character",
-      "aliases": [],
-      "summary": "",
-      "currentState": "",
-      "source": "inferred",
-      "registeredAt": "2026-04-22T23:56:36+08:00"
+      "registeredAt": "2026-04-22T23:56:36+08:00",
+      "profile": {
+        "role": "",
+        "fullName": "苏明",
+        "appearance": [],
+        "abilities": [],
+        "background": "",
+        "motivation": "",
+        "weakness": ""
+      }
     }
   ],
   "enrichmentProposals": [

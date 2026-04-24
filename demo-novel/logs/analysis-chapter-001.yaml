@@ -1,0 +1,78 @@
+{
+  "chapterId": "chapter-001",
+  "chapterTitle": "裂痕之夜",
+  "analyzedAt": "2026-04-23T00:17:41+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 31,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 4,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-001::entity-lin-zhou::0b7d032f5d",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "信任",
+      "stateTags": [
+        "信任"
+      ],
+      "evidence": "赵局长。赵继明。雾港市公安局局长。@{林舟}的老上级，曾经最信任的领导和恩师。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-zhao-juzhang::0b7d032f5d",
+      "entityId": "entity-zhao-juzhang",
+      "entityName": "赵局长",
+      "proposedState": "信任",
+      "stateTags": [
+        "信任"
+      ],
+      "evidence": "赵局长。赵继明。雾港市公安局局长。@{林舟}的老上级，曾经最信任的领导和恩师。",
+      "confidence": 0.78
+    },
+    {
+      "candidateId": "snapshot::chapter-001::entity-lin-zhou::9ac7691924",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "疲惫；离开",
+      "stateTags": [
+        "疲惫",
+        "离开"
+      ],
+      "evidence": "妻子在他被革职后的第二十八天离开了，当时她抱着刚满月的孩子，站在出租屋门口，眼里全是疲惫和失望。\"林舟，我求过你，\"她说，\"就这一次，听我一句劝，别查了。\"",
+      "confidence": 0.78
+    }
+  ],
+  "relationCandidates": [
+    {
+      "candidateId": "relation::chapter-001::entity-lin-zhou::entity-zhao-juzhang::0b7d032f5d",
+      "fromId": "entity-lin-zhou",
+      "fromName": "林舟",
+      "toId": "entity-zhao-juzhang",
+      "toName": "赵局长",
+      "label": "信任上升",
+      "severity": "suggestion",
+      "evidence": "赵局长。赵继明。雾港市公安局局长。@{林舟}的老上级，曾经最信任的领导和恩师。",
+      "confidence": 0.84
+    }
+  ],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-lin-zhou",
+      "entity-zhao-juzhang"
+    ],
+    "activeEntityNames": [
+      "林舟",
+      "赵局长"
+    ]
+  }
+}

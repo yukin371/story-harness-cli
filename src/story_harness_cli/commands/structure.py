@@ -8,6 +8,7 @@ from story_harness_cli.services.structure import (
     apply_template,
     check_structure,
     list_templates,
+    scaffold_structure_to_outline,
     show_structure,
 )
 
@@ -84,6 +85,26 @@ def command_structure_map(args) -> int:
     return 0
 
 
+def command_structure_scaffold(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+
+    try:
+        result = scaffold_structure_to_outline(
+            state,
+            mapped_only=args.mapped_only,
+            replace_directions=args.replace_directions,
+        )
+    except ValueError as exc:
+        print(json.dumps({"error": str(exc)}, ensure_ascii=False, indent=2))
+        return 1
+
+    save_state(root, state)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
+
+
 def register_structure_commands(subparsers) -> None:
     structure_parser = subparsers.add_parser("structure", help="Narrative structure templates")
     structure_sub = structure_parser.add_subparsers(dest="structure_command", required=True)
@@ -115,3 +136,18 @@ def register_structure_commands(subparsers) -> None:
     map_parser.add_argument("--beat", required=True, help="Beat name to map")
     map_parser.add_argument("--chapter-id", required=True, help="Chapter id to map to")
     map_parser.set_defaults(func=command_structure_map)
+
+    # structure scaffold
+    scaffold_parser = structure_sub.add_parser("scaffold", help="Scaffold outline beats and directions from active structure")
+    scaffold_parser.add_argument("--root", required=True)
+    scaffold_parser.add_argument(
+        "--mapped-only",
+        action="store_true",
+        help="Only scaffold beats that have explicit structure map bindings",
+    )
+    scaffold_parser.add_argument(
+        "--replace-directions",
+        action="store_true",
+        help="Overwrite existing manual chapter directions with generated structure directions",
+    )
+    scaffold_parser.set_defaults(func=command_structure_scaffold)

@@ -1,6 +1,6 @@
 # Story Harness CLI 项目画像
 
-> 最后更新: 2026-04-22
+> 最后更新: 2026-04-23
 > 事实来源: `README.md`、`pyproject.toml`、入口代码、测试目录
 > 说明: 只记录高置信度事实；未确认项标记为 `TBD`
 
@@ -13,7 +13,7 @@
 
 ## 2. 当前定位
 
-Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为结构化文件层（proposals / reviews / projections / context），让 AI agent 和作者在明确的约束下协作，减少设定漂移和状态丢失。当前处于早期功能积累阶段。
+Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为结构化文件层（proposals / reviews / projections / context），让 AI agent 和作者在明确的约束下协作，减少设定漂移和状态丢失。当前协议已覆盖基础定位层、故事契约和商业连载蓝图，但整体仍处于早期功能积累阶段。
 
 ## 3. 运行与构建入口
 
@@ -26,9 +26,9 @@ Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为
 |------|--------|------|
 | `init` | — | 初始化项目 |
 | `brainstorm` | `character` / `world` / `outline` | 灵感生成 |
-| `outline` | `propose` / `promote` | 大纲管理 |
-| `chapter` | `analyze` / `suggest` | 章节分析 |
-| `review` | `apply` | 审核变更请求 |
+| `outline` | `propose` / `promote` / `check` / `beat-add` / `beat-complete` / `beat-list` / `scene-add` / `scene-list` / `scene-detect` / `scene-update` / `scene-remove` | 大纲管理、严格写作前门禁与章节场景维护（默认检查 project positioning / storyContract + direction / beats / scenePlans） |
+| `chapter` | `analyze` / `suggest` | 章节分析与细化建议生成（`suggest` 默认要求先通过严格 outline-first 门禁） |
+| `review` | `apply` / `chapter` / `scene` | 审核变更请求 / 生成章节与一幕回顾评分（含类型/平台加权、契约对齐、商业对齐） |
 | `projection` | `apply` | 应用投影 |
 | `context` | `refresh` / `show` | 写作上下文 |
 | `entity` | `enrich` / `review` / `list` / `show` | 角色管理 |
@@ -43,13 +43,13 @@ Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为
 - 框架: argparse（子命令路由）
 - 持久化: JSON-compatible YAML 文件（`.yaml` 后缀，内容为合法 JSON）
 - 测试框架: unittest（stdlib）
-- CI 平台: TBD
+- CI 平台: GitHub Actions
 
 ## 5. 当前验证基线
 
-- Lint: TBD（无 linter 配置）
-- Test: `PYTHONPATH=src python -m unittest discover -s tests`（54 个测试）
-- Build: `pip install -e .`（需 hatchling）
+- Lint: `ruff format --check src/ tests/` + `ruff check src/ tests/`
+- Test: `PYTHONPATH=src python -m unittest discover -s tests`
+- Build: `pip install -e .`（需 hatchling）或 `uv sync`
 - Security: TBD
 - Release: TBD
 
@@ -62,17 +62,22 @@ Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为
 - `src/story_harness_cli/data/`: 创作数据表（角色原型、世界元素、中文姓名等）
 - `tests/smoke/`: 冒烟测试
 - `tests/fixtures/minimal_project/`: 最小测试 fixture
+- `demo-novel/`: 长篇样例工程
+- `demo-short-story/`: 短篇端到端验证样例工程
+- `demo-light-novel-short/`: 风格驱动短篇样例工程（西幻轻小说）
+- `demo-xuanhuan-short/`: 风格驱动短篇样例工程（玄幻网文）
+- `demo-urban-occult-long/`: 商业化网站连载长篇样例工程（都市玄幻 / 民俗志怪 / 职业线）
 - `docs/`: 文档与模板
 - `adapters/`: 宿主适配器（Codex、Claude Code 等）
 - `scripts/`: 安装脚本
 
 ## 7. 现有治理骨架
 
-- 当前执行入口: 本文档创建前无（本文件为首次建立）
-- 架构护栏: 无（本文件为首次建立）
-- 模块文档规范: 无
-- 报告 / issue / archive 入口: 无
-- hooks / commit policy / CI governance: 无
+- 当前执行入口: `docs/roadmap.md`
+- 架构护栏: `docs/ARCHITECTURE_GUARDRAILS.md`
+- 模块文档规范: `src/story_harness_cli/commands/MODULE.md`、`src/story_harness_cli/services/MODULE.md`、`src/story_harness_cli/protocol/MODULE.md`
+- 报告 / issue / archive 入口: `docs/plans/`、`docs/releases/`
+- hooks / commit policy / CI governance: `.github/workflows/ci.yml`、`docs/COMMIT_POLICY.md`、`docs/ENGINEERING_GOVERNANCE.md`
 
 ## 8. 已知高风险区域
 
@@ -83,7 +88,6 @@ Agent-native 小说创作工作流 CLI。将长篇小说的创作状态拆分为
 
 ## 9. 缺失或待确认项
 
-- CI/CD 配置: TBD（确认路径：maintainer 决定是否使用 GitHub Actions）
-- lint 工具: TBD（确认路径：ruff / flake8 选型）
 - 发布流程: TBD（确认路径：PyPI 发布 + 版本策略）
 - 适配器安装脚本的实际使用情况: TBD
+- Security 基线与权限模型: TBD

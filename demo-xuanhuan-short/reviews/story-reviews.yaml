@@ -1,0 +1,570 @@
+{
+  "rubricVersion": "chapter-review-v1",
+  "sceneRubricVersion": "scene-review-v1",
+  "chapterReviews": [],
+  "sceneReviews": [
+    {
+      "reviewId": "scene-review-ce9f88b1d0",
+      "fingerprint": "scene-review-v1:chapter-002:1:4:e958f33a41e3516b",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T19:10:22+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "赤桥试榜",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 58/100。当前最稳的是场景功能，最需要补强的是逻辑性。",
+      "rating": "workable",
+      "scores": {
+        "total": 58,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 14,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 1 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 13,
+            "maxScore": 20,
+            "comment": "这一幕单独可读，但与前后文的承接还可以更明显。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": [
+              "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+            ]
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "事件能看懂，但因果或动机还可以再明示一点。",
+            "signals": [
+              "因果词 0 个",
+              "动机词 1 个",
+              "决定/变化词 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 10,
+            "maxScore": 20,
+            "comment": "这一幕完成了当前动作，但伏笔/回收信号还偏弱。",
+            "signals": [
+              "伏笔信号 0 个",
+              "回收信号 1 个",
+              "疑问钩子 0 个"
+            ],
+            "suggestions": [
+              "结尾可以留下一个未解答的问题，增强这一幕的牵引力。"
+            ]
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 11,
+            "maxScore": 20,
+            "comment": "读者能跟上大意，但场景锚点还可以更稳。",
+            "signals": [
+              "环境锚点 0 个",
+              "出场角色 3 个",
+              "开头带锚点 否"
+            ],
+            "suggestions": [
+              "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。"
+            ]
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。"
+      ],
+      "priorityActions": [
+        "结尾可以留下一个未解答的问题，增强这一幕的牵引力。",
+        "开头补一个时间、地点或环境锚点，帮助读者快速抓到镜头。",
+        "结尾补一个钩子、未完成动作或状态余波，让下一幕更自然接上。"
+      ],
+      "textMetrics": {
+        "wordCount": 415,
+        "paragraphCount": 4,
+        "averageParagraphLength": 114,
+        "tagMentions": [
+          "宁灼",
+          "赵北辰",
+          "陆小棠"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "玄幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "xuanhuan",
+          "styleTags": [
+            "web-serial"
+          ],
+          "targetAudience": [
+            "qidian-reader",
+            "progression-fantasy-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "每章都有一次境界或处境推进",
+            "压制与反压制必须给出兑现"
+          ],
+          "avoidances": [
+            "空转讲设定"
+          ],
+          "endingContract": "完成一次小型宗门危机并拿到新的晋升资格",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "at-risk",
+        "matched": [],
+        "risks": [
+          "主类型偏设定型，但这一幕的场景/设定锚点偏弱。",
+          "声明为快节奏，但这一幕的推进或钩子还不够强。",
+          "核心承诺“压制与反压制必须给出兑现”：兑现/爽点承诺在这一幕里的爆点还不够明显。"
+        ],
+        "notes": [
+          "核心承诺“每章都有一次境界或处境推进”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-f4d90515ed",
+      "fingerprint": "scene-review-v1:chapter-002:1:4:9dd77700138d884b",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T19:11:44+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "赤桥试榜",
+      "sceneRange": {
+        "startParagraph": 1,
+        "endParagraph": 4,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 1,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-01"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 87/100。当前最稳的是场景清晰度，最需要补强的是场景功能。",
+      "rating": "strong",
+      "scores": {
+        "total": 87,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 3 处",
+              "状态候选 0 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 0 个",
+              "后续角色重合 1 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 3 个",
+              "动机词 2 个",
+              "决定/变化词 3 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一幕兼顾了悬念维持或局部兑现。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 1 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 20,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 2 个",
+              "出场角色 4 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "伏笔与回收：这一幕兼顾了悬念维持或局部兑现。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [],
+      "textMetrics": {
+        "wordCount": 633,
+        "paragraphCount": 4,
+        "averageParagraphLength": 174,
+        "tagMentions": [
+          "宁灼",
+          "赵北辰",
+          "陆小棠",
+          "韩执事"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 4,
+        "snapshotCandidateCount": 0,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "玄幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "xuanhuan",
+          "styleTags": [
+            "web-serial"
+          ],
+          "targetAudience": [
+            "qidian-reader",
+            "progression-fantasy-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "每章都有一次境界或处境推进",
+            "压制与反压制必须给出兑现"
+          ],
+          "avoidances": [
+            "空转讲设定"
+          ],
+          "endingContract": "完成一次小型宗门危机并拿到新的晋升资格",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "aligned",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。",
+          "节奏承诺为快节奏，这一幕的推进和钩子基本对位。",
+          "核心承诺“压制与反压制必须给出兑现”：兑现/爽点承诺已被这一幕的推进和钩子支撑。"
+        ],
+        "risks": [],
+        "notes": [
+          "核心承诺“每章都有一次境界或处境推进”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    },
+    {
+      "reviewId": "scene-review-395dc140c0",
+      "fingerprint": "scene-review-v1:chapter-002:5:8:a0b7fd97076f396c",
+      "rubricVersion": "scene-review-v1",
+      "generatedAt": "2026-04-23T19:11:44+08:00",
+      "chapterId": "chapter-002",
+      "chapterTitle": "赤桥试榜",
+      "sceneRange": {
+        "startParagraph": 5,
+        "endParagraph": 8,
+        "paragraphCount": 4,
+        "totalChapterParagraphs": 8,
+        "sceneIndex": 2,
+        "source": "explicit",
+        "scenePlanId": "scene-c002-02"
+      },
+      "summary": "基于选定片段的正文与分析信号，这一幕总分 85/100。当前最稳的是场景功能，最需要补强的是连续性。",
+      "rating": "strong",
+      "scores": {
+        "total": 85,
+        "maxScore": 100,
+        "dimensions": [
+          {
+            "id": "sceneFunction",
+            "label": "场景功能",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕承担了清楚的推进或转折功能。",
+            "signals": [
+              "推进/变化信号 5 处",
+              "状态候选 3 个",
+              "关系候选 0 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "continuity",
+            "label": "连续性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "这一幕与前后文的接缝基本顺。",
+            "signals": [
+              "承接角色重合 1 个",
+              "后续角色重合 0 个",
+              "承接/过渡词 2 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "logic",
+            "label": "逻辑性",
+            "score": 16,
+            "maxScore": 20,
+            "comment": "人物行动和因果链基本说得通。",
+            "signals": [
+              "因果词 3 个",
+              "动机词 0 个",
+              "决定/变化词 2 个"
+            ],
+            "suggestions": [
+              "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+            ]
+          },
+          {
+            "id": "foreshadowing",
+            "label": "伏笔与回收",
+            "score": 17,
+            "maxScore": 20,
+            "comment": "这一幕兼顾了悬念维持或局部兑现。",
+            "signals": [
+              "伏笔信号 1 个",
+              "回收信号 2 个",
+              "疑问钩子 1 个"
+            ],
+            "suggestions": []
+          },
+          {
+            "id": "sceneClarity",
+            "label": "场景清晰度",
+            "score": 18,
+            "maxScore": 20,
+            "comment": "这一幕的镜头和焦点比较清楚。",
+            "signals": [
+              "环境锚点 1 个",
+              "出场角色 3 个",
+              "开头带锚点 是"
+            ],
+            "suggestions": []
+          }
+        ]
+      },
+      "strengths": [
+        "场景功能：这一幕承担了清楚的推进或转折功能。",
+        "连续性：这一幕与前后文的接缝基本顺。",
+        "逻辑性：人物行动和因果链基本说得通。",
+        "伏笔与回收：这一幕兼顾了悬念维持或局部兑现。",
+        "场景清晰度：这一幕的镜头和焦点比较清楚。"
+      ],
+      "priorityActions": [
+        "给角色一个更直白的动机或顾虑提示，读者更容易跟上行动逻辑。"
+      ],
+      "textMetrics": {
+        "wordCount": 660,
+        "paragraphCount": 4,
+        "averageParagraphLength": 180,
+        "tagMentions": [
+          "宁灼",
+          "赵北辰",
+          "韩执事"
+        ],
+        "totalChapterParagraphs": 8
+      },
+      "analysisSignals": {
+        "analysisBacked": true,
+        "activeEntityCount": 3,
+        "snapshotCandidateCount": 3,
+        "relationCandidateCount": 0
+      },
+      "projectContext": {
+        "genre": "玄幻",
+        "positioning": {
+          "primaryGenre": "fantasy",
+          "subGenre": "xuanhuan",
+          "styleTags": [
+            "web-serial"
+          ],
+          "targetAudience": [
+            "qidian-reader",
+            "progression-fantasy-reader"
+          ]
+        },
+        "storyContract": {
+          "corePromises": [
+            "每章都有一次境界或处境推进",
+            "压制与反压制必须给出兑现"
+          ],
+          "avoidances": [
+            "空转讲设定"
+          ],
+          "endingContract": "完成一次小型宗门危机并拿到新的晋升资格",
+          "paceContract": "快节奏"
+        }
+      },
+      "contractAlignment": {
+        "status": "aligned",
+        "matched": [
+          "主类型偏设定型，这一幕的镜头和设定锚点基本清楚。",
+          "节奏承诺为快节奏，这一幕的推进和钩子基本对位。",
+          "核心承诺“压制与反压制必须给出兑现”：兑现/爽点承诺已被这一幕的推进和钩子支撑。"
+        ],
+        "risks": [],
+        "notes": [
+          "核心承诺“每章都有一次境界或处境推进”目前仅记录，尚未接入一幕级自动判定。"
+        ]
+      },
+      "rubric": [
+        {
+          "id": "sceneFunction",
+          "label": "场景功能",
+          "maxScore": 20,
+          "focus": "这一幕是否承担推进、转折、铺垫或兑现任务"
+        },
+        {
+          "id": "continuity",
+          "label": "连续性",
+          "maxScore": 20,
+          "focus": "这一幕是否与前后文形成承接，而不是孤立切片"
+        },
+        {
+          "id": "logic",
+          "label": "逻辑性",
+          "maxScore": 20,
+          "focus": "人物行动、因果链和信息流是否说得通"
+        },
+        {
+          "id": "foreshadowing",
+          "label": "伏笔与回收",
+          "maxScore": 20,
+          "focus": "这一幕是否种下信息、维持悬念或完成局部兑现"
+        },
+        {
+          "id": "sceneClarity",
+          "label": "场景清晰度",
+          "maxScore": 20,
+          "focus": "读者能否迅速抓到时间、地点、角色和冲突焦点"
+        }
+      ]
+    }
+  ]
+}

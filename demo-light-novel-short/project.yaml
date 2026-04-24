@@ -1,0 +1,31 @@
+{
+  "title": "星铃与见习龙",
+  "genre": "奇幻",
+  "defaultMode": "driving",
+  "activeChapterId": "chapter-001",
+  "positioning": {
+    "primaryGenre": "fantasy",
+    "subGenre": "western-fantasy",
+    "styleTags": [
+      "light-novel",
+      "short-fiction"
+    ],
+    "targetAudience": [
+      "ya-reader",
+      "light-novel-reader"
+    ]
+  },
+  "storyContract": {
+    "corePromises": [
+      "队伍互动轻快且有化学反应",
+      "每章都有一个明确兑现点"
+    ],
+    "avoidances": [
+      "沉重设定长篇讲解"
+    ],
+    "endingContract": "完成一次小冒险并建立新的搭档关系",
+    "paceContract": "快节奏"
+  },
+  "createdAt": "2026-04-23T17:24:32+08:00",
+  "updatedAt": "2026-04-23T17:51:06+08:00"
+}

@@ -1,0 +1,59 @@
+{
+  "chapterId": "chapter-010",
+  "chapterTitle": "封街夜巡",
+  "analyzedAt": "2026-04-24T00:17:05+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-zhou-qian",
+      "name": "周祈安",
+      "mentionCount": 14,
+      "source": "registry"
+    },
+    {
+      "id": "entity-bai",
+      "name": "白小刀",
+      "mentionCount": 5,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen",
+      "name": "沈观澜",
+      "mentionCount": 2,
+      "source": "registry"
+    },
+    {
+      "id": "entity-father",
+      "name": "周敬庵",
+      "mentionCount": 1,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-010::entity-zhou-qian::81bb5e0660",
+      "entityId": "entity-zhou-qian",
+      "entityName": "周祈安",
+      "proposedState": "愤怒",
+      "stateTags": [
+        "愤怒"
+      ],
+      "evidence": "那一瞬间，@{周祈安}心里不是害怕，反而生出一种越想越冷的愤怒：原来在对方眼里，前面他们拼命收下来的每一场险，都不过是今晚能拿出来复用的道具。他立刻改了布置，不再跟着异象跑，而是反过来盯住“谁在运货”。河桥口、戏台背街、旧巷牌楼这三处最容易被案子拖走视线的地方，全换成两人一组，一人盯异象，一人只看地面物流痕迹；凡是看到板车、纸灰袋、旧木箱，先截物，再追人。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-zhou-qian",
+      "entity-bai",
+      "entity-shen",
+      "entity-father"
+    ],
+    "activeEntityNames": [
+      "周祈安",
+      "白小刀",
+      "沈观澜",
+      "周敬庵"
+    ]
+  }
+}

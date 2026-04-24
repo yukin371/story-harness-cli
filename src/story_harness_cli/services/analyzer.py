@@ -68,7 +68,14 @@ def resolve_entities(text: str, entities_state: Dict[str, Any]) -> Dict[str, Dic
     for entity_id, entity in inferred.items():
         if entity["name"] not in tag_mentions:
             continue
-        existing = next((item for item in resolved.values() if item["name"] == entity["name"]), None)
+        existing = next(
+            (
+                item
+                for item in resolved.values()
+                if entity["name"] == item["name"] or entity["name"] in item.get("aliases", [])
+            ),
+            None,
+        )
         if existing is None:
             resolved[entity_id] = entity
 
@@ -171,4 +178,3 @@ def analyze_chapter(root: Path, state: Dict[str, Dict[str, Any]], chapter_id: st
     dump_json_compatible_yaml(root / "logs" / "latest-analysis.yaml", analysis)
     dump_json_compatible_yaml(root / "logs" / f"analysis-{chapter_id}.yaml", analysis)
     return analysis
-

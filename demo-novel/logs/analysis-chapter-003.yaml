@@ -1,0 +1,82 @@
+{
+  "chapterId": "chapter-003",
+  "chapterTitle": "雾中往事",
+  "analyzedAt": "2026-04-23T00:17:41+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-lin-zhou",
+      "name": "林舟",
+      "mentionCount": 18,
+      "source": "registry"
+    },
+    {
+      "id": "entity-su-qing",
+      "name": "苏晴",
+      "mentionCount": 15,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-zhao",
+      "name": "沈昭",
+      "mentionCount": 8,
+      "source": "registry"
+    },
+    {
+      "id": "entity-zhao-juzhang",
+      "name": "赵局长",
+      "mentionCount": 3,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-003::entity-lin-zhou::f106a86261",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "愤怒；背叛",
+      "stateTags": [
+        "愤怒",
+        "背叛"
+      ],
+      "evidence": "@{林舟}盯着照片里那张模糊的脸，一种说不清的情绪在心底翻涌。是愤怒？是背叛感？还是某种更复杂的东西？",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-003::entity-lin-zhou::c3d275206c",
+      "entityId": "entity-lin-zhou",
+      "entityName": "林舟",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "\"@{林舟}？\"电话那头的声音低沉而克制，是典型的法医腔调——冷静、精准、不带感情色彩，\"我是@{苏晴}，市公安局法医中心。\"",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-003::entity-su-qing::c3d275206c",
+      "entityId": "entity-su-qing",
+      "entityName": "苏晴",
+      "proposedState": "冷静",
+      "stateTags": [
+        "冷静"
+      ],
+      "evidence": "\"@{林舟}？\"电话那头的声音低沉而克制，是典型的法医腔调——冷静、精准、不带感情色彩，\"我是@{苏晴}，市公安局法医中心。\"",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-lin-zhou",
+      "entity-su-qing",
+      "entity-shen-zhao",
+      "entity-zhao-juzhang"
+    ],
+    "activeEntityNames": [
+      "林舟",
+      "苏晴",
+      "沈昭",
+      "赵局长"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "chapterId": "chapter-002",
+  "chapterTitle": "第十七号信箱",
+  "analyzedAt": "2026-04-23T16:16:22+08:00",
+  "activeEntities": [
+    {
+      "id": "entity-shen-he",
+      "name": "沈禾",
+      "mentionCount": 6,
+      "source": "registry"
+    },
+    {
+      "id": "entity-lu-chuan",
+      "name": "陆川",
+      "mentionCount": 4,
+      "source": "registry"
+    },
+    {
+      "id": "entity-shen-lan",
+      "name": "沈岚",
+      "mentionCount": 3,
+      "source": "registry"
+    },
+    {
+      "id": "entity-chen-qiming",
+      "name": "陈启明",
+      "mentionCount": 2,
+      "source": "registry"
+    }
+  ],
+  "snapshotCandidates": [
+    {
+      "candidateId": "snapshot::chapter-002::entity-shen-lan::ae090bb186",
+      "entityId": "entity-shen-lan",
+      "entityName": "沈岚",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "那封信只有一页。@{沈岚} 在里面说，他不是没想过带她离开纸灯巷，只是如果所有人都走了，当年的事就再也不会有人提起。洪灾那晚，他看见 @{陈启明} 带人关闸，也看见几个孩子还困在巷尾，于是先去救人，再回来藏信，等他把最后一卷录音送到废戏台时，洪水已经漫到了腰。",
+      "confidence": 0.92
+    },
+    {
+      "candidateId": "snapshot::chapter-002::entity-chen-qiming::ae090bb186",
+      "entityId": "entity-chen-qiming",
+      "entityName": "陈启明",
+      "proposedState": "离开",
+      "stateTags": [
+        "离开"
+      ],
+      "evidence": "那封信只有一页。@{沈岚} 在里面说，他不是没想过带她离开纸灯巷，只是如果所有人都走了，当年的事就再也不会有人提起。洪灾那晚，他看见 @{陈启明} 带人关闸，也看见几个孩子还困在巷尾，于是先去救人，再回来藏信，等他把最后一卷录音送到废戏台时，洪水已经漫到了腰。",
+      "confidence": 0.92
+    }
+  ],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "entity-shen-he",
+      "entity-lu-chuan",
+      "entity-shen-lan",
+      "entity-chen-qiming"
+    ],
+    "activeEntityNames": [
+      "沈禾",
+      "陆川",
+      "沈岚",
+      "陈启明"
+    ]
+  }
+}

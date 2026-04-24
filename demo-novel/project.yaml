@@ -1,0 +1,32 @@
+{
+  "title": "雾港疑案",
+  "genre": "悬疑",
+  "defaultMode": "driving",
+  "activeChapterId": "chapter-008",
+  "positioning": {
+    "primaryGenre": "mystery",
+    "subGenre": "urban-mystery",
+    "styleTags": [
+      "web-serial"
+    ],
+    "targetAudience": [
+      "mystery-reader",
+      "web-fiction-reader"
+    ]
+  },
+  "storyContract": {
+    "corePromises": [
+      "主线谜团持续推进",
+      "稳定提供新线索与阶段性反转",
+      "调查推进同时拉动人物关系变化"
+    ],
+    "avoidances": [
+      "长时间脱离核心案件",
+      "集中灌输过量背景设定"
+    ],
+    "endingContract": "阶段性破案并揭开更大阴谋",
+    "paceContract": "中快节奏"
+  },
+  "createdAt": "2026-04-22T23:46:43+08:00",
+  "updatedAt": "2026-04-23T15:55:42+08:00"
+}

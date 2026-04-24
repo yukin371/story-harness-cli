@@ -1,0 +1,47 @@
+{
+  "chapterId": "chapter-001",
+  "chapterTitle": "火种入骨",
+  "analyzedAt": "2026-04-23T19:08:26+08:00",
+  "activeEntities": [
+    {
+      "id": "inferred::韩执事",
+      "name": "韩执事",
+      "mentionCount": 2,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::宁灼",
+      "name": "宁灼",
+      "mentionCount": 1,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::赵北辰",
+      "name": "赵北辰",
+      "mentionCount": 1,
+      "source": "inferred"
+    },
+    {
+      "id": "inferred::陆小棠",
+      "name": "陆小棠",
+      "mentionCount": 1,
+      "source": "inferred"
+    }
+  ],
+  "snapshotCandidates": [],
+  "relationCandidates": [],
+  "sceneScope": {
+    "activeEntityIds": [
+      "inferred::韩执事",
+      "inferred::宁灼",
+      "inferred::赵北辰",
+      "inferred::陆小棠"
+    ],
+    "activeEntityNames": [
+      "韩执事",
+      "宁灼",
+      "赵北辰",
+      "陆小棠"
+    ]
+  }
+}
