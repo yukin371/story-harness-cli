@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import os
 import time
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Dict
 
-from .files import ROOT_FILES, resolve_state_path, root_file
+from .files import LAYOUT_LAYERED, ROOT_FILES, detect_layout, resolve_state_path, root_file
 from .io import dump_json_compatible_yaml, load_json_compatible_yaml
 from .schema import default_project_state
 
@@ -60,6 +61,15 @@ def load_project_state(root: Path) -> Dict[str, Any]:
             state[internal_key] = merge_defaults(raw, defaults[internal_key])
         else:
             state[internal_key] = raw
+
+    # In layered layout, volumes may be stored in per-volume files.
+    layout = detect_layout(root)
+    if layout == LAYOUT_LAYERED:
+        outline = state["outline"]
+        volumes = outline.get("volumes")
+        if volumes and not any(v.get("chapters") for v in volumes):
+            state["outline"] = _load_outline_layered(root, outline)
+
     state[STATE_META_KEY] = _build_state_meta(root)
     return state
 
@@ -73,6 +83,14 @@ def save_state(root: Path, state: Dict[str, Any], *, timeout_seconds: float = ST
         for state_key, internal_key in STATE_KEY_MAP.items():
             fpath = resolve_state_path(root, state_key)
             dump_json_compatible_yaml(fpath, state[internal_key])
+
+        # In layered layout, split volume chapters into per-volume files.
+        layout = detect_layout(root)
+        if layout == LAYOUT_LAYERED:
+            volumes = state["outline"].get("volumes")
+            if volumes and any(v.get("chapters") for v in volumes):
+                _save_outline_layered(root, state["outline"])
+
         state[STATE_META_KEY] = _build_state_meta(root)
 
 
@@ -96,6 +114,64 @@ def merge_defaults(payload: Dict[str, Any], defaults: Dict[str, Any]) -> Dict[st
         if key not in merged:
             merged[key] = value
     return merged
+
+
+# ---------------------------------------------------------------------------
+# Volume-level outline splitting (layered layout)
+# ---------------------------------------------------------------------------
+
+def _load_yaml(path: Path) -> dict:
+    """Read a JSON-compatible YAML file and return its contents as a dict."""
+    raw = path.read_text(encoding="utf-8").strip()
+    return json.loads(raw) if raw else {}
+
+
+def _save_outline_layered(root: Path, outline: Dict[str, Any]) -> None:
+    """Split volume chapters into per-volume files under spec/outlines/."""
+    volumes = outline.get("volumes")
+    if not volumes:
+        return
+
+    for vol in volumes:
+        vol_id = vol.get("id")
+        if not vol_id:
+            continue
+        chapters = vol.get("chapters", [])
+        vol_path = resolve_state_path(
+            root, "outline_volume", volume_id=vol_id, layout=LAYOUT_LAYERED,
+        )
+        vol_path.parent.mkdir(parents=True, exist_ok=True)
+        dump_json_compatible_yaml(vol_path, {"chapters": chapters})
+
+    # Overwrite the index with thin volumes (id + title only, no chapters).
+    thin_volumes = [
+        {"id": v.get("id"), "title": v.get("title", "")}
+        for v in volumes
+    ]
+    thin_outline = {k: v for k, v in outline.items() if k != "volumes"}
+    thin_outline["volumes"] = thin_volumes
+    idx_path = resolve_state_path(root, "outline", layout=LAYOUT_LAYERED)
+    dump_json_compatible_yaml(idx_path, thin_outline)
+
+
+def _load_outline_layered(root: Path, outline: Dict[str, Any]) -> Dict[str, Any]:
+    """Re-assemble outline by merging per-volume chapter files into the index."""
+    volumes = outline.get("volumes")
+    if not volumes:
+        return outline
+
+    for vol in volumes:
+        vol_id = vol.get("id")
+        if not vol_id:
+            continue
+        vol_path = resolve_state_path(
+            root, "outline_volume", volume_id=vol_id, layout=LAYOUT_LAYERED,
+        )
+        if vol_path.exists():
+            vol_data = _load_yaml(vol_path)
+            vol["chapters"] = vol_data.get("chapters", [])
+
+    return outline
 
 
 def _sync_outline(outline: Dict[str, Any]) -> None:
