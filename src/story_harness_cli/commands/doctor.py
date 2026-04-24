@@ -4,14 +4,25 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List
 
-from story_harness_cli.protocol import ROOT_FILES, chapter_path, root_file
+from story_harness_cli.protocol import chapter_path, root_file
+from story_harness_cli.protocol.files import resolve_state_path
 from story_harness_cli.protocol.io import load_json_compatible_yaml
 from story_harness_cli.protocol.schema import default_project_state
+from story_harness_cli.protocol.state import merge_defaults
+from story_harness_cli.services.outline_guard import evaluate_chapter_outline_readiness
+from story_harness_cli.services.stats import compute_project_stats
+from story_harness_cli.utils.project_meta import (
+    is_commercial_serial_project,
+    is_machine_label,
+    normalize_machine_label,
+    normalize_primary_genre,
+)
 
 
 WORKFLOW_FILES = {
     "proposals": "proposals/draft-proposals.yaml",
     "reviews": "reviews/change-requests.yaml",
+    "story_reviews": "reviews/story-reviews.yaml",
     "projection": "projections/projection.yaml",
     "context_lens": "projections/context-lens.yaml",
     "projection_log": "logs/projection-log.yaml",
@@ -49,14 +60,42 @@ def validate_json_compatible_file(
     return payload
 
 
+def validate_layout_aware_file(
+    root: Path,
+    state_key: str,
+    default_payload: Dict[str, Any],
+    checks: List[Dict[str, str]],
+) -> Dict[str, Any]:
+    """Validate a state file whose location depends on the project layout.
+
+    Uses :func:`resolve_state_path` to find the correct path for *state_key*
+    (e.g. ``outline`` may live at ``root/outline.yaml`` or ``root/spec/outline.yaml``).
+    """
+    path = resolve_state_path(root, state_key)
+    display = path.relative_to(root) if path.is_relative_to(root) else str(path)
+    if not path.exists():
+        record_check(checks, "error", "missing-file", f"缺少必需文件: {display}")
+        return json.loads(json.dumps(default_payload))
+    try:
+        payload = load_json_compatible_yaml(path, default_payload)
+    except SystemExit as exc:
+        record_check(checks, "error", "invalid-json-compatible-yaml", str(exc))
+        return json.loads(json.dumps(default_payload))
+    record_check(checks, "info", "parsed-file", f"文件可解析: {display}")
+    return payload
+
+
 def validate_project_shape(root: Path, checks: List[Dict[str, str]]) -> Dict[str, Dict[str, Any]]:
     defaults = default_project_state()
+    project_payload = validate_json_compatible_file(root, "project.yaml", defaults["project"], checks)
     state = {
-        "project": validate_json_compatible_file(root, "project.yaml", defaults["project"], checks),
-        "outline": validate_json_compatible_file(root, "outline.yaml", defaults["outline"], checks),
-        "entities": validate_json_compatible_file(root, "entities.yaml", defaults["entities"], checks),
-        "timeline": validate_json_compatible_file(root, "timeline.yaml", defaults["timeline"], checks),
+        "project": merge_defaults(project_payload, defaults["project"]),
+        "outline": validate_layout_aware_file(root, "outline", defaults["outline"], checks),
+        "entities": validate_layout_aware_file(root, "entities", defaults["entities"], checks),
+        "timeline": validate_layout_aware_file(root, "timeline", defaults["timeline"], checks),
         "branches": validate_json_compatible_file(root, "branches.yaml", defaults["branches"], checks),
+        "threads": validate_layout_aware_file(root, "threads", defaults["threads"], checks),
+        "structures": validate_layout_aware_file(root, "structures", defaults["structures"], checks),
     }
     for key, relative_path in WORKFLOW_FILES.items():
         state[key] = validate_json_compatible_file(root, relative_path, defaults[key], checks)
@@ -103,13 +142,13 @@ def validate_project_links(root: Path, state: Dict[str, Dict[str, Any]], checks:
 
 def _check_outline_volumes(root: Path, issues: list) -> None:
     """Validate outline.yaml has volumes structure."""
-    outline_path = root / "outline.yaml"
+    outline_path = resolve_state_path(root, "outline")
     if not outline_path.exists():
         return
     outline = load_json_compatible_yaml(outline_path, {})
     volumes = outline.get("volumes")
     if volumes is None:
-        issues.append({"level": "warn", "message": "outline.yaml 缺少 volumes 字段，建议运行 brainstorm outline 初始化"})
+        issues.append({"level": "warning", "message": "outline.yaml 缺少 volumes 字段，建议运行 brainstorm outline 初始化"})
     else:
         for vol in volumes:
             for ch in vol.get("chapters", []):
@@ -123,14 +162,14 @@ def _check_outline_volumes(root: Path, issues: list) -> None:
 
 def _check_entity_profiles(root: Path, issues: list) -> None:
     """Validate entities have profile structure."""
-    entities_path = root / "entities.yaml"
+    entities_path = resolve_state_path(root, "entities")
     if not entities_path.exists():
         return
     entities_data = load_json_compatible_yaml(entities_path, {})
     for entity in entities_data.get("entities", []):
         if "profile" not in entity:
             issues.append({
-                "level": "warn",
+                "level": "warning",
                 "message": f"实体 '{entity.get('name')}' 缺少 profile 字段，建议重新初始化或运行 entity enrich",
             })
         if "seed" not in entity:
@@ -193,18 +232,174 @@ def _check_structure_coverage(root: Path, state: Dict, issues: list) -> None:
         issues.append({"level": "info", "message": f"叙事结构覆盖率: {int(coverage * 100)}%"})
 
 
+def _check_chapter_word_counts(
+    root: Path,
+    state: Dict[str, Dict[str, Any]],
+    checks: List[Dict[str, str]],
+    *,
+    min_chapter_words: int,
+    target_chapter_words: int,
+) -> None:
+    commercial = state.get("project", {}).get("commercialPositioning", {})
+    configured_floor = commercial.get("chapterWordFloor", 0) or 0
+    configured_target = commercial.get("chapterWordTarget", 0) or 0
+    effective_min = max(min_chapter_words, configured_floor)
+    effective_target = max(target_chapter_words, configured_target, effective_min)
+    stats = compute_project_stats(
+        state,
+        root,
+        min_chapter_words=effective_min,
+        target_chapter_words=effective_target,
+    )
+    for chapter in stats.get("wordCount", {}).get("byChapter", []):
+        chapter_id = chapter.get("chapterId") or "unknown-chapter"
+        title = chapter.get("title") or chapter_id
+        words = chapter.get("words", 0)
+        status = chapter.get("status")
+        if status == "below-minimum":
+            missing = chapter.get("missingToMinimum", 0)
+            record_check(
+                checks,
+                "warning",
+                "chapter-below-minimum",
+                (
+                    f"章节 {chapter_id}《{title}》当前约 {words} 字，"
+                    f"低于最低 {effective_min} 字，还差 {missing} 字"
+                ),
+            )
+        elif status == "meets-minimum":
+            missing = chapter.get("missingToTarget", 0)
+            record_check(
+                checks,
+                "info",
+                "chapter-below-target",
+                (
+                    f"章节 {chapter_id}《{title}》当前约 {words} 字，"
+                    f"已达到最低 {effective_min} 字，但距建议 {effective_target} 字还差 {missing} 字"
+                ),
+            )
+
+
+def _check_outline_readiness(root: Path, state: Dict[str, Dict[str, Any]], checks: List[Dict[str, str]]) -> None:
+    chapters = state.get("outline", {}).get("chapters", [])
+    for chapter in chapters:
+        chapter_id = chapter.get("id")
+        if not chapter_id:
+            continue
+        if not chapter_path(root, chapter_id).exists():
+            continue
+        readiness = evaluate_chapter_outline_readiness(
+            state,
+            chapter_id,
+            require_project_gate=False,
+        )
+        if readiness["ready"]:
+            continue
+        missing = "、".join(item["message"] for item in readiness["missing"]) or "缺少前置大纲"
+        record_check(
+            checks,
+            "warning",
+            "chapter-outline-not-ready",
+            f"章节 {chapter_id}《{readiness['title']}》已有正文文件，但仍未完成大纲前置约束：{missing}",
+        )
+
+
+def _check_project_positioning(state: Dict, checks: List[Dict[str, str]]) -> None:
+    project = state.get("project", {})
+    positioning = project.get("positioning", {})
+    story_contract = project.get("storyContract", {})
+
+    primary_genre = positioning.get("primaryGenre", "")
+    target_audience = positioning.get("targetAudience", [])
+    core_promises = story_contract.get("corePromises", [])
+    pace_contract = story_contract.get("paceContract", "")
+    genre = project.get("genre", "")
+
+    if not primary_genre:
+        record_check(checks, "warning", "missing-primary-genre", "project.positioning.primaryGenre 为空，后续类型化 review 无法稳定切换权重")
+    elif not is_machine_label(primary_genre):
+        record_check(checks, "warning", "non-normalized-primary-genre", f"primaryGenre 建议使用稳定 slug，当前值为: {primary_genre}")
+
+    normalized_genre = normalize_primary_genre(genre)
+    normalized_primary = normalize_primary_genre(primary_genre)
+    if genre and primary_genre and normalized_genre and normalized_primary != normalized_genre:
+        record_check(checks, "warning", "genre-primary-mismatch", f"genre={genre} 与 primaryGenre={primary_genre} 可能漂移，建议统一")
+
+    if not target_audience:
+        record_check(checks, "warning", "missing-target-audience", "project.positioning.targetAudience 为空，读者定位尚未显式声明")
+    if not core_promises:
+        record_check(checks, "warning", "missing-core-promises", "project.storyContract.corePromises 为空，作品卖点承诺尚未声明")
+    if not pace_contract:
+        record_check(checks, "info", "missing-pace-contract", "project.storyContract.paceContract 为空，节奏承诺尚未声明")
+
+
+def _check_commercial_positioning(state: Dict, checks: List[Dict[str, str]]) -> None:
+    project = state.get("project", {})
+    commercial = project.get("commercialPositioning", {})
+    if not is_commercial_serial_project(project) and not any(commercial.values()):
+        return
+
+    premise = commercial.get("premise", "")
+    hook_line = commercial.get("hookLine", "")
+    hook_stack = commercial.get("hookStack", [])
+    benchmark_works = commercial.get("benchmarkWorks", [])
+    target_platform = commercial.get("targetPlatform", "")
+    serialization_model = commercial.get("serializationModel", "")
+    release_cadence = commercial.get("releaseCadence", "")
+    chapter_word_floor = commercial.get("chapterWordFloor", 0)
+    chapter_word_target = commercial.get("chapterWordTarget", 0)
+
+    if not premise:
+        record_check(checks, "warning", "missing-commercial-premise", "commercialPositioning.premise 为空，连载作品的商业主张尚未明确")
+    if not hook_line:
+        record_check(checks, "warning", "missing-commercial-hook-line", "commercialPositioning.hookLine 为空，缺少可复用的一句话钩子")
+    if not hook_stack:
+        record_check(checks, "warning", "missing-commercial-hook-stack", "commercialPositioning.hookStack 为空，缺少稳定的追读钩子结构")
+    if not benchmark_works:
+        record_check(checks, "info", "missing-commercial-benchmarks", "commercialPositioning.benchmarkWorks 为空，建议补充对标作品/参考样板")
+    if not target_platform:
+        record_check(checks, "warning", "missing-commercial-target-platform", "commercialPositioning.targetPlatform 为空，平台感与投放口径尚未声明")
+    if not serialization_model:
+        record_check(checks, "warning", "missing-commercial-serialization-model", "commercialPositioning.serializationModel 为空，连载模型尚未明确")
+    if not release_cadence:
+        record_check(checks, "info", "missing-commercial-release-cadence", "commercialPositioning.releaseCadence 为空，更新节奏尚未明确")
+    if chapter_word_floor and chapter_word_target and chapter_word_target < chapter_word_floor:
+        record_check(
+            checks,
+            "warning",
+            "commercial-word-target-order",
+            "commercialPositioning.chapterWordTarget 不应小于 chapterWordFloor",
+        )
+
+
 def command_doctor(args) -> int:
     root = Path(args.root).resolve()
     checks: List[Dict[str, str]] = []
 
     if not root.exists():
         raise SystemExit(f"{root} 不存在")
+    if args.min_chapter_words <= 0:
+        raise SystemExit("--min-chapter-words 必须大于 0")
+    if args.target_chapter_words < args.min_chapter_words:
+        raise SystemExit("--target-chapter-words 不能小于 --min-chapter-words")
 
-    for relative_path in ROOT_FILES:
+    # -- Always-at-root files (project.yaml, branches.yaml) ----------------------
+    _ROOT_ONLY_FILES = ["project.yaml", "branches.yaml"]
+    for relative_path in _ROOT_ONLY_FILES:
         if root_file(root, relative_path).exists():
             record_check(checks, "info", "root-file", f"已找到根文件: {relative_path}")
         else:
             record_check(checks, "error", "missing-root-file", f"缺少根文件: {relative_path}")
+
+    # -- Layout-aware spec files -------------------------------------------------
+    _SPEC_CHECK_KEYS = ["outline", "entities", "timeline", "threads", "structures"]
+    for key in _SPEC_CHECK_KEYS:
+        resolved = resolve_state_path(root, key)
+        display = resolved.relative_to(root) if resolved.is_relative_to(root) else str(resolved)
+        if resolved.exists():
+            record_check(checks, "info", "root-file", f"已找到规范文件: {display}")
+        else:
+            record_check(checks, "error", "missing-root-file", f"缺少规范文件: {display}")
 
     for directory in WORKFLOW_DIRS:
         path = root / directory
@@ -215,11 +410,21 @@ def command_doctor(args) -> int:
 
     state = validate_project_shape(root, checks)
     validate_project_links(root, state, checks)
+    _check_project_positioning(state, checks)
+    _check_commercial_positioning(state, checks)
     _check_outline_volumes(root, checks)
+    _check_outline_readiness(root, state, checks)
     _check_entity_profiles(root, checks)
     _check_threads(root, state, checks)
     _check_arcs(root, state, checks)
     _check_structure_coverage(root, state, checks)
+    _check_chapter_word_counts(
+        root,
+        state,
+        checks,
+        min_chapter_words=args.min_chapter_words,
+        target_chapter_words=args.target_chapter_words,
+    )
 
     error_count = sum(1 for item in checks if item["level"] == "error")
     warning_count = sum(1 for item in checks if item["level"] == "warning")
@@ -243,4 +448,6 @@ def register_doctor_commands(subparsers) -> None:
     doctor_parser = subparsers.add_parser("doctor", help="Validate story project structure and workflow files")
     doctor_parser.add_argument("--root", required=True)
     doctor_parser.add_argument("--strict", action="store_true", help="Treat warnings as failures")
+    doctor_parser.add_argument("--min-chapter-words", type=int, default=2000, help="Minimum acceptable words per chapter")
+    doctor_parser.add_argument("--target-chapter-words", type=int, default=3000, help="Recommended words per chapter")
     doctor_parser.set_defaults(func=command_doctor)
