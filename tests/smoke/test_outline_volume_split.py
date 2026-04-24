@@ -63,6 +63,7 @@ def _setup_layered_with_volumes(root: Path, volumes: list[dict]) -> None:
         "projection_log": {"projectionChanges": []},
         "threads": {"threads": []},
         "structures": {"activeStructure": None, "mappings": []},
+        "foreshadowing": {"foreshadows": []},
     }
 
     for state_key, internal_key in STATE_KEY_MAP.items():
@@ -193,6 +194,7 @@ class FlatLayoutNoVolumeFilesTest(unittest.TestCase):
             "projection_log": {"projectionChanges": []},
             "threads": {"threads": []},
             "structures": {"activeStructure": None, "mappings": []},
+            "foreshadowing": {"foreshadows": []},
         }
         for state_key, internal_key in STATE_KEY_MAP.items():
             fpath = resolve_state_path(self.root, state_key)

@@ -52,6 +52,7 @@ def _build_minimal_state_files(root: Path) -> None:
         "projection_log": {"projectionChanges": []},
         "threads": {"threads": []},
         "structures": {"activeStructure": None, "mappings": []},
+        "foreshadowing": {"foreshadows": []},
     }
     for state_key, internal_key in STATE_KEY_MAP.items():
         fpath = resolve_state_path(root, state_key)

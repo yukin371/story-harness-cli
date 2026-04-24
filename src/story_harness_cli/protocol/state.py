@@ -26,6 +26,7 @@ STATE_FILE_NAMES = (
     "logs/projection-log.yaml",
     "threads.yaml",
     "structures.yaml",
+    "foreshadowing.yaml",
 )
 
 # Ordered mapping from state_key (used with resolve_state_path) to the
@@ -44,6 +45,7 @@ STATE_KEY_MAP = {
     "projection_log": "projection_log",
     "threads": "threads",
     "structures": "structures",
+    "foreshadowing": "foreshadowing",
 }
 STATE_META_KEY = "_stateMeta"
 STATE_LOCK_FILENAME = ".story-harness.lock"

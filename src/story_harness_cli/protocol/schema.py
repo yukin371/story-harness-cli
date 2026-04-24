@@ -5,13 +5,49 @@ from typing import Any, Dict
 
 def default_project_state() -> Dict[str, Dict[str, Any]]:
     return {
-        "project": {},
+        "project": {
+            "title": "",
+            "genre": "",
+            "defaultMode": "driving",
+            "activeChapterId": None,
+            "positioning": {
+                "primaryGenre": "",
+                "subGenre": "",
+                "styleTags": [],
+                "targetAudience": [],
+            },
+            "storyContract": {
+                "corePromises": [],
+                "avoidances": [],
+                "endingContract": "",
+                "paceContract": "",
+            },
+            "commercialPositioning": {
+                "premise": "",
+                "hookLine": "",
+                "hookStack": [],
+                "benchmarkWorks": [],
+                "targetPlatform": "",
+                "serializationModel": "",
+                "releaseCadence": "",
+                "chapterWordFloor": 0,
+                "chapterWordTarget": 0,
+            },
+            "createdAt": "",
+            "updatedAt": "",
+        },
         "outline": {"chapters": [], "chapterDirections": [], "volumes": []},
         "entities": {"entities": [], "enrichmentProposals": []},
         "timeline": {"events": []},
         "branches": {"branches": []},
         "proposals": {"draftProposals": []},
         "reviews": {"changeRequests": []},
+        "story_reviews": {
+            "rubricVersion": "chapter-review-v1",
+            "sceneRubricVersion": "scene-review-v1",
+            "chapterReviews": [],
+            "sceneReviews": [],
+        },
         "projection": {
             "snapshotProjections": [],
             "relationProjections": [],
@@ -23,5 +59,6 @@ def default_project_state() -> Dict[str, Dict[str, Any]]:
         "projection_log": {"projectionChanges": []},
         "threads": {"threads": []},
         "structures": {"activeStructure": None, "mappings": []},
+        "foreshadowing": {"foreshadows": []},
     }
 
