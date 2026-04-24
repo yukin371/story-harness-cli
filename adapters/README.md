@@ -18,6 +18,8 @@ Each adapter should explain:
 1. when to invoke the CLI
 2. which protocol files matter
 3. which commands correspond to the writing loop
+4. what the complete close-the-loop workflow is after scoring
+5. which fallback command path to use when `story-harness` is unavailable
 
 Install adapters with:
 
