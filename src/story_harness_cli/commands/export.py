@@ -14,11 +14,19 @@ def command_export(args) -> int:
     state = load_project_state(root)
     fmt = args.format
 
+    # Hierarchical format always exports as split files
+    if fmt == "spec-outline-hierarchical":
+        return _export_hierarchical_split(state, args)
+
     # Spec formats export structured data, not chapter prose
     if fmt == "spec-outline":
         output = _generate_spec_outline(state)
     elif fmt == "spec-characters":
         output = _generate_spec_characters(state)
+    elif fmt == "spec-global-outline":
+        output = _generate_spec_global_outline(state)
+    elif fmt == "spec-detail":
+        output = _generate_spec_detail(state)
     else:
         output = _export_chapter_prose(state, root, fmt, getattr(args, "chapter_id", None))
 
@@ -203,6 +211,159 @@ def _generate_spec_characters(state: dict) -> str:
     return "\n".join(parts)
 
 
+def _export_hierarchical_split(state: dict, args) -> int:
+    """Export global outline, detail, and characters as separate files."""
+    title = state["project"].get("title", "manuscript")
+
+    if args.output:
+        out_dir = Path(args.output)
+    else:
+        out_dir = Path(".")
+
+    if out_dir.is_file():
+        out_dir = out_dir.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    files_written = []
+
+    # 1. Global outline
+    global_content = _generate_spec_global_outline(state)
+    global_path = out_dir / f"{title}-global-outline.md"
+    global_path.write_text(global_content, encoding="utf-8")
+    files_written.append(global_path.name)
+
+    # 2. Detailed outline
+    detail_content = _generate_spec_detail(state)
+    detail_path = out_dir / f"{title}-detail.md"
+    detail_path.write_text(detail_content, encoding="utf-8")
+    files_written.append(detail_path.name)
+
+    # 3. Character cards
+    chars_content = _generate_spec_characters(state)
+    chars_path = out_dir / f"{title}-characters.md"
+    chars_path.write_text(chars_content, encoding="utf-8")
+    files_written.append(chars_path.name)
+
+    for name in files_written:
+        print(f"已导出: {out_dir / name}", file=sys.stderr)
+    return 0
+
+
+def _generate_spec_global_outline(state: dict) -> str:
+    """Generate global outline only (volumes + chapter index, no details)."""
+    title = state["project"].get("title", "未命名")
+    parts = [f"# 全局大纲: {title}", ""]
+
+    outline = state.get("outline", {})
+    volumes = outline.get("volumes", [])
+
+    if volumes:
+        for vol in volumes:
+            vol_title = vol.get("title", "未命名卷")
+            vol_theme = vol.get("theme", "")
+            parts.append(f"## 卷: {vol_title}")
+            if vol_theme:
+                parts.append(f"**主题:** {vol_theme}")
+            parts.append("")
+            for ch in vol.get("chapters", []):
+                ch_id = ch.get("id", "unknown")
+                ch_title = ch.get("title", "未命名")
+                status = ch.get("status", "")
+                status_label = f" [{status}]" if status else ""
+                parts.append(f"- {ch_id}: {ch_title}{status_label}")
+            parts.append("")
+    else:
+        for ch in outline.get("chapters", []):
+            ch_id = ch.get("id", "unknown")
+            ch_title = ch.get("title", "未命名")
+            status = ch.get("status", "")
+            status_label = f" [{status}]" if status else ""
+            parts.append(f"- {ch_id}: {ch_title}{status_label}")
+        parts.append("")
+
+    return "\n".join(parts)
+
+
+def _generate_spec_detail(state: dict) -> str:
+    """Generate per-chapter detailed plans (direction + beats + scenePlans)."""
+    title = state["project"].get("title", "未命名")
+    parts = [f"# 细纲: {title}", ""]
+
+    detailed = state.get("detailed_outlines", {})
+    entry_map = {e.get("chapterId"): e for e in detailed.get("entries", [])}
+
+    outline = state.get("outline", {})
+    chapters = list(outline.get("chapters", []))
+    for vol in outline.get("volumes", []):
+        chapters.extend(vol.get("chapters", []))
+
+    seen = set()
+    has_any = False
+    for ch in chapters:
+        cid = ch.get("id")
+        if not cid or cid in seen:
+            continue
+        seen.add(cid)
+
+        entry = entry_map.get(cid)
+        direction = (entry or {}).get("direction") or ch.get("direction", "")
+        beats = (entry or {}).get("beats") or ch.get("beats", [])
+        scenes = (entry or {}).get("scenePlans") or ch.get("scenePlans", [])
+
+        if not direction and not beats and not scenes:
+            continue
+
+        has_any = True
+
+        ch_title = ch.get("title", cid)
+        parts.append(f"## {cid}: {ch_title}")
+        parts.append("")
+
+        if direction:
+            parts.append(f"**方向:** {direction}")
+            parts.append("")
+
+        if beats:
+            parts.append("**节拍:**")
+            for beat in beats:
+                summary = beat.get("summary", beat.get("description", str(beat)))
+                beat_status = beat.get("status", "")
+                label = f" [{beat_status}]" if beat_status else ""
+                parts.append(f"- {summary}{label}")
+            parts.append("")
+
+        if scenes:
+            parts.append("**场景:**")
+            for i, scene in enumerate(scenes, 1):
+                s_title = scene.get("title", "")
+                s_summary = scene.get("summary", "")
+                label = f"{s_title}: {s_summary}" if s_title else s_summary
+                parts.append(f"{i}. {label}")
+            parts.append("")
+
+        parts.append("---")
+        parts.append("")
+
+    if not has_any:
+        parts.append("暂无细纲数据。")
+
+    return "\n".join(parts)
+
+
+def _generate_spec_outline_hierarchical(state: dict) -> str:
+    """Generate combined view: global outline then detailed plans."""
+    parts = [_generate_spec_global_outline(state)]
+    parts.append("")
+    parts.append("")
+    detail = _generate_spec_detail(state)
+    # Replace the title to make it a section header
+    detail_lines = detail.split("\n")
+    if detail_lines and detail_lines[0].startswith("# "):
+        detail_lines[0] = detail_lines[0].replace("# ", "## ", 1)
+    parts.extend(detail_lines)
+    return "\n".join(parts)
+
+
 def _format_extension(fmt: str) -> str:
     """Return file extension for a given format."""
     return {
@@ -211,6 +372,9 @@ def _format_extension(fmt: str) -> str:
         "txt": ".txt",
         "spec-outline": ".md",
         "spec-characters": ".md",
+        "spec-global-outline": ".md",
+        "spec-detail": ".md",
+        "spec-outline-hierarchical": ".md",
     }.get(fmt, ".txt")
 
 
@@ -239,5 +403,5 @@ def register_export_commands(subparsers) -> None:
     export_parser.add_argument("--root", required=True)
     export_parser.add_argument("--chapter-id", help="Export single chapter (default: all)")
     export_parser.add_argument("--output", "-o", help="Output file path (default: stdout)")
-    export_parser.add_argument("--format", choices=["txt", "json", "markdown", "spec-outline", "spec-characters"], default="txt", help="Output format")
+    export_parser.add_argument("--format", choices=["txt", "json", "markdown", "spec-outline", "spec-characters", "spec-global-outline", "spec-detail", "spec-outline-hierarchical"], default="txt", help="Output format")
     export_parser.set_defaults(func=command_export)
