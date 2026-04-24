@@ -8,7 +8,7 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Dict
 
-from .files import LAYOUT_LAYERED, ROOT_FILES, detect_layout, resolve_state_path, root_file
+from .files import LAYOUT_FLAT, LAYOUT_LAYERED, ROOT_FILES, detect_layout, resolve_state_path, root_file
 from .io import dump_json_compatible_yaml, load_json_compatible_yaml
 from .schema import default_project_state
 
@@ -98,6 +98,52 @@ def ensure_project_root(root: Path) -> None:
     missing = [name for name in ROOT_FILES if not root_file(root, name).exists()]
     if missing:
         raise SystemExit(f"{root} 不是已初始化的 story harness 项目，缺少: {', '.join(missing)}")
+
+
+def load_outline_for_chapter(root: Path, chapter_id: str) -> dict:
+    """Load only the outline volume containing the given chapter.
+
+    In flat layout, returns the full outline.
+    In layered layout, returns only the relevant volume's chapters.
+    """
+    layout = detect_layout(root)
+    if layout == LAYOUT_FLAT:
+        state = load_project_state(root)
+        return state["outline"]
+
+    # Layered: read index, find volume containing chapter, load only that volume
+    index_path = resolve_state_path(root, "outline", layout=LAYOUT_LAYERED)
+    if not index_path.exists():
+        return {"chapters": [], "chapterDirections": [], "volumes": []}
+
+    index = _load_yaml(index_path)
+    for vol in index.get("volumes", []):
+        vol_id = vol.get("id")
+        if not vol_id:
+            continue
+        vol_path = resolve_state_path(
+            root, "outline_volume", volume_id=vol_id, layout=LAYOUT_LAYERED
+        )
+        if not vol_path.exists():
+            continue
+        vol_data = _load_yaml(vol_path)
+        for ch in vol_data.get("chapters", []):
+            if ch.get("id") == chapter_id:
+                return {
+                    "chapters": vol_data.get("chapters", []),
+                    "chapterDirections": [
+                        {"chapterId": c["id"], "title": c.get("title", ""),
+                         "summary": c.get("direction", "")}
+                        for c in vol_data.get("chapters", [])
+                        if c.get("direction")
+                    ],
+                    "volumes": [vol],
+                    "activeVolumeId": vol_id,
+                }
+
+    # Fallback: chapter not found in any volume, return full outline
+    state = load_project_state(root)
+    return state["outline"]
 
 
 def merge_defaults(payload: Dict[str, Any], defaults: Dict[str, Any]) -> Dict[str, Any]:
