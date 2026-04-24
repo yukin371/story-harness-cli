@@ -27,6 +27,7 @@ STATE_FILE_NAMES = (
     "threads.yaml",
     "structures.yaml",
     "foreshadowing.yaml",
+    "detailed_outlines.yaml",
 )
 
 # Ordered mapping from state_key (used with resolve_state_path) to the
@@ -46,6 +47,7 @@ STATE_KEY_MAP = {
     "threads": "threads",
     "structures": "structures",
     "foreshadowing": "foreshadowing",
+    "detailed_outlines": "detailed_outlines",
 }
 STATE_META_KEY = "_stateMeta"
 STATE_LOCK_FILENAME = ".story-harness.lock"
@@ -72,8 +74,66 @@ def load_project_state(root: Path) -> Dict[str, Any]:
         if volumes and not any(v.get("chapters") for v in volumes):
             state["outline"] = _load_outline_layered(root, outline)
 
+    # Merge detailed outlines into outline chapters for transparent access.
+    _merge_detailed_into_outline(state["outline"], state.get("detailed_outlines", {"entries": []}))
+
     state[STATE_META_KEY] = _build_state_meta(root)
     return state
+
+
+def _merge_detailed_into_outline(outline: Dict[str, Any], detailed_outlines: Dict[str, Any]) -> None:
+    entries = detailed_outlines.get("entries", [])
+    if not entries:
+        return
+    lookup: Dict[str, dict] = {e.get("chapterId"): e for e in entries if e.get("chapterId")}
+
+    for ch in outline.get("chapters", []):
+        _apply_detailed_entry(ch, lookup.get(ch.get("id")))
+    for vol in outline.get("volumes", []):
+        for ch in vol.get("chapters", []):
+            _apply_detailed_entry(ch, lookup.get(ch.get("id")))
+
+
+def _apply_detailed_entry(chapter: Dict[str, Any], entry: dict | None) -> None:
+    if entry is None:
+        return
+    for field in ("direction", "beats", "scenePlans"):
+        val = entry.get(field)
+        if val is not None:
+            chapter[field] = val
+
+
+def _extract_to_detailed(outline: Dict[str, Any], detailed_outlines: Dict[str, Any]) -> None:
+    """Copy direction/beats/scenePlans from outline chapters into detailed_outlines entries."""
+    entries = detailed_outlines.setdefault("entries", [])
+    existing: Dict[str, dict] = {e.get("chapterId"): e for e in entries if e.get("chapterId")}
+
+    all_chapters = list(outline.get("chapters", []))
+    for vol in outline.get("volumes", []):
+        all_chapters.extend(vol.get("chapters", []))
+
+    for ch in all_chapters:
+        cid = ch.get("id")
+        if not cid:
+            continue
+        has_detail = any(ch.get(f) for f in ("direction", "beats", "scenePlans"))
+        if not has_detail:
+            continue
+        entry = existing.get(cid)
+        if entry is None:
+            entry = {"chapterId": cid}
+            entries.append(entry)
+            existing[cid] = entry
+        for field in ("direction", "beats", "scenePlans"):
+            val = ch.get(field)
+            if val is not None:
+                entry[field] = val
+        entry["updatedAt"] = _now_iso_compat()
+
+
+def _now_iso_compat() -> str:
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).isoformat()
 
 
 def save_state(root: Path, state: Dict[str, Any], *, timeout_seconds: float = STATE_LOCK_TIMEOUT_SECONDS) -> None:
@@ -81,6 +141,9 @@ def save_state(root: Path, state: Dict[str, Any], *, timeout_seconds: float = ST
         _ensure_state_not_stale(root, state)
         # Sync volumes → flat chapters/chapterDirections before saving
         _sync_outline(state["outline"])
+
+        # Extract detailed fields into detailed_outlines storage (keeps outline.yaml backward-compatible).
+        _extract_to_detailed(state["outline"], state.setdefault("detailed_outlines", {"entries": []}))
 
         for state_key, internal_key in STATE_KEY_MAP.items():
             fpath = resolve_state_path(root, state_key)

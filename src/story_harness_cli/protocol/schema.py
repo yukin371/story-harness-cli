@@ -60,5 +60,6 @@ def default_project_state() -> Dict[str, Dict[str, Any]]:
         "threads": {"threads": []},
         "structures": {"activeStructure": None, "mappings": []},
         "foreshadowing": {"foreshadows": []},
+        "detailed_outlines": {"entries": []},
     }
 

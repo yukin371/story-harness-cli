@@ -329,6 +329,62 @@ def command_outline_scene_remove(args) -> int:
     return 0
 
 
+def _find_detailed_entry(detailed_outlines: dict, chapter_id: str) -> dict | None:
+    for entry in detailed_outlines.get("entries", []):
+        if entry.get("chapterId") == chapter_id:
+            return entry
+    return None
+
+
+def command_outline_detail_init(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id
+
+    chapter = _find_chapter(state["outline"], chapter_id)
+    if chapter is None:
+        raise SystemExit(f"找不到章节: {chapter_id}")
+
+    detailed = state.setdefault("detailed_outlines", {"entries": []})
+    entry = _find_detailed_entry(detailed, chapter_id)
+    if entry is None:
+        entry = {"chapterId": chapter_id}
+        detailed["entries"].append(entry)
+
+    if args.direction:
+        entry["direction"] = args.direction
+        chapter["direction"] = args.direction
+
+    from story_harness_cli.utils import now_iso
+    entry["updatedAt"] = now_iso()
+
+    save_state(root, state)
+    print(json.dumps({"chapterId": chapter_id, "status": "initialized"}, ensure_ascii=False, indent=2))
+    return 0
+
+
+def command_outline_detail_show(args) -> int:
+    root = Path(args.root).resolve()
+    ensure_project_root(root)
+    state = load_project_state(root)
+    chapter_id = args.chapter_id
+
+    chapter = _find_chapter(state["outline"], chapter_id)
+    if chapter is None:
+        raise SystemExit(f"找不到章节: {chapter_id}")
+
+    result = {
+        "chapterId": chapter_id,
+        "title": chapter.get("title", ""),
+        "direction": chapter.get("direction", ""),
+        "beats": chapter.get("beats", []),
+        "scenePlans": chapter.get("scenePlans", []),
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
+
+
 def register_outline_commands(subparsers) -> None:
     outline_parser = subparsers.add_parser("outline", help="Outline and structure commands")
     outline_subparsers = outline_parser.add_subparsers(dest="outline_command", required=True)
@@ -428,3 +484,14 @@ def register_outline_commands(subparsers) -> None:
     scene_remove_parser.add_argument("--chapter-id", required=True)
     scene_remove_parser.add_argument("--scene-id", required=True)
     scene_remove_parser.set_defaults(func=command_outline_scene_remove)
+
+    detail_init_parser = outline_subparsers.add_parser("detail-init", help="Initialize detailed outline for a chapter")
+    detail_init_parser.add_argument("--root", required=True)
+    detail_init_parser.add_argument("--chapter-id", required=True)
+    detail_init_parser.add_argument("--direction", help="Initial chapter direction")
+    detail_init_parser.set_defaults(func=command_outline_detail_init)
+
+    detail_show_parser = outline_subparsers.add_parser("detail-show", help="Show detailed outline for a chapter")
+    detail_show_parser.add_argument("--root", required=True)
+    detail_show_parser.add_argument("--chapter-id", required=True)
+    detail_show_parser.set_defaults(func=command_outline_detail_show)

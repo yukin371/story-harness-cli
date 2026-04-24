@@ -72,6 +72,17 @@ Layout is auto-detected: if `spec/` directory exists, layered paths are used. No
 6. `outline.yaml` may contain explicit `scenePlans`, and `review scene --scene-index` should prefer them.
 7. In layered layout, `spec/outline.yaml` is a thin index; per-volume chapters live in `spec/outlines/vol-NNN.yaml`.
 8. Context refresh in layered layout only loads the active volume's outline, saving AI context tokens.
+9. `detailed_outlines.yaml` stores per-chapter direction, beats, and scenePlans separately from the global outline.
+10. Use `outline detail-init` to create a detailed plan for a chapter, and `outline detail-show` to view it.
+
+## Outline Hierarchy
+
+The outline system has two levels:
+
+1. **Global outline** (`outline.yaml`): volumes, chapter index (id, title, status), major arcs. This is the "architecture" — locked early.
+2. **Detailed outlines** (`detailed_outlines.yaml`): per-chapter direction, beats, scenePlans. This is the "sprint plan" — created progressively.
+
+On load, detailed entries are merged into outline chapters transparently. All existing commands work with the merged view.
 
 ## New Commands
 
@@ -84,6 +95,8 @@ Layout is auto-detected: if `spec/` directory exists, layered paths are used. No
 | `export --format spec-outline` | Human-readable outline as Markdown |
 | `export --format spec-characters` | Human-readable character cards as Markdown |
 | `init --layout layered` | Create project with layered file structure |
+| `outline detail-init` | Initialize detailed outline for a chapter |
+| `outline detail-show` | Show detailed outline for a chapter |
 
 ## Chinese Prose Guidance
 

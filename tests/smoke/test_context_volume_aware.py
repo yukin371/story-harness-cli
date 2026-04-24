@@ -53,6 +53,7 @@ def _build_minimal_state_files(root: Path) -> None:
         "threads": {"threads": []},
         "structures": {"activeStructure": None, "mappings": []},
         "foreshadowing": {"foreshadows": []},
+        "detailed_outlines": {"entries": []},
     }
     for state_key, internal_key in STATE_KEY_MAP.items():
         fpath = resolve_state_path(root, state_key)

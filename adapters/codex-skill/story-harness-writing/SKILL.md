@@ -110,6 +110,13 @@ uv run story-harness outline promote --root <project-dir> --proposal-id <proposa
 uv run story-harness projection apply --root <project-dir> --chapter-id <chapter-id>
 ```
 
+### If the user wants to manage detailed outlines
+
+```powershell
+uv run story-harness outline detail-init --root <project-dir> --chapter-id <chapter-id> --direction "<章节方向>"
+uv run story-harness outline detail-show --root <project-dir> --chapter-id <chapter-id>
+```
+
 ## Operational Rules
 
 1. Keep `Draft Proposal`, `Change Request`, `Projection`, and chapter prose separate.

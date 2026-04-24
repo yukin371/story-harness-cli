@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "story-harness-cli"
-version = "0.2.0"
+version = "0.2.1"
 description = "Agent-native fiction workflow CLI for long-form narrative writing"
 readme = "README.md"
 requires-python = ">=3.10"

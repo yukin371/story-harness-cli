@@ -110,6 +110,15 @@ uv run story-harness outline promote --root <project-dir> --proposal-id <proposa
 uv run story-harness projection apply --root <project-dir> --chapter-id <chapter-id>
 ```
 
+### If the user wants to manage detailed outlines
+
+```powershell
+uv run story-harness outline detail-init --root <project-dir> --chapter-id <chapter-id> --direction "<章节方向>"
+uv run story-harness outline detail-show --root <project-dir> --chapter-id <chapter-id>
+```
+
+Use `detail-init` to create a sprint-level plan for a specific chapter (direction + beats + scenePlans). The global outline remains the architecture document.
+
 ## Operational Rules
 
 1. Keep `Draft Proposal`, `Change Request`, `Projection`, and chapter prose separate.
@@ -122,6 +131,7 @@ uv run story-harness projection apply --root <project-dir> --chapter-id <chapter
 8. In layered projects (`spec/` directory exists), spec files live in `spec/` — do not look for them at root.
 9. Use `foreshadow plant` when planting a setup and `foreshadow resolve` when paying it off. Do not manually edit `foreshadowing.yaml`.
 10. Use `export --format spec-outline / spec-characters` to generate human-readable Markdown for review before or during writing.
+11. Use `outline detail-init` to create per-chapter sprint plans (direction, beats). The global outline is the architecture; detailed outlines are the implementation plan.
 
 ## Core Files
 
