@@ -16,6 +16,7 @@ from .structure import register_structure_commands
 from .timeline import register_timeline_commands
 from .search import register_search_commands
 from .thread import register_thread_commands
+from .migrate import register_migrate_commands
 
 __all__ = [
     "register_arc_commands",
@@ -36,4 +37,5 @@ __all__ = [
     "register_timeline_commands",
     "register_search_commands",
     "register_thread_commands",
+    "register_migrate_commands",
 ]
